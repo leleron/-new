@@ -1,0 +1,75 @@
+<div id="deviceLog_div" class="deviceLog">
+
+</div>
+<p style="display: none" align="center">
+    <textarea id="tpl_deviceLog">
+        <div >
+            <ul id="deviceLogs" class="list">
+                {#if $T.logList==""}
+                <li><h6 class="topMessage">没有符合条件的日志</h6></li>
+                {#else}
+                {#foreach $T.logList as logItem}
+                <li><h6>{$T.logItem.logTime}</h6>
+
+                    <p>{$T.logItem.logContent}</p></li>
+                {#/for}
+                {#/if}
+            </ul>
+        </div>
+
+        <div id="filterForm" align="center" style="display:none;">
+            <form method="post" action="">
+                <select name="day" id="controller" data-native-menu="true">
+                    <option value="">所有用户</option>
+                    {#foreach $T.handlerList as handlerItem}
+                    <option value="{$T.handlerItem.userId}">
+                        {$T.handlerItem.userName}
+                    </option>
+                    {#/for}
+                </select>
+                <select name="day" id="controlSource" data-native-menu="true">
+                    <option value="">全部操作源</option>
+                    <option value="host">设备主机</option>
+                    <option value="weichar">微信</option>
+                    <option value="App">App</option>
+                </select>
+
+                <div id="logTime">
+            <span class="col3"><input type="text" class="af-ui-forms" name="yearName" id="yearId"
+                                      value="{$T.logTime.year}"/></span>
+            <span class="col3"><input type="text" class="af-ui-forms" name="monthName" id="monthId"
+                                      value="{$T.logTime.month}"/></span>
+            <span class="col3"><input type="text" class="af-ui-forms" name="dayName" id="dayId"
+                                      value="{$T.logTime.day}"/></span>
+                </div>
+                <a id="searchLog" onclick="hideSearch()" class="button">开始筛选</a>
+            </form>
+        </div>
+        <!--<div  id="filterForm">-->
+        <!--<form method="post" action="">-->
+
+                <!--<select name="day" id="controller" data-native-menu="false">-->
+                    <!--&lt;!&ndash;操作用户列表&ndash;&gt;-->
+                    <!--<option value="">所有用户</option>-->
+                    <!--{#foreach $T.handlerList as handlerItem}-->
+                    <!--<option value="{$T.handlerItem.userId}">{$T.handlerItem.userName}</option>-->
+                    <!--{#/for}-->
+                <!--</select>-->
+                <!--<select name="day" id="controlSource" data-native-menu="false">-->
+                    <!--<option value="">全部操作源</option>-->
+                    <!--<option value="host">设备主机</option>-->
+                    <!--<option value="weichar">微信</option>-->
+                    <!--<option value="App">App</option>-->
+                <!--</select>-->
+                <!--<div id="logTime">-->
+                    <!--&lt;!&ndash;操作时间&ndash;&gt;-->
+                    <!--<span><input type="text" class='af-ui-forms' name="yearName" id="yearId" value="{$T.logTime.year}"/></span>-->
+                    <!--<span><input type="text" class='af-ui-forms' name="monthName" id="monthId" value="{$T.logTime.month}"/></span>-->
+                    <!--<span><input type="text" class='af-ui-forms' name="dayName" id="dayId" value="{$T.logTime.day}"/></span>-->
+                <!--</div>-->
+            <!--<a id="searchLog" class="button" >开始筛选</a>-->
+        <!--</form>-->
+    <!--</div>-->
+    </textarea>
+</p>
+

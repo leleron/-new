@@ -1,0 +1,60 @@
+
+<div id="myOrdersDetail11"> </div>
+<div id="myOrdersDetail12"> </div>
+
+<p style="display: none">
+    <textarea id="tpl_myordersdetail11">
+             <div class="orderDetail">
+                 <strong>订单状态：<span>{$T.status}</span></strong>
+                 <strong>商品总价：{$T.goods_amount}元</strong>
+                 {#if $T.integral > 0}<strong>积分抵扣：{$T.integral_money}元</strong>{#/if}
+                 {#if $T.shipping_fee > 0}<strong>运费：{$T.shipping_fee}元</strong>{#/if}
+                 {#if $T.discount > 0}<strong>优惠：{$T.discount}元</strong>{#/if}
+                 <strong>应付总额：{$T.order_amount}元</strong>
+                 <a href="#" class="blue qxdd" order-sn="{$T.Item.order_sn}" mobile="{$T.mobile}">取消订单></a>
+            </div>
+            <div class="orderDetail">
+                <p>下单日期：{$T.add_time}</p>
+                <p>订单编号：{$T.order_sn}</p>
+                <p>收货地址：{$T.address}</p>
+                <p><span>{$T.consignee} {$T.mobile}</span></p>
+                <!--<p>送货时间：{$T.best_time}</p>-->
+                {#if $T.inv_type == 0}
+                <p>发票类型：个人</p>
+                <p>发票信息：个人</p>
+                {#else}
+                <p>发票类型：单位</p>
+                <p>发票信息：{$T.inv_payee}</p>
+                {#/if}
+                <input type="hidden" class="payOrderSn" value="{$T.order_sn}" />
+                <input type="hidden" class="payTotalFee" value="{$T.order_amount}" />
+                <input type="hidden" class="payAddressInfo" value="{$T.address}" />
+                <input type="hidden" class="payInvoice" value="{$T.inv_type}" />
+                <input type="hidden" class="payPersonalInfo" value="{$T.consignee} {$T.Item.mobile}" />
+            </div>
+    </textarea>
+    <textarea id="tpl_myordersdetail12">
+        <div class="tkList">
+            <ul>
+                {#foreach $T as Item}
+                    <li id="{$T.Item.sku_sn}">
+                        <a href="#">
+                            <img src="{$T.Item.goods_thumb}" />
+                            <strong>{$T.Item.goods_name}</strong>
+                                <span>
+                                    商城价：{$T.Item.goods_price}元&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+                                    数量：{$T.Item.goods_number}&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+                                    小计：{$T.Item.goods_total}元
+                                    <!--<input class="transaction_price" type="hidden" value="{$T.Item.transaction_price}" />-->
+                                </span>
+                        </a>
+                    </li>
+                {#/for}
+            </ul>
+        </div>
+        <div class="fixedBuy">
+            <span> </span><input class="totalPrice" type="hidden" value="" />
+            <a href="#" class="orderPay">付款</a>
+        </div>
+    </textarea>
+</p>

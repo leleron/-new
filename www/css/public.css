@@ -1,0 +1,1509 @@
+.darkblue{
+    background-color:#001330;
+    color:#fff;
+}
+
+.darkblue .inset{
+    background-color: #010c1e;
+    margin-top: 30px;
+}
+
+.darkblue .inset input,
+.darkblue .inset textarea{
+    margin: 0;
+    border-radius: 0;
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid #2364ae;
+    background-color: #010c1e;
+    /*width:100%;*/
+}
+
+.darkblue .inset input:last-child{
+    border-bottom: 0;
+}
+
+.icon.devices:before{
+    content: url("../images/icons-png/device.png");
+}
+.icon.shop:before{
+    content: url("../images/icons-png/mall.png");
+}
+.icon.my:before{
+    content: url("../images/icons-png/my.png");
+}
+
+.icon.devices.selected:before{
+    content: url("../images/icons-png/deviceselected.png");
+}
+.icon.shop.selected:before{
+    content: url("../images/icons-png/mallselected.png");
+}
+.icon.my.selected:before{
+    content: url("../images/icons-png/myselected.png");
+}
+
+.icon.flashlight:before{
+    content: url("../images/icons-png/flashlight.png");
+}
+
+.icon.album:before{
+    content: url("../images/icons-png/album.png");
+}
+
+
+
+/*退出警告*/
+#exitWarning{
+    position: fixed;
+    width: 80%;
+    text-align: center;
+    background: rgba(99, 99, 99, 0.5);
+    z-index: 9999;
+    line-height: 40px;
+    border-radius: 5px;
+    bottom: 10%;
+    margin: 0 10%;
+    color: #fff;
+}
+
+/*清除链接样式*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a span{
+    color:#0087ee;
+}
+
+/*无效、灰显样式*/
+.disabled {
+    background: #ccc !important;
+    border-color: #ccc !important;
+    color: #fff !important;
+}
+
+/*1/3+2/3布局*/
+
+.grid {
+    /*color: #808080;*/
+    font-size: 14px;
+}
+
+
+
+/*弹出手动添加、扫一扫、搜索菜单*/
+.popupDevice {
+    /*border:1px solid #cccccc;*/
+    /*border-radius: 20px;*/
+    width: 10rem;
+    position: fixed;
+    top: 39px;
+    right: 0;
+    z-index: 100;
+    display: none;
+}
+
+/*设备控制页中，弹出设备权限、设备粉丝、设备日志、设备消息、设备设置、关于设备*/
+.popupMyDevice {
+    /*border:1px solid #cccccc;*/
+    /*border-radius: 20px;*/
+    width: 10rem;
+    position: fixed;
+    top: 39px;
+    right: 0;
+    z-index: 100;
+    display: none;
+}
+
+/*设备离线状态*/
+.offline {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+
+.popupMyFollowedDevice {
+    /*border:1px solid #cccccc;*/
+    /*border-radius: 20px;*/
+    width: 10rem;
+    position: fixed;
+    top: 39px;
+    right: 0;
+    z-index: 100;
+    display: none;
+}
+
+/*顶部提示消息*/
+.topMessage {
+    background-color: #125d9c;
+    color: #fff;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    top: 44px;
+    z-index: 9999;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/*页面顶部大图*/
+.bigli {
+    line-height: 90px;
+}
+
+/*00_404.html*/
+.ui-blue-radius {
+    background-image: -webkit-radial-gradient(center, ellipse closest-side, #3376c1 0%, #0c82d9 100%);
+    background-image: -moz-radial-gradient(center, ellipse closest-side, #3376c1 0%, #0c82d9 100%);
+    background-image: -o-radial-gradient(center, ellipse closest-side, #3376c1 0%, #0c82d9 100%);
+    background-image: radial-gradient(center, ellipse closest-side, #3376c1 0%, #0c82d9 100%);
+}
+
+.logo {
+    position: fixed;
+    top: 39%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+}
+
+.copyright {
+    position: fixed;
+    bottom: 1%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+/*02-05-00_myMall.html*/
+#myMall {
+    background: #f2f2f2;
+}
+
+
+
+/*03-1-1_manuallyAdd.html*/
+#manuallyAdd img{
+    width:80%;
+}
+
+/*03-1-0_addMenu.html*/
+#find {
+    background: #f2f2f2;
+}
+
+.findIndex {
+    display: block;
+    background: #eee;
+}
+
+/*03-1-2_scanQRcode.html*/
+.scanQRcode #qrcanvas {
+    height: 10rem;
+    width: 10rem;
+    margin: 5rem;
+    border: solid 1px #000000;
+}
+
+.login .grid > div {
+    text-align: center;
+}
+
+.scanQRcode .button {
+    width: 10rem;
+}
+
+/*03-1-3_wifiConfiguration.html*/
+/*.wifiCon {*/
+    /*color: #808080;*/
+/*}*/
+
+
+/*.wifiCon #wifiSSIDDiv {*/
+    /*padding: 0;*/
+    /*color: #0c82d9;*/
+/*}*/
+
+.wifiCon img {
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+/*03-1-3-2_connecting.html*/
+#connecting img{
+    width:30%;
+}
+
+/*03-1-3-1_deviceNearby.html*/
+.deviceNearby * {
+    font-size: 12px;
+}
+
+.deviceNearby span {
+    float: right;
+    text-align: right;
+    margin-left: 5px;
+}
+
+.deviceNearby .info span {
+    margin-top: 33px;
+}
+
+.deviceNearby .info span:last-child {
+    left: 20px;
+    font-size: 14px;
+    margin-top: 31px;
+}
+
+.deviceNearby .list > li > a:after {
+    display: none;
+}
+
+.deviceNearby .info {
+    display: inline;
+}
+
+.deviceNearby .distance {
+    width: 40px;
+    float: right;
+    margin-top: 33px;
+    margin-left: 20px;
+}
+
+.deviceNearby .online:before {
+    content: url("../images/icons-png/round-online.png");
+    vertical-align: -10%;
+}
+
+.deviceNearby .offline:before {
+    content: url("../images/icons-png/round-offline.png");
+    vertical-align: -10%;
+}
+
+/*03-1-4_nameGroupSetting.html*/
+#NameGroupDiv img {
+    width: 20%;
+    display: block;
+    margin: 5rem;
+}
+
+#NameGroupDiv label {
+    width: 30%;
+    padding: 15px 0;
+}
+
+#NameGroupDiv input {
+    width: 50%;
+}
+
+#NameGroupDiv .button {
+    width: 80%;
+}
+
+/*03-1-4-1_attentionRank.html*/
+.attentionRank * {
+    font-size: 12px;
+}
+
+.attentionRank span {
+    float: right;
+    margin-left: 5px;
+}
+
+.attentionRank .info span {
+    margin-top: 33px;
+}
+
+.attentionRank .info span:last-child {
+    font-size: 14px;
+    margin-top: 31px;
+}
+
+.attentionRank .info span:first-child {
+    width: 60px;
+    text-align: right;
+}
+
+.attentionRank .list > li > a:after {
+    display: none;
+}
+
+.attentionRank .info {
+    display: inline;
+}
+
+.attentionRank .online:before {
+    content: url("../images/icons-png/round-online.png");
+    vertical-align: -10%;
+}
+
+.attentionRank .offline:before {
+    content: url("../images/icons-png/round-offline.png");
+    vertical-align: -10%;
+}
+
+/*03-1-5_nameCard.html*/
+.nameCard .ct {
+    padding-top: 20%;
+}
+
+.nameCard img {
+    width: 30%;
+}
+
+.nameCard p[align="center"] {
+    padding: 3% 0;
+}
+
+.nameCard .a {
+    font-size: 25px;
+    color: #ff9000;
+    padding-left: .5rem;
+    padding-right: 1rem;
+}
+
+.nameCard .b {
+    font-size: 25px;
+    color: #14a205;
+    padding-left: .5rem;
+}
+
+.nameCard h2 {
+    padding-left: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.nameCard .button {
+    /*width: 30%;*/
+    /*padding: .5rem 3rem;*/
+    /*border: 0;*/
+    /*background: #ff9000;*/
+    /*color: white;*/
+    /*-webkit-border-radius: 3px;*/
+}
+
+/*03-2-0_deviceSearch.html*/
+.searchbox {
+    margin: 10px;
+    width: 100%;
+}
+
+.searchInput {
+    margin: 0;
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-left: 1px solid #666;
+}
+
+.deviceSearch {
+    margin: 10% 5%;
+}
+
+.search.button.blue:after {
+    content: url("../images/icons-svg/search-white15x15.svg");
+}
+
+/*03-2-1_deviceSearchResult.html*/
+.deviceSearchResult .item_name h2 {
+    display: inline-block;
+    font-size: 14px;
+    color: #646464;
+}
+
+.deviceSearchResult .online {
+    float: right;
+    margin-top: 30px;
+}
+
+.deviceSearchResult .offline {
+    float: right;
+    margin-top: 30px;
+}
+
+.deviceSearchResult .list > li > a:after {
+    display: none;
+}
+
+.deviceSearchResult .online:before {
+    content: url("../images/icons-png/round-online.png");
+    vertical-align: -10%;
+}
+
+.deviceSearchResult .offline:before {
+    content: url("../images/icons-png/round-offline.png");
+    vertical-align: -10%;
+}
+
+/*03-3-4-1_hints.html*/
+#hints {
+    background: #f4f4f4;
+}
+
+
+.hints .list li {
+    /*padding: 15px 25px 15px 25px;*/
+    /*border: 0;*/
+    /*border-top:1px solid #ccc ;*/
+}
+
+.hints .list li:nth-last-child(1) {
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 1px 1px #ccc;
+}
+
+/*03-4-1_followRank.html*/
+.followRank h5 {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.followRank h5 + p {
+    float: right;
+    margin-top: 1.8rem;
+    font-size: 12px;
+}
+
+.followRank .list > li > a:after {
+    display: none;
+}
+
+.followRank .online:before {
+    content: url("../images/icons-png/round-online.png");
+    vertical-align: -10%;
+}
+
+.followRank .offline:before {
+    content: url("../images/icons-png/round-offline.png");
+    vertical-align: -10%;
+}
+
+/*03-6-1_miscellaneous.html*/
+.miscellaneous .grid .col2 img {
+    width: 50%;
+    margin-top: 15%;
+}
+
+.miscellaneous .service-tel {
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.miscellaneous .service-tel .tel img {
+    width: 24px;
+}
+
+.miscellaneous .service-tel .kf {
+    padding: 1rem 0;
+    color: #707070;
+}
+
+.miscellaneous .service-tel .telNumber {
+    color: #0c82d9;
+    font-style: italic;
+    font-size: 26px;
+}
+
+/*03-4-1_followRank.html*/
+.followRank h5 {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.followRank h5 + p {
+    float: right;
+    margin-top: 1.8rem;
+    font-size: 12px;
+}
+
+.followRank .list > li > a:after {
+    display: none;
+}
+
+/*03-5-1_activity.html*/
+/*.active h2 {*/
+    /*color: #000;*/
+/*}*/
+
+/*03-6-2-1_spotsNearby.html*/
+.spotsNearby ul li {
+    padding-left: 1rem;
+}
+
+.spotsNearby h1 {
+    font-size: 1rem;
+}
+
+.spotsNearby .ui-li-aside {
+    /*float: right;*/
+    position:absolute;
+    right:5px;
+    top:15px;
+    font-weight: normal;
+}
+
+.spotsNearby .list > li > a:after {
+    display: none;
+}
+
+.spotsNearby .list li > p {
+    color: #808080;
+    font-size: 12px;
+    margin: 0 !important;
+}
+
+/*04-1-1-1_myDeviceList.html*/
+
+#deviceList .addScan{
+    position:absolute;
+    z-index:100;
+    background-color:#001c3d;
+}
+
+#deviceList .addScan img{
+    width: 40%;
+    margin: 10% 30%;
+}
+
+
+.deviceList#myDeviceContent {
+    height: 100%;
+}
+
+
+.deviceList .swiper-slide {
+    perspective:0;
+    -webkit-perspective:0;
+    border-top: 1px solid #23a0ff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: -moz-linear-gradient( 90deg, rgb(0,25,56) 0%, rgb(0,67,126) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(0,25,56) 0%, rgb(0,67,126) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(0,25,56) 0%, rgb(0,67,126) 100%);
+    text-align: center;
+    /*padding-top: 10px;*/
+    font-size:20px;
+    line-height:60px;
+
+}
+
+.deviceList .swiper-slide.swiper-slide-active {
+    padding-bottom: 120px;
+    z-index:99;
+}
+
+.deviceList .swiper-slide .round_pic {
+    /*background:url("../images/icons-png/clean_robot_try.png");*/
+    border-radius:50%;
+    width: 65%;
+    margin: auto;
+    /*background-size: cover;*/
+}
+
+.deviceList .swiper-slide .round_pic img {
+    width:100%;
+}
+
+
+/*04-3-1-1-1_cleanerIndex.html*/
+
+#cleanerIndex .device{
+    height: 40%;
+    position:relative;
+    background: url("../images/cleaner-index/bg.png");
+    background-size: cover;
+}
+
+#cleanerIndex .device .device-figure{
+    text-align: center;
+}
+
+#cleanerIndex .device .device-figure img{
+    width:50%;
+}
+
+
+#cleanerIndex .device .outdoor-air{
+    position:absolute;
+    bottom: 0;
+    width:100%;
+    background-color: rgba(0, 133, 255, 0.5);
+    height: 55px;
+}
+
+#cleanerIndex .device .outdoor-air .outdoor-air-level{
+    position:absolute;
+    top:10px;
+    left:10px;
+    font-size: 20px;
+}
+
+#cleanerIndex .device .outdoor-air address{
+    position:absolute;
+    top: 32px;
+    left: 10px;
+    font-style: normal;
+}
+
+#cleanerIndex .device .outdoor-air .outdoor-air-quality{
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size: 40px;
+}
+
+
+
+#cleanerIndex .cleaner-control,
+#cleanerIndex .filter-control{
+    height: 50%;
+    position:relative;
+}
+
+#cleanerIndex .filter-control img{
+    float: left;
+    margin-right: 5%;
+    width: 15%;
+}
+
+#cleanerIndex .filter-control h3{
+    display:inline-block;
+    width:60%;
+}
+
+#cleanerIndex .filter-control p{
+    display:inline-block;
+    width:60%;
+}
+
+#cleanerIndex .cleaner-control .indoor-air{
+    /*border:3px solid #0088ff;*/
+    /*position:relative;*/
+}
+
+#cleanerIndex .cleaner-control .filter{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:30px;
+}
+
+#cleanerIndex .cleaner-control .light{
+    position:absolute;
+    top:10px;
+    left:10px;
+    width:30px;
+}
+
+#cleanerIndex .cleaner-control .status-bar{
+    color:#0088ff;
+    text-align:center;
+}
+
+
+
+/*环形*/
+#cleanerIndex .circle {
+    width: 200px;
+    height: 200px;
+    /* position: absolute; */
+    border-radius: 50%;
+    background: #838383;
+    margin: 10% auto;
+    position: relative;
+}
+
+#cleanerIndex .pie_left,
+#cleanerIndex .pie_right {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#cleanerIndex .left,
+#cleanerIndex .right {
+    width: 200px;
+    height: 200px;
+    background: #00aacc;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#cleanerIndex .pie_right,
+#cleanerIndex .right {
+    clip: rect(0, auto, auto, 100px);
+}
+
+#cleanerIndex .pie_left,
+#cleanerIndex .left {
+    clip: rect(0, 100px, auto, 0);
+}
+
+#cleanerIndex .mask {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
+    background: #001330;
+    position: absolute;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#cleanerIndex .mask .indoor-air-quality{
+    font-size: 70px;
+}
+
+#cleanerIndex .mask img{
+    width:56px;
+}
+
+
+
+
+
+
+
+
+/*04-4-3-1_deviceLog.html*/
+/*.deviceLog{*/
+/*padding-top: 1rem;*/
+/*}*/
+.deviceLog form {
+    text-align: center;
+}
+
+.deviceLog form fieldset {
+    margin: 0 auto;
+    padding: 1rem;
+    border: none;
+}
+
+.deviceLog .button {
+    display: inline-block;
+    width: 210px;
+    background: #0c82d9;
+    color: white;
+    border: none;
+}
+
+#filterForm {
+    position: fixed;
+    top: 6rem;
+    border: 1px solid #ccc;
+    margin: 0 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: #ccc 1px 1px 5px;
+}
+
+#filterForm input,
+#filterForm select {
+    width: 100%;
+}
+
+/*04-4-1-2_deviceAuthority.html*/
+#deviceAuthority .list > li img {
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    border-radius:50%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#deviceAuthority .deleteDevice{
+    text-align: center;
+    margin-top: 10px;
+    font-size:20px;
+}
+
+
+/*04-4-2-1_deviceFans.html*/
+.deviceFans .list img {
+    margin: 0 !important;
+}
+
+.deviceFans h2 {
+    color: #323232;
+}
+
+/*04-4-4-1_deviceErrorList.html*/
+.deviceErrorList .swipe-content {
+    padding: 1.5rem;
+}
+
+.deviceErrorList h3 {
+    font-size: 1rem;
+    display: inline-block;
+    /*float:left;*/
+}
+
+.deviceErrorList time {
+    font-weight: normal;
+    font-size: 14px;
+    color: #d4d4d4;
+    float: right;
+}
+
+/*04-4-4-2_deviceErrorDetail.html*/
+.deviceErrorDetail {
+    padding: 1rem 1rem 0 1rem;
+}
+
+.deviceErrorDetail .errorPanel {
+    width: 100%;
+    height: 15rem;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.deviceErrorDetail .errorTitle {
+    margin-bottom: 2rem;
+}
+
+.deviceErrorDetail .errorTitle span {
+    color: #9f9f9f;
+}
+
+.deviceErrorDetail .errorDetail span {
+    display: block;
+    color: #9f9f9f;
+}
+
+.deviceErrorDetail .errorMessage {
+    display: inline-block;
+    margin: -1rem 0 0 3.75rem;
+}
+
+.deviceErrorDetail .errorMessage p {
+    padding: 1rem 0;
+}
+
+.deviceErrorDetail time {
+    color: #9f9f9f;
+}
+
+.deviceErrorDetail .grid {
+    text-align: center;
+}
+
+.deviceErrorDetail .grid > div {
+    padding: 1rem;
+}
+
+.deviceErrorDetail .grid a {
+    text-decoration: none;
+    color: #000;
+}
+
+.deviceErrorDetail .grid img {
+    height: 2rem;
+}
+
+/*04-4-5-1_deviceSetting.html*/
+.deviceSetting input.toggle + label {
+    left: 100%;
+    margin-left: -65px;
+}
+
+.deviceSetting .div-label label {
+    text-align: left;
+}
+
+/*04-4-5-2_timing.html*/
+.timing input {
+    width: 33%;
+    margin-left: 20px;
+}
+
+/*04-4-6-1_aboutDevice.html*/
+.aboutDevice #devicePic img {
+    width: 40%;
+}
+
+.timingSave .button {
+    display: inline-block;
+    width: 60%;
+}
+
+/*05-1-1_myPage.html*/
+
+.myPage .list li.bigli {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    height: 100px;
+    color: #fff;
+    background:#002252;
+}
+
+.myPage .list li.bigli i{
+    position: absolute;
+    top: 38px;
+    right: 0px;
+    padding: 16px;
+    content: url("../images/icons-png/back.png");
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.myPage .bigli h3 {
+    /*color: #fff;*/
+    /*font-weight: normal;*/
+    font-size: 14px;
+    margin-right: 30px;
+    /* padding: 0; */
+    float: right;
+    /* display: inline-block; */
+    /* text-align: center; */
+    /*position: absolute;*/
+    /*top: 4px;*/
+    /*left: 110px;*/
+}
+
+.myPage .bigli span {
+    color: #fff;
+    position: absolute;
+    top: 45px;
+    right: 50px;
+}
+
+.myPage .bigli img {
+    /*width: 30%;*/
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left:4%;
+}
+
+.myPage .list li {
+    /*padding: 10px 20px 10px 10px;*/
+}
+
+.myPage .list > li img {
+    margin: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.myPage .messageCount span{
+    position: absolute;
+    background: #ee3137;
+    right: 45px;
+    top: 18px;
+    font-size: 8px;
+    line-height: 22px;
+    display: block;
+    border-radius: 50%;
+    color: #fff;
+    padding-right: 1px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+/*05-1-2_loginPage.html*/
+.login {
+    margin-top: 10%;
+}
+
+
+.login .button {
+    /*border: 0;*/
+    /*color: white;*/
+    /*background: #0c82d9;*/
+    /*width: 50%;*/
+    /*padding: 15px;*/
+    /*font-size: 18px;*/
+}
+
+.login .grid img {
+    height: 32px;
+}
+
+
+.login #todoForgetPassword {
+    float:right;
+    margin-right: 10%;
+}
+
+.login .doRegister{
+    float:left;
+    margin-left: 10%;
+}
+
+.login .thirdParty{
+    margin-top: 60px;
+}
+
+.login .others {
+    color: #cccccc;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.login .doLogin {
+    margin-top: 30px;
+}
+
+/*05-1-2-2_GesturePW.html*/
+#gesturePW {
+    background: #ebebeb;
+}
+
+.gesturePW {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.gesturePW p {
+    color: red;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.gesturePW a {
+    display: inline-block;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.gesturePW img {
+    width: 60%;
+}
+
+/*05-1-3_registVeri.html*/
+.registVeri{
+    border:0;
+    margin: 30px 0;
+}
+
+.registVeri .confirm{
+    /*display: block;*/
+    width: 70%;
+    margin-top: 5rem;
+}
+
+.registVeri .veriGroup{
+    width: 80%;
+}
+
+
+.registVeri #sendCode{
+    /*float: right;*/
+    /* width: 35%; */
+    /*margin-bottom: 10px;*/
+    /*margin-top: 0;*/
+    position: absolute;
+    right: 36px;
+    top: 141px;
+    width: 70px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.registVeri a{
+    color:#0087ee;
+}
+
+/*05-1-3-1_registPassword.html*/
+.registPassword,
+.resetPassword {
+    margin: 30% 5%;
+}
+
+.registPassword .userRegist,
+.resetPassword .passwordReset {
+    display: block;
+    width: 80%;
+    margin-top: 5rem;
+}
+
+/*05-1-4-1_phoneVer.html*/
+#phoneVer #sendCode{
+    /*float: right;*/
+    /* width: 35%; */
+    /*margin-bottom: 10px;*/
+    /*margin-top: 0;*/
+    position: absolute;
+    right: 36px;
+    top: 26px;
+    width: 70px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+
+/*05-1-4-1_mailVer.html*/
+#mailVer img{
+    position: absolute;
+    right: 36px;
+    top: 38px;
+    width: 70px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+
+
+
+/*05-2-1_myInfo.html*/
+.myInfo #doLogout {
+    font-size: 16px;
+    line-height: 1;
+
+}
+
+.myInfo .list > li > a {
+    float:right;
+}
+
+/*.myInfo .grid .col1-3{*/
+/*padding-top: 1rem;*/
+/*}*/
+.myInfo > .list > li > a:after {
+    content: none;
+}
+
+.myInfo img {
+    height:90px;
+    width: 90px;
+}
+
+.myInfo .tpTitle{
+    text-align: center;
+}
+
+/*.myInfo .logout {*/
+    /*position: fixed;*/
+    /*bottom: 20px;*/
+    /*left: 6.5%;*/
+    /*margin: 0;*/
+/*}*/
+
+/*05-3-1_userMessage.html*/
+.usermessage input[type="checkbox"] + label {
+    display: inline-block;
+    line-height: 16px;
+    margin-left: 10px;
+    width: 60%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    float: none;
+    padding: 0 0 0 20px;
+}
+
+
+.usermessage time {
+    font-weight: normal;
+    font-size: 14px;
+    /*color: #d4d4d4;*/
+    float: right;
+    line-height: 16px;
+
+}
+
+.usermessage .unreadMessage{
+    background-color: #FF0000;
+    /* background-size: contain; */
+    height: 8px;
+    width: 8px;
+    /* display: inline; */
+    /* float: left; */
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    border-radius: 50%;
+}
+
+.usermessage .selectCircle::before{
+    content: url("../images/icons-png/round_nocheck.png");
+    /* background-size: contain; */
+    height: 16px;
+    width: 16px;
+    /* display: inline; */
+    /* float: left; */
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+.usermessage .selectCircle.checked{
+    background: url("../images/icons-png/round_red_check.png");
+}
+
+
+
+/*.usermessage .swipe-reveal {*/
+    /*position: relative;*/
+/*}*/
+
+.usermessage .tag {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    padding: 5px 10px;
+    background: #000;
+    color: #fff;
+    display: none;
+    border-radius: 5px;
+    margin-left: -21px;
+}
+
+/*.usermessage .list li {*/
+/*padding: 0;*/
+/*}*/
+/*.usermessage .swipe-reveal .swipe-content{*/
+/*margin: 0;*/
+/*padding: 10px 20px;*/
+/*}*/
+/*.usermessage .swipe-content p{*/
+/*display: inline-block;*/
+/*}*/
+/*.usermessage .swipe-hidden{*/
+/*border: 1px solid #ccc;*/
+/*bottom: -1px;*/
+/*}*/
+
+/*05-3-2_userMessageDetail.html*/
+/*.userMessageDetail .odd {*/
+    /*padding: 0 1rem 0 1rem;*/
+/*}*/
+
+.userMessageDetail time {
+    /*display: block;*/
+    /*text-align: center;*/
+    /*padding: 1rem 0;*/
+    /*color: #b3b3b6;*/
+}
+
+
+.userMessageDetail .message {
+    width: 80%;
+    margin: 20px auto;
+    /*padding: 7px 10px;*/
+    /*background: #e5e5ea;*/
+    /*border-radius: 10px;*/
+    line-height: 30px;
+}
+
+/*05-5-1_afterSaleService.html*/
+#afterSaleService h3{
+    margin:30px auto;
+    font-weight:normal;
+}
+
+/*05-8-1_mySettings.html*/
+.mySettings label {
+    /*float:left;*/
+    /*font-size:16px;*/
+    /*padding-top: 13px;*/
+}
+
+/*05-8-2_accountBind.html*/
+.accountBind h2 {
+    display: inline-block;
+    font-weight: normal;
+    color: #818181;
+}
+
+.accountBind h2 + p {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.accountBind .list > li {
+    position: relative;
+}
+
+.accountBind .list > li img {
+    width: 25%;
+}
+
+.accountBind .list > li > a:after {
+    content: "";
+}
+
+/*.accountBind .divider{*/
+/*padding-left: 1.5rem;*/
+/*color: #818181;*/
+/*}*/
+.accountBind .bindButton {
+    position: absolute;
+    /*top: -14px;*/
+    margin-top: -11%;
+    right: 1.5rem;
+    display: table;
+    line-height: 24px;
+}
+
+.accountBind .bindButton span:nth-last-child(1) {
+    margin-left: .3rem;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+}
+
+.accountBind .message {
+    color: #818181;
+    padding: 0 1rem 0 1rem;
+}
+
+.accountBind .addStatus {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../images/icons-png/round-add.png') center no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.accountBind .minStatus {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../images/icons-png/round-delete.png') center no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*05-9-1_feedback.html*/
+#feedback .inset{
+    background:none;
+}
+
+#feedback #textarea {
+    /*margin-top: 2rem;*/
+    min-height: 10rem;
+    width: 100%;
+    border: none;
+    /*border: 1px solid #ccc;*/
+}
+
+#feedback #textinput {
+    margin-top: 20px;
+    border: none;
+    width: 100%;
+}
+
+/*#feedback .button-content {*/
+/*text-align: center;*/
+/*}*/
+
+#feedback .button {
+    display: inline-block;
+    width: 80%;
+    margin: 10% auto;
+    color: white;
+    background: #0c82d9;
+    border: 0;
+}
+
+/*05-10-1_aboutUs.html*/
+.aboutUs img {
+    width: 70%;
+    margin-top: 5rem;
+}
+
+.aboutUs #version {
+    margin: 15% auto;
+    font-size: 18px;
+}
+
+.aboutUs .bottom {
+    line-height:20px;
+    font-size:12px;
+    margin: 8px auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    padding-bottom: 8px;
+    /* color: #CCC; */
+    word-spacing: 3px;
+    zoom: 1;
+}
+
+
+/*welcome*/
+#welcome .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#welcome .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+#welcome .swiper-slide {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#welcome .enter {
+    margin: auto auto 30% auto;
+    color: #fff;
+    border: solid 1px #d4d4d4;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#welcome .swiper-slide:nth-child(1) {
+    background: url(../images/welcome/welcome1.png);
+    background-size: 100%;
+}
+
+#welcome .swiper-slide:nth-child(2) {
+    background: url(../images/welcome/welcome2.png);
+    background-size: 100%;
+}
+
+#welcome .swiper-slide:nth-child(3) {
+    background: url(../images/welcome/welcome3.png);
+    background-size: 100%;
+}
+

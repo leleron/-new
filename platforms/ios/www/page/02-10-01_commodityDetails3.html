@@ -1,0 +1,169 @@
+<header id="detailTab" class="all">
+
+        <span id="headerParameter">
+
+            参数
+
+        </span>
+
+    <a><span id="headerDetail">
+
+            详情
+
+        </span></a>
+
+    <a><span id="headerComment" class="cur">
+
+            评价
+
+        </span></a>
+
+</header>
+
+<div class="chatAndTop">
+    <p id="go-to-chat">
+        <a><span></span></a>
+    </p>
+    <p id="back-to-top" style="display:none;">
+        <a><span></span></a>
+    </p>
+</div>
+<div id="slideThree" >
+
+    <div id="slideThreeComment" class="productPJ">
+
+        <ul class="slideComment">
+
+        </ul>
+
+        <div class="ui-loader heavy waitLoading" style="display: none">
+                <span class="ui-icon ui-icon-loading spin"></span>
+        </div>
+        <a class="blueBtn subBtn loadingMore">加载更多</a>
+
+    </div>
+
+        </div>
+
+<p class="textArea" style="display: none">
+    <textarea id="tpl_goodsComment">
+        <h4>购买评论（<span>{$T.comment_num}</span>）<a class="doComment"><img src="images/pjIcon.png"/>我要评价</a></h4>
+
+
+                {#foreach $T.comment as Item}
+                <li class="{$T.Item.comment_id}">
+
+                    <div class="name">
+
+                        {$T.Item.user_name}
+
+                    </div>
+
+                    <div class="score">
+
+                        <div class="starBg">
+
+                            <span class="star" style='{$T.Item.rankStarStyle}'></span>
+
+                        </div>
+
+                        <span style="color:#ff7c44;">{$T.Item.comment_rank}分</span>
+
+                        <span>{$T.Item.rankLevel}</span>
+
+                        <span class="time">{$T.Item.add_time}</span>
+
+                    </div>
+
+                    <p>评论：{$T.Item.content}</p>
+
+                    <!--<div class="imgI firstComment">
+
+                        <img src="images/star.png" />
+
+                    </div>-->
+
+                    <div class="gf">
+
+                        <span>官方回复：</span>{$T.Item.answer}
+
+                    </div>
+
+                    <div class="zj">
+
+                        <span>追加评论：</span>{$T.Item.append_comment.content}
+
+                    </div>
+
+                    <!--<div class="imgI">
+
+                        <img src="images/star.png" />
+
+                        <img src="images/star.png" />
+
+                        <img src="images/star.png" />
+
+                    </div>-->
+                </li>
+                {#/for}
+    </textarea>
+
+    <textarea id="tpl_CommentUl">
+        {#foreach $T.comment as Item}
+        <li class="{$T.Item.comment_id}">
+
+            <div class="name">
+
+                {$T.Item.user_name}
+
+            </div>
+
+            <div class="score">
+
+                <div class="starBg">
+
+                    <span class="star" style='{$T.Item.rankStarStyle}'></span>
+
+                </div>
+
+                <span style="color:#ff7c44;">{$T.Item.comment_rank}分</span>
+
+                <span>{$T.Item.rankLevel}</span>
+
+                <span class="time">{$T.Item.add_time}</span>
+
+            </div>
+
+            <p>评论：{$T.Item.content}</p>
+
+            <!--<div class="imgI firstComment">
+
+                <img src="images/star.png" />
+
+            </div>-->
+
+            <div class="gf">
+
+                <span>官方回复：</span><div class="gfd">{$T.Item.answer}</div>
+
+            </div>
+
+            <div class="zj">
+
+                <span>追加评论：</span><div class="zjd">{$T.Item.append_comment.content}</div>
+
+            </div>
+
+            <!--<div class="imgI">
+
+                <img src="images/star.png" />
+
+                <img src="images/star.png" />
+
+                <img src="images/star.png" />
+
+            </div>-->
+        </li>
+        {#/for}
+    </textarea>
+</p>

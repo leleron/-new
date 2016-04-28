@@ -1,0 +1,86 @@
+<!--<html>-->
+<!--<head>-->
+<!--<meta charset="utf-8" />-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />-->
+<!--<title>飞科商城</title>-->
+<!--<link href="css/base.css" rel="stylesheet" type="text/css">-->
+<!--<link href="css/global.css" rel="stylesheet" type="text/css">-->
+<!--<script src="js/jquery-1.7.2.min.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<header class="all">-->
+    <!--<a href="javascript:;" class="home">-->
+        <!--<div class="home">-->
+        <!--</div>-->
+    <!--</a>-->
+    <!--退货单-->
+
+    <!--<a href="javascript:;" class="shortCar">-->
+        <!--<div class="shortCar">-->
+            <!--<span>1</span>-->
+        <!--</div>-->
+    <!--</a>-->
+<!--</header>-->
+
+
+<div id="returnListDiv" class="tkList">
+    <!--<ul>
+            <li>
+                <a href="#returnDetail">
+                    <img src="images/mall/goods/FS359/FS359_000_01.jpg" />
+                    <strong>订单日期：2015/05/06</strong>
+                    <span>
+                        订单编号：781184815151326285
+
+                        <br />
+                        总价：79元&nbsp;&nbsp;&nbsp;&nbsp;状态：已退货
+
+                    </span>
+                    <em></em>
+                </a>
+            </li>
+            <li>
+                <a href="#returnDetail">
+                    <img src="images/mall/goods/FS359/FS359_000_01.jpg" />
+                    <strong>订单日期：2015/05/05</strong>
+                    <span>
+                        订单编号：781184815151326285
+
+                        <br />
+                        总价：79元&nbsp;&nbsp;&nbsp;&nbsp;状态：已退货
+
+                    </span>
+                    <em></em>
+                </a>
+            </li>
+        </ul>-->
+</div>
+
+
+<p style="display: none">
+    <textarea id="returnList_itemAdd">
+        <ul>
+            {#if $T==""}
+            <p class="topMessage">没有退货记录</p>
+            {#else}
+                {#foreach $T as Item}
+                <li>
+                    <a class="tkListItem" order_sn="{$T.Item.order_sn}" returns_order_sn="{$T.Item.returns_order_sn}">
+                        <img src="{$T.Item.goods_thumb}" />
+                        <strong>订单日期：{$T.Item.apply_time}</strong>
+                        <span>
+                            订单编号：{$T.Item.order_sn}<br/>
+                            总价：{$T.Item.total_money}元<br/>
+                            状态：{$T.Item.returns_statusString}
+                        </span>
+                        <em></em>
+                    </a>
+                </li>
+                {#/for}
+            {/#if}
+        </ul>
+    </textarea>
+</p>
+
+<!--</body>-->
+<!--</html>-->

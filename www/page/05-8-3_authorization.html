@@ -1,0 +1,14 @@
+<div class="ui-content login">
+    <div class="ui-loginBox">
+        <div class="inset" align="center">
+            <input type="text" name="account" id="authUserName" required="required" maxlength="11"
+                   pattern="^1[3|4|5|8][0-9]\d{4,8}$" title="请输入正确的手机号" placeholder="请输入手机号码">
+            <input type="password" name="password" id="authUserPassWord" required="required" maxlength="16"
+                   pattern="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$" title="密码必须为8-16位字母和数字的组合" placeholder="输入密码">
+        </div>
+
+        <div align="center">
+            <div><a href="" class="button" id="doAuth">授权</a></div>
+        </div>
+    </div>
+</div>

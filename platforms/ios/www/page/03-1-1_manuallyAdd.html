@@ -1,0 +1,53 @@
+<div id="myDeviceContent" >
+    <ul id="manuallyAddDivs" class="list" >
+        <!--  手动添加设备列表-->
+        <!--<div id="tapholdTest1" class="col3" align="center" style="position: relative";>
+            <a href="#deviceIndex"><img class="content_image_width" src="images/mydevicelist/device1.png">
+            </a>
+            <p class="content_text">WIFI设备1</p>
+        </div>
+        <div id="tapholdTest2" class="col3" align="center" style="position: relative";>
+            <a href="#"><img class="content_image_width" src="images/mydevicelist/device2.png">
+            </a>
+            <p class="content_text">WIFI设备2</p>
+        </div>
+        <div id="tapholdTest3" class="col3" align="center" style="position: relative";>
+            <a align="center" href="#"><img class="content_image_width  offline" src="images/mydevicelist/device3.png">
+            </a>
+            <p class="content_text">WIFI设备3</p>
+        </div>
+        <div id="tapholdTest4" class="col3" align="center" style="position: relative";>
+            <a href="#"><img  class="content_image_width" src="images/mydevicelist/device4.png">
+            </a>
+            <p class="content_text">蓝牙设备1</p>
+        </div>
+        <div id="tapholdTest5" class="col3" align="center" style="position: relative";>
+            <a href="#"><img class="content_image_width" src="images/mydevicelist/device5.png">
+            </a>
+            <p class="content_text">蓝牙设备2</p>
+        </div>
+        <div id="tapholdTest6" class="col3" align="center" style="position: relative;">
+            <a href="#"><img class="content_image_width" src="images/mydevicelist/device6.png">
+            </a>
+            <p class="content_text">蓝牙设备3</p>
+        </div>
+        <div id="tapholdTest7" class="col3" align="center" style="position: relative";>
+            <a href="#"><img class="content_image_width" src="images/mydevicelist/device7.png">
+            </a>
+            <p class="content_text">蓝牙设备4</p>
+        </div>-->
+    </ul>
+        <!--  手动添加设备列表 模板 -->
+        <p style="display: none">
+                <textarea id="tpl_manuallyAdd">
+                        {#foreach $T as Item}
+                            <li id="{$T.Item.productCode}" productModel="{$T.Item.productModel}" productName="{$T.Item.productName}">
+                                <a href="#">{$T.Item.productCode}</a>
+                                <!--<p class="content_text">{$T.Item.productName}</p>-->
+                                <i></i>
+                            </li>
+                        {#/for}
+                </textarea>
+        </p>
+    <!--  手动添加设备列表 模板-->
+</div>

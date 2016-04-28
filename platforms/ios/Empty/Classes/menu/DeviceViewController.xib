@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment version="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeviceViewController">
+            <connections>
+                <outlet property="btnAddDevice" destination="UWe-hh-wfs" id="eFJ-LD-gA3"/>
+                <outlet property="btnTryDevice" destination="GBi-5b-a4M" id="edr-MQ-ni2"/>
+                <outlet property="imgLogo" destination="PBX-4g-0sM" id="zrQ-P5-QO5"/>
+                <outlet property="myTableView" destination="ufZ-pZ-uj2" id="MqY-lg-sBd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deviceViewBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-cn-Iky">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ufZ-pZ-uj2">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="691"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO.png" translatesAutoresizingMaskIntoConstraints="NO" id="PBX-4g-0sM">
+                    <rect key="frame" x="127" y="259.5" width="160" height="25"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="PBX-4g-0sM" secondAttribute="height" multiplier="160:25" id="X5P-wN-1NX"/>
+                        <constraint firstAttribute="width" constant="160" id="gMv-nn-OaF"/>
+                        <constraint firstAttribute="height" constant="42" id="uAT-pj-Icv"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="uAT-pj-Icv"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWe-hh-wfs">
+                    <rect key="frame" x="0.0" y="314.5" width="414" height="57"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="9yd-tv-N4R"/>
+                    </constraints>
+                    <state key="normal" title="添加设备" backgroundImage="deviceCellBg.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBi-5b-a4M">
+                    <rect key="frame" x="177" y="619" width="60" height="30"/>
+                    <state key="normal" title="点击试用">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus-white.png" translatesAutoresizingMaskIntoConstraints="NO" id="ugk-pA-dTG">
+                    <rect key="frame" x="307" y="358" width="21" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="21" id="RDa-Ea-tWm"/>
+                        <constraint firstAttribute="height" constant="21" id="b1g-Tk-4l5"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0078431372550000003" green="0.074509803920000006" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="UWe-hh-wfs" firstAttribute="top" secondItem="PBX-4g-0sM" secondAttribute="bottom" constant="30" id="3kF-W7-7fk"/>
+                <constraint firstItem="Dmk-cn-Iky" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4B1-RP-Ep0"/>
+                <constraint firstItem="Dmk-cn-Iky" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8fL-Lb-S05"/>
+                <constraint firstItem="PBX-4g-0sM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="91R-Wc-4uL"/>
+                <constraint firstAttribute="trailing" secondItem="ufZ-pZ-uj2" secondAttribute="trailing" id="Fxy-hG-Jcl"/>
+                <constraint firstItem="PBX-4g-0sM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="70" id="Hxz-CJ-6f1"/>
+                <constraint firstItem="ufZ-pZ-uj2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IPZ-yh-VlA"/>
+                <constraint firstItem="PBX-4g-0sM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KzR-mp-4vE"/>
+                <constraint firstItem="UWe-hh-wfs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OaY-iY-Fhe"/>
+                <constraint firstAttribute="trailing" secondItem="Dmk-cn-Iky" secondAttribute="trailing" id="Q8d-ug-pWU"/>
+                <constraint firstItem="GBi-5b-a4M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TIw-DM-7hV"/>
+                <constraint firstAttribute="bottom" secondItem="Dmk-cn-Iky" secondAttribute="bottom" id="Uyr-ek-jVI"/>
+                <constraint firstAttribute="trailing" secondItem="ugk-pA-dTG" secondAttribute="trailing" constant="86" id="kt5-gC-JQA"/>
+                <constraint firstAttribute="bottom" secondItem="ufZ-pZ-uj2" secondAttribute="bottom" constant="45" identifier="tableBottom" id="na5-uB-Vdt"/>
+                <constraint firstItem="ufZ-pZ-uj2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pNS-hG-I9B"/>
+                <constraint firstAttribute="trailing" secondItem="PBX-4g-0sM" secondAttribute="trailing" constant="70" id="spa-Zx-oXJ"/>
+                <constraint firstAttribute="bottom" secondItem="GBi-5b-a4M" secondAttribute="bottom" constant="87" id="tQQ-9q-Na8"/>
+                <constraint firstAttribute="trailing" secondItem="PBX-4g-0sM" secondAttribute="trailing" constant="50" id="vh7-BT-QJb"/>
+                <constraint firstItem="UWe-hh-wfs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-25" id="vuP-Ld-7f9"/>
+                <constraint firstItem="ugk-pA-dTG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="wmS-OM-bbb"/>
+                <constraint firstAttribute="trailing" secondItem="UWe-hh-wfs" secondAttribute="trailing" id="xRu-h6-Fay"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="91R-Wc-4uL"/>
+                    <exclude reference="Hxz-CJ-6f1"/>
+                    <exclude reference="spa-Zx-oXJ"/>
+                    <exclude reference="vh7-BT-QJb"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="192" y="260"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LOGO.png" width="175" height="21"/>
+        <image name="deviceCellBg.png" width="360" height="56"/>
+        <image name="deviceViewBg.png" width="360" height="572"/>
+        <image name="plus-white.png" width="56" height="56"/>
+    </resources>
+</document>

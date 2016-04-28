@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Hy3-Tz-2pk" customClass="ServiceNetTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFT-p7-RM8">
+                    <rect key="frame" x="8" y="15" width="346" height="17"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="v5a-sN-IL1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCz-E7-LNE">
+                    <rect key="frame" x="8" y="41" width="346" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="XbJ-mY-c4O"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lb-Ph-Gu2">
+                    <rect key="frame" x="8" y="76" width="346" height="18"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="lWR-4l-Kbf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hline_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="pgP-Bl-gtv">
+                    <rect key="frame" x="5" y="109" width="352" height="1"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="edC-IT-sLy"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.0" green="0.18039215689999999" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="3lb-Ph-Gu2" firstAttribute="leading" secondItem="Hy3-Tz-2pk" secondAttribute="leading" constant="8" id="0J3-Y8-ZqI"/>
+                <constraint firstItem="CFT-p7-RM8" firstAttribute="top" secondItem="Hy3-Tz-2pk" secondAttribute="top" constant="15" id="1ga-sc-lxb"/>
+                <constraint firstItem="pgP-Bl-gtv" firstAttribute="top" secondItem="3lb-Ph-Gu2" secondAttribute="bottom" constant="15" id="3M9-8V-0Bu"/>
+                <constraint firstAttribute="trailing" secondItem="pgP-Bl-gtv" secondAttribute="trailing" constant="5" id="5aI-WE-ZKK"/>
+                <constraint firstItem="pgP-Bl-gtv" firstAttribute="leading" secondItem="Hy3-Tz-2pk" secondAttribute="leading" constant="5" id="7Aw-Fl-Dwj"/>
+                <constraint firstItem="MCz-E7-LNE" firstAttribute="leading" secondItem="Hy3-Tz-2pk" secondAttribute="leading" constant="8" id="7s3-iC-iYP"/>
+                <constraint firstAttribute="trailing" secondItem="3lb-Ph-Gu2" secondAttribute="trailing" constant="8" id="C8o-In-afJ"/>
+                <constraint firstItem="MCz-E7-LNE" firstAttribute="top" secondItem="CFT-p7-RM8" secondAttribute="bottom" constant="9" id="Mqq-4Y-Kdx"/>
+                <constraint firstAttribute="bottom" secondItem="pgP-Bl-gtv" secondAttribute="bottom" id="U1q-4A-3Fa"/>
+                <constraint firstAttribute="trailing" secondItem="MCz-E7-LNE" secondAttribute="trailing" constant="8" id="cl9-Xd-LGP"/>
+                <constraint firstAttribute="trailing" secondItem="CFT-p7-RM8" secondAttribute="trailing" constant="8" id="k9O-a7-Z2s"/>
+                <constraint firstItem="CFT-p7-RM8" firstAttribute="leading" secondItem="Hy3-Tz-2pk" secondAttribute="leading" constant="8" id="q8t-FP-LSE"/>
+                <constraint firstItem="3lb-Ph-Gu2" firstAttribute="top" secondItem="MCz-E7-LNE" secondAttribute="bottom" constant="14" id="zbM-Hv-BwC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgLine" destination="pgP-Bl-gtv" id="y2S-aj-eCZ"/>
+                <outlet property="lblAddress" destination="MCz-E7-LNE" id="62M-Ez-YIv"/>
+                <outlet property="lblName" destination="CFT-p7-RM8" id="hJs-5k-cAs"/>
+                <outlet property="lblPhone" destination="3lb-Ph-Gu2" id="sB1-cx-7vq"/>
+            </connections>
+            <point key="canvasLocation" x="41" y="-22.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Hline_blue.png" width="587" height="1"/>
+    </resources>
+</document>

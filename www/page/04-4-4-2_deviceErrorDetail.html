@@ -1,0 +1,39 @@
+<div id="deviceErrorDetailInfo">
+
+</div>
+
+<!--  设备故障列表 模板 -->
+<p style="display: none">
+        <textarea id="tpl_deviceErrorDetailAdd">
+            <div class="container deviceErrorDetail">
+                <div class="errorPanel">
+                    <div class="errorTitle">
+                        <span>故障主题</span>
+                        <span style="color: #000;"> {$T.deviceMsgTitle}</span>
+                    </div>
+                    <div class="errorDetail">
+                        <span>故障详情</span>
+                        <div class="errorMessage">
+                            {$T.deviceMsgContent}
+                            <p></p>
+                            <time>{$T.deviceMsgDetailTime}</time>
+                        </div>
+                    </div>
+                </div>
+                <div class="device-error-info">
+                    <input type="hidden" class="deviceMsgId" value="{$T.deviceMsgId}" />
+                    <input type="hidden" class="deviceMsgContent" value="{$T.deviceMsgContent}" />
+                    <input type="hidden" class="deviceMsgStatus" value="{$T.deviceMsgStatus}" />
+                    <input type="hidden" class="deviceMsgTime" value="{$T.deviceMsgTime}" />
+                    <input type="hidden" class="deviceMsgDetailTime" value="{$T.deviceMsgDetailTime}" />
+                    <input type="hidden" class="deviceMsgTitle" value="{$T.deviceMsgTitle}" />
+                </div>
+                <div class="grid inset">
+                    <div class="col2"><a href="tel:{$T.phoneNumber}"><img src="images/deviceErrorDetail/tel.jpg">客服电话</a></div>
+                    <div class="col2 online-advisory"><a><img src="images/deviceErrorDetail/error.jpg">在线咨询</a></div>
+                    <div class="col2 spots-nearby"><a><img src="images/deviceErrorDetail/info.jpg">附近网点</a></div>
+                    <div class="col2"><a><img src="images/deviceErrorDetail/gou.png">购买配件</a></div>
+                </div>
+            </div>
+         </textarea>
+</p>

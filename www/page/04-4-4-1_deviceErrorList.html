@@ -1,0 +1,29 @@
+<div id="deviceErrorInfo" class="deviceErrorList" style="font-size: .75rem;">
+</div>
+<!--  设备故障列表 模板 -->
+<p style="display: none">
+        <textarea id="tpl_deviceErrorListAdd">
+            <ul class="list">
+                {#foreach $T.deviceMessageList as Item}
+                    <li class="swipe-reveal">
+                        <div class="swipe-content">
+                            <h3>{$T.Item.deviceMsgTitle}</h3>
+                            <time>{$T.Item.deviceMsgTime}</time>
+                        </div>
+                        <div class="swipe-hidden">
+                            <a class="device button archive">删除</a>
+                        </div>
+                        <div class="device-error-info">
+                            <input type="hidden" class="deviceMsgId" value="{$T.Item.deviceMsgId}"/>
+                            <input type="hidden" class="deviceMsgContent" value="{$T.Item.deviceMsgContent}"/>
+                            <input type="hidden" class="deviceMsgStatus" value="{$T.Item.deviceMsgStatus}"/>
+                            <input type="hidden" class="deviceMsgTime" value="{$T.Item.deviceMsgTime}"/>
+                            <input type="hidden" class="deviceMsgDetailTime" value="{$T.Item.deviceMsgDetailTime}"/>
+                            <input type="hidden" class="deviceMsgTitle" value="{$T.Item.deviceMsgTitle}"/>
+                        </div>
+                    </li>
+                {#/for}
+            </ul>
+         </textarea>
+</p>
+<!--  设备故障列表 模板-->

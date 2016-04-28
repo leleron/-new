@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="lvwangViewController">
+            <connections>
+                <outlet property="btnReset" destination="icj-lJ-uFY" id="Bi7-la-hz8"/>
+                <outlet property="lvwangTableView" destination="a7X-Qb-lSV" id="1hT-Tw-O4V"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a7X-Qb-lSV">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="vqO-1p-rcp"/>
+                    </constraints>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icj-lJ-uFY">
+                    <rect key="frame" x="0.0" y="200" width="600" height="50"/>
+                    <color key="backgroundColor" red="0.1333333333" green="0.52941176469999995" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Vsj-k6-Ebr"/>
+                    </constraints>
+                    <state key="normal" title="重置滤网">
+                        <color key="titleColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkk-9b-xrF">
+                    <rect key="frame" x="0.0" y="250" width="600" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.18039215689999999" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="X59-wa-93g"/>
+                        <constraint firstAttribute="height" constant="50" id="juN-fI-EwL"/>
+                    </constraints>
+                    <state key="normal" title="购买滤网">
+                        <color key="titleColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buyFilter:" destination="-1" eventType="touchUpInside" id="GUo-6K-35H"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0078431372550000003" green="0.1137254902" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Lkk-9b-xrF" secondAttribute="trailing" id="0ug-Ea-8Vi"/>
+                <constraint firstAttribute="trailing" secondItem="icj-lJ-uFY" secondAttribute="trailing" id="9e6-Yl-t1u"/>
+                <constraint firstItem="icj-lJ-uFY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BKC-Xd-vwV"/>
+                <constraint firstItem="a7X-Qb-lSV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IYP-M6-bn9"/>
+                <constraint firstItem="Lkk-9b-xrF" firstAttribute="top" secondItem="icj-lJ-uFY" secondAttribute="bottom" id="Qgo-Km-EFI"/>
+                <constraint firstItem="a7X-Qb-lSV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RrV-f7-I8y"/>
+                <constraint firstItem="Lkk-9b-xrF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gko-ZP-CvK"/>
+                <constraint firstItem="icj-lJ-uFY" firstAttribute="top" secondItem="a7X-Qb-lSV" secondAttribute="bottom" id="grk-Hd-wwz"/>
+                <constraint firstAttribute="trailing" secondItem="a7X-Qb-lSV" secondAttribute="trailing" id="uYv-1n-3Ja"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

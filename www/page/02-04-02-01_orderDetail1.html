@@ -1,0 +1,51 @@
+
+<div id="myOrdersDetail1"> </div>
+
+<div id="myOrdersDetail2"> </div>
+
+<p style="display: none">
+    <textarea id="tpl_myordersdetail1">
+            <div class="orderDetail">
+                <strong>订单状态：<span>{$T.status}</span></strong>
+                <strong>商品总价：{$T.goods_amount}元</strong>
+                {#if $T.integral > 0}<strong>积分抵扣：{$T.integral_money}元</strong>{#/if}
+                {#if $T.shipping_fee > 0}<strong>运费：{$T.shipping_fee}元</strong>{#/if}
+                {#if $T.discount > 0}<strong>优惠：{$T.discount}元</strong>{#/if}
+                <strong>已付总额：{$T.money_paid}元</strong>
+                {#if $T.refund_enabled == 1}<a href="#" class="grey sqtk" order-sn="{$T.order_sn}" mobile="{$T.mobile}">申请退款></a>{#/if}
+            </div>
+            <div class="orderDetail">
+                <p>下单日期：{$T.add_time}</p>
+                <p>订单编号：{$T.order_sn}</p>
+                <p>收货地址：{$T.address}</p>
+                <p><span>{$T.consignee} {$T.mobile}</span></p>
+                <!--<p>送货时间：{$T.best_time}</p>-->
+                {#if $T.inv_type == 0}
+                <p>发票类型：个人</p>
+                <p>发票信息：个人</p>
+                {#else}
+                <p>发票类型：单位</p>
+                <p>发票信息：{$T.inv_payee}</p>
+                {#/if}
+            </div>
+    </textarea>
+    <textarea id="tpl_myordersdetail2">
+        <div class="tkList">
+            <ul>
+                {#foreach $T as Item}
+                    <li id="{$T.Item.sku_sn}">
+                        <a href="#">
+                            <img src="{$T.Item.goods_thumb}" />
+                            <strong>{$T.Item.goods_name}</strong>
+                                <span>
+                                    商城价：{$T.Item.market_price}元&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+                                    数量：{$T.Item.goods_number}&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+                                    小计：{$T.Item.transaction_price}元
+                                </span>
+                        </a>
+                    </li>
+                {#/for}
+            </ul>
+        </div>
+    </textarea>
+</p>

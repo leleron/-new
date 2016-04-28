@@ -1,0 +1,37 @@
+<div class="usermessage">
+    <ul class="list">
+        <li><h6 class="topMessage">沒有消息</h6></li>
+    </ul>
+</div>
+<p style="display: none">
+    <textarea id="tpl_myUserMessage">
+        <ul class="list">
+            {#foreach $T as Item}
+                <li>
+                    <!--<h3>{$T.Item.messageSender}</h3>-->
+                    {#if $T.Item.messageStatus=="0"}
+                    <div class="message unreadMessage"></div>
+                    {#else}
+                    <div class="message"></div>
+                    {#/if}
+                    <!--<div {#if $T.Item.messageStatus=="0"}class="message"{#else}class="unreadMessage" {#/if}></div>-->
+                    <input id="{$T.Item.messageId}" type="checkbox" value="{$T.Item.messageId}" class="msgSelect" />
+                    <label for="{$T.Item.messageId}">{$T.Item.messageContent}</label>
+                    <time>{$T.Item.messageReceiveTime}</time>
+                    <div class="message-info">
+                        <input type="hidden" class="messageId" value="{$T.Item.messageId}"/>
+                        <input type="hidden" class="messageTitle" value="{$T.Item.messageTitle}"/>
+                        <input type="hidden" class="messageContent" value="{$T.Item.messageContent}"/>
+                        <input type="hidden" class="messageReceiveTime" value="{$T.Item.messageReceiveTime}"/>
+                        <input type="hidden" class="messageReceiveDtlTime" value="{$T.Item.messageReceiveDtlTime}"/>
+                        <input type="hidden" class="messageStatus" value="{$T.Item.messageStatus}"/>
+                        <input type="hidden" class="messageSender" value="{$T.Item.messageSender}"/>
+                    </div>
+                    <!--<div class="swipe-hidden">-->
+                    <!--<a class="message button archive" id="{$T.Item.messageId}">删除</a>-->
+                    <!--</div>-->
+                </li>
+            {#/for}
+        </ul>
+    </textarea>
+</p>

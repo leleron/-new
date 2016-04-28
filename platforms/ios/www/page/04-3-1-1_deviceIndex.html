@@ -1,0 +1,169 @@
+<!--<div class='popupMyDevice button-grouped vertical'>-->
+<!--<a href='#deviceAuthority' class="button">设备权限</a>-->
+<!--<a href='#deviceFans' class="button">设备粉丝</a>-->
+<!--<a href='#deviceLog' class="button">设备日志</a>-->
+<!--<a href='#deviceErrorList' class="button">设备消息</a>-->
+<!--<a href='#deviceSetting' class="button">设备设置</a>-->
+<!--<a href='#aboutDevice' class="button">关于设备</a>-->
+<!--</div>-->
+<!--<div class='popupMyFollowedDevice button-grouped vertical'>-->
+<!--<a href='#aboutDevice' class="button">关于设备</a>-->
+<!--</div>-->
+
+<div id="bars">
+    <div id="purifierScreen">
+        <div id="standby" class="shining" style="display:none">待机中</div>
+        <ul>
+            <li>空气质量：<span>优</span></li>
+            <li>温度：<span>29.3℃</span></li>
+            <li>湿度：<span>50%</span></li>
+            <li>气味：<span>浓</span></li>
+            <li>颗粒物：<span>312</span></li>
+            <li>定时关机：<span>40min</span></li>
+            <li>滤网寿命：<span>100min</span></li>
+
+            <!--<li>模式:<span>智能</span></li>-->
+            <!--<li>当前风速：<span>弱</span></li>-->
+            <!--<li>定时关机：<span>8小时</span></li>-->
+            <!--<li>背光亮度：<span>弱</span></li>-->
+            <!--<li>离子释放：<span>关</span></li>-->
+            <!--<li>传感器：<span>开</span></li>-->
+        </ul>
+
+
+        <!--点击展开详情-->
+        <!--状态显示-->
+        <!--<div>-->
+        <!--<div style="display:none"><span>智能</span>模式</div>-->
+        <!--<div style="display:none">当前风速：<span>弱</span></div>-->
+        <!--<div style="display:none">定时关机：<span>8小时</span></div>-->
+        <!--<div style="display:none">面版背光亮度：<span>弱</span></div>-->
+        <!--<div style="display:none">离子释放功能：<span>关</span></div>-->
+        <!--<div style="display:none">粉尘传感器：<span>开</span></div>-->
+        <!--</div>-->
+        <!-- -->
+        <!--警告类按鈕-->
+        <div class="button white shining" style="display:none">滤网更换</div>
+        <div class="button red shining" style="display:none">报警信息</div>
+
+        <!--开关-->
+        <div id="powerButtons">
+            <div class="button transparent off" style="display:none">关</div>
+            <div class="button white on" style="display:none">开</div>
+        </div>
+        <!--模式-->
+        <div id="modeButtons">
+            <div class="button white on" style="display:none">智能</div>
+            <div class="button transparent " style="display:none">强力</div>
+            <div class="button transparent " style="display:none">睡眠</div>
+            <div class="button transparent " style="display:none">标准1</div>
+            <div class="button transparent " style="display:none">标准2</div>
+            <div class="button transparent " style="display:none">标准3</div>
+        </div>
+
+        <!--定时-->
+        <div id="timingButtons">
+            <div class="button transparent off" style="display:none">关</div>
+            <div class="button transparent " style="display:none">1</div>
+            <div class="button transparent " style="display:none">2</div>
+            <div class="button transparent " style="display:none">3</div>
+            <div class="button transparent " style="display:none">4</div>
+            <div class="button transparent " style="display:none">5</div>
+            <div class="button transparent " style="display:none">6</div>
+            <div class="button transparent " style="display:none">7</div>
+            <div class="button transparent " style="display:none">8</div>
+        </div>
+
+        <!--灯效-->
+        <div id="lightButtons">
+            <div class="button transparent off" style="display:none">关</div>
+            <div class="button transparent " style="display:none">微</div>
+            <div class="button transparent " style="display:none">亮</div>
+        </div>
+
+        <!--离子-->
+        <div id="ionButtons">
+            <div class="button transparent off" style="display:none">关</div>
+            <div class="button transparent " style="display:none">微</div>
+            <div class="button transparent " style="display:none">强</div>
+        </div>
+
+        <!--传感-->
+        <div id="sensorButtons">
+            <div class="button transparent off" style="display:none">关</div>
+            <div class="button transparent " style="display:none">开</div>
+            <div class="button transparent " style="display:none">自动</div>
+        </div>
+    </div>
+    <div id="knobs">
+        <!--主控制盘-->
+        <div class="control" id="mainKnob">
+            <div class="colorBar active" id="power">开关</div>
+            <div class="colorBar" id="mode">模式</div>
+            <div class="colorBar" id="timing">定时</div>
+            <div class="colorBar" id="light">灯效</div>
+            <div class="colorBar" id="ion">离子</div>
+            <div class="colorBar" id="sensor">传感</div>
+            <div class="colorBar" id="authority">权限</div>
+            <div class="colorBar" id="fans">粉丝</div>
+            <div class="colorBar" id="log">日志</div>
+            <div class="colorBar" id="errorList">消息</div>
+            <div class="colorBar" id="setting">设置</div>
+            <div class="colorBar" id="about">关于</div>
+        </div>
+
+        <!--&lt;!&ndash;模式&ndash;&gt;-->
+        <!--<div class="control" id="modeKnob" style="display:none">-->
+        <!--<div class="colorBar active">智能</div>-->
+        <!--<div class="colorBar">强力</div>-->
+        <!--<div class="colorBar">睡眠</div>-->
+        <!--<div class="colorBar">标准1級</div>-->
+        <!--<div class="colorBar">标准2級</div>-->
+        <!--<div class="colorBar">标准3級</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;定时&ndash;&gt;-->
+        <!--<div class="control" id="timingKnob" style="display:none">-->
+        <!--<div class="colorBar">关</div>-->
+        <!--<div class="colorBar">1</div>-->
+        <!--<div class="colorBar">2</div>-->
+        <!--<div class="colorBar">3</div>-->
+        <!--<div class="colorBar">4</div>-->
+        <!--<div class="colorBar">5</div>-->
+        <!--<div class="colorBar">6</div>-->
+        <!--<div class="colorBar">7</div>-->
+        <!--<div class="colorBar">8</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;灯效&ndash;&gt;-->
+        <!--<div class="control" id="lightKnob" style="display:none">-->
+        <!--<div class="colorBar active">关</div>-->
+        <!--<div class="colorBar">微</div>-->
+        <!--<div class="colorBar">亮</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;离子&ndash;&gt;-->
+        <!--<div class="control" id="ionKnob" style="display:none">-->
+        <!--<div class="colorBar active">关</div>-->
+        <!--<div class="colorBar">微</div>-->
+        <!--<div class="colorBar">强</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;传感&ndash;&gt;-->
+        <!--<div class="control" id="sensorKnob" style="display:none">-->
+        <!--<div class="colorBar active">关</div>-->
+        <!--<div class="colorBar">开</div>-->
+        <!--<div class="colorBar">自动</div>-->
+        <!--</div>-->
+    </div>
+</div>
+<script>
+    creatKnob('#mainKnob');
+    creatKnob('#modeKnob');
+    creatKnob('#speedKnob');
+    creatKnob('#timingKnob');
+    creatKnob('#lightKnob');
+    creatKnob('#ionKnob');
+    creatKnob('#sensorKnob');
+
+</script>

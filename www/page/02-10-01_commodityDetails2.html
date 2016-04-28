@@ -1,0 +1,255 @@
+<header id="detailTab" class="all">
+
+        <span id="headerParameter">
+
+            参数
+
+        </span>
+
+    <a><span id="headerDetail" class="cur">
+
+            详情
+
+        </span></a>
+
+    <a><span id="headerComment">
+
+            评价
+
+        </span></a>
+
+</header>
+
+<div class="chatAndTop">
+    <p id="go-to-chat">
+        <a><span></span></a>
+    </p>
+    <p id="back-to-top" style="display:none;">
+        <a><span></span></a>
+    </p>
+</div>
+
+<div id="slideTwo" >
+
+    <div id="slideTwoDetail" class="productdetails">
+
+    </div>
+
+</div>
+
+
+<!--
+<p class="textArea" style="display: none">
+    <textarea id="tpl_CommodityBannerSwiper">
+        {#foreach $T as Item}
+        <div class="swiper-slide">
+
+            <a><img src="{$T.Item.thumb_url}"></a>
+
+        </div>
+        {#/for}
+    </textarea>
+    <textarea id="tpl_prodetails_dataPro">
+        <div class="prodetails" goods_sn="{$T.goods_sn}">
+
+            &lt;!&ndash;<div class="fav">&ndash;&gt;
+            <div id="doFav" class="notfav">
+                <span id="doFavorite"></span><br/><br/>
+
+                <div id="favoriteFlag">收藏</div>
+
+            </div>
+
+            <h4>{$T.goods_name}<br/>{$T.recommend}</h4>
+            &lt;!&ndash;普通商品价格&ndash;&gt;
+            <div id="ofNormal" class="price" price="{#if $T.app_price==null || $T.app_price == '0.00'}{$T.shop_price}{#else}{$T.app_price}{#/if}"><strong>{#if $T.app_price==null || $T.app_price == '0.00'}{$T.shop_price}{#else}{$T.app_price}{#/if}</strong>元 <span
+                    id="mobileExclusive" style="display: none">手机专享</span></div>
+            &lt;!&ndash;团购商品价格&ndash;&gt;
+            <div id="ofGroup" class="tuanprice"><strong>{$T.shop_price}</strong>元
+                <span>特惠价</span><em><strong>154人已购买</strong>数量有限，赶快下单吧</em></div>
+            &lt;!&ndash;秒杀商品价格&ndash;&gt;
+            <div id="ofSecKill" class="secprice"><strong>{$T.shop_price}</strong>元 <span>秒杀价</span><em
+                    id="detailSecKill">12天20小时01分钟40秒</em></div>
+            <div class="num">
+
+                购买数量：
+
+                <a onclick="minusCount()">-</a>
+
+                <input id="purchaseQuantity" type="text" value="1"/>
+
+                <a onclick="plusCount()">+</a>
+
+                库存<span>{$T.inventory}</span>件
+
+            </div>
+
+            <p>
+                {#foreach $T.promos as Item}
+                {$T.Item.pr_name}<br/>
+                {#/for}
+
+            </p>
+
+            <input type="hidden" class="sku_sn" value="{$T.sku_sn}"/>
+
+        </div>
+
+            <div class="dataPro">
+
+                <div>
+
+                    运费
+
+                    <p>{$T.shipping_fee}元</p>
+
+                </div>
+
+                <div>
+
+                    客户评价
+
+                    <p>{$T.comment_num}</p>
+
+                </div>
+
+                <div>
+
+                    总销量
+
+                    <p>{$T.sales_number}</p>
+
+                </div>
+
+            </div>
+    </textarea>
+    <textarea id="tpl_goodsComment">
+        <h4>购买评论（<span>{$T.comment_num}</span>）<a class="doComment"><img src="images/pjIcon.png"/>我要评价</a></h4>
+
+
+                {#foreach $T.comment as Item}
+                <li class="{$T.Item.comment_id}">
+
+                    <div class="name">
+
+                        {$T.Item.user_name}
+
+                    </div>
+
+                    <div class="score">
+
+                        <div class="starBg">
+
+                            <span class="star" style='{$T.Item.rankStarStyle}'></span>
+
+                        </div>
+
+                        <span style="color:#ff7c44;">{$T.Item.comment_rank}分</span>
+
+                        <span>{$T.Item.rankLevel}</span>
+
+                        <span class="time">{$T.Item.add_time}</span>
+
+                    </div>
+
+                    <p>评论：{$T.Item.content}</p>
+
+                    &lt;!&ndash;<div class="imgI firstComment">
+
+                        <img src="images/star.png" />
+
+                    </div>&ndash;&gt;
+
+                    <div class="gf">
+
+                        <span>官方回复：</span>{$T.Item.answer}
+
+                    </div>
+
+                    <div class="zj">
+
+                        <span>追加评论：</span>{$T.Item.append_comment.content}
+
+                    </div>
+
+                    &lt;!&ndash;<div class="imgI">
+
+                        <img src="images/star.png" />
+
+                        <img src="images/star.png" />
+
+                        <img src="images/star.png" />
+
+                    </div>&ndash;&gt;
+                </li>
+                {#/for}
+    </textarea>
+    <textarea id="tpl_recommendCommodity">
+        {#foreach $T as Item}
+        <a href="#" godds_sn="{$T.Item.goods_sn}">
+            <img src="{$T.Item.thumb}"/>
+            <span>{$T.Item.goods_price}元</span>
+        </a>
+        {#/for}
+        <div class="clear"></div>
+    </textarea>
+
+    <textarea id="tpl_CommentUl">
+        {#foreach $T.comment as Item}
+        <li class="{$T.Item.comment_id}">
+
+            <div class="name">
+
+                {$T.Item.user_name}
+
+            </div>
+
+            <div class="score">
+
+                <div class="starBg">
+
+                    <span class="star" style='{$T.Item.rankStarStyle}'></span>
+
+                </div>
+
+                <span style="color:#ff7c44;">{$T.Item.comment_rank}分</span>
+
+                <span>{$T.Item.rankLevel}</span>
+
+                <span class="time">{$T.Item.add_time}</span>
+
+            </div>
+
+            <p>评论：{$T.Item.content}</p>
+
+            &lt;!&ndash;<div class="imgI firstComment">
+
+                <img src="images/star.png" />
+
+            </div>&ndash;&gt;
+
+            <div class="gf">
+
+                <span>官方回复：</span><div class="gfd">{$T.Item.answer}</div>
+
+            </div>
+
+            <div class="zj">
+
+                <span>追加评论：</span><div class="zjd">{$T.Item.append_comment.content}</div>
+
+            </div>
+
+            &lt;!&ndash;<div class="imgI">
+
+                <img src="images/star.png" />
+
+                <img src="images/star.png" />
+
+                <img src="images/star.png" />
+
+            </div>&ndash;&gt;
+        </li>
+        {#/for}
+    </textarea>
+</p>-->

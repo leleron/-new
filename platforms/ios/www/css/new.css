@@ -1,0 +1,90 @@
+.view header{
+    height:64px;
+}
+.categoryButton::before{
+    top:18px;
+}
+header input[type="text"]{
+    top:29px;
+}
+a.headSearchIcon{
+    top:28px;
+}
+.view header h1{
+    height:64px;
+    line-height: 71px;
+}
+.cartButton::before{
+    top:16px;
+}
+.topMessage{
+    top:64px;
+}
+div.shortCar span{
+    top:15px;
+}
+.backButton::before{
+    top:14px;
+}
+.jumpBackButton::before{
+    top:14px;
+}
+/*.down-list{*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*z-index: 1000;*/
+    /*color:white;*/
+    /*box-shadow: 1px 1px 1px #010408;*/
+/*}*/
+/*.down-list li:not(:nth-last-child(1)){*/
+    /*border-bottom: 1px solid #010408;*/
+/*}*/
+/*.down-list li a{*/
+    /*display: block;*/
+    /*padding:5px 40px;*/
+    /*background: #000c1c;*/
+/*}*/
+.down-list{
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    top: 63px;
+    height: 100%;
+}
+.down-list ul.member {
+    margin:0;
+    background: #001d49;
+}
+.down-list ul.member li {
+    height: 40px;
+    line-height: 40px;
+    border: 0px;
+    text-indent: 55px;
+}
+.down-list ul.member span {
+    top: 6px;
+}
+.down-list ul.member li i {
+    display: none;
+}
+.down-list ul.member li a {
+    color: white;
+}
+
+.cartButton::before {
+    right: 12%;
+}
+.showMallButton::before {
+    top: 16px;
+}
+.showMallButton::before {
+    z-index: -1;
+    position: absolute;
+    right: 1%;
+    content: url("../images/icons-svg/more.svg");
+    padding: 12px;
+    top:18px;
+}
+.afPopup .button{
+    width:30%;
+}

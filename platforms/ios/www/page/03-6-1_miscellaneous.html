@@ -1,0 +1,33 @@
+<div class="miscellaneous">
+    <div class="grid" align="center">
+        <div class="col2"><a href="#"><img id="onlineConsult" src="images/miscellaneous/onlinequery.png"> </a>
+            <p>在线咨询</p>
+        </div>
+        <div class="col2"><a href="#spotsNearby"><img src="images/miscellaneous/spotsnearby.png"> </a>
+            <p>附近网点</p>
+        </div>
+        <div class="col2"><a href="#hints"><img src="images/miscellaneous/hints.png"> </a>
+            <p>帮助信息</p>
+        </div>
+        <div class="col2"><a href="#"><img src="images/miscellaneous/qrcode.png"></a>
+            <p>二维码生成器</p>
+        </div>
+    </div>
+    <br>
+    <div class="service-tel">
+        <div class="kf">客服电话</div>
+        <div id="customerServicePhone">
+            <!--客服电话-->
+        </div>
+    </div>
+</div>
+<!--模板-->
+<p style="display: none">
+        <textarea id="tpl_CustomerServicePhone">
+            <a href="tel:{$T}" class="tel">
+            <img src="images/miscellaneous/phone24.png">
+            </a>
+            <a href="tel:{$T}" id="servicePhone" class="telNumber">{$T}</a>
+        </textarea>
+</p>
+

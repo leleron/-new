@@ -1,0 +1,517 @@
+﻿{
+	"deviceName":"Air Conditionary",
+	"deviceType":"AC001",
+	"BatchType":"20150101",
+	"Version":"1.0",
+	"Domain":"http://121.40.104.203:8080/Inbound",
+	"Operations":[
+	  {
+		"FunctionName": "TrunOn",
+		"ShowName": "开机",
+		"Options": {
+		  "Level": "1",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "onoff"
+		},
+		"Location": "/devices/{mac_id}/powerswitch",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "powerswitch": "poweron",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "runmodelauto",
+		"ShowName": "智能",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "smode"
+		},
+		"Location": "/devices/{mac_id}/runningmodel",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "runningmodel": "runmodelauto",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "runmodelstrong",
+		"ShowName": "强力",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "smode"
+		},
+		"Location": "/devices/{mac_id}/runningmodel",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "runningmodel": "runmodelstrong",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "runmodelsleep",
+		"ShowName": "睡眠",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "smode"
+		},
+		"Location": "/devices/{mac_id}/runningmodel",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "runningmodel": "runmodelsleep",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "HandOne",
+		"ShowName": "风速一",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "smode"
+		},
+		"Location": "/devices/{mac_id}/runningmodel",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "runningmodel": "runmodelhandone",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "HandTwo",
+		"ShowName": "风速二",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "smode"
+		},
+		"Location": "/devices/{mac_id}/runningmodel",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "runningmodel": "runmodelhandtwo",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "HandThree",
+		"ShowName": "风速三",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "smode"
+		},
+		"Location": "/devices/{mac_id}/runningmodel",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "runningmodel": "runmodelhandthree",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "hour0",
+		"ShowName": "0",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sschd"
+		},
+		"Location": "/devices/{mac_id}/timer",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "time_status": "timeyes",
+		  "time_remind": "0",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "hour1",
+		"ShowName": "1",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sschd"
+		},
+		"Location": "/devices/{mac_id}/timer",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "time_status": "timeyes",
+		  "time_remind": "60",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "hour2",
+		"ShowName": "2",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sschd"
+		},
+		"Location": "/devices/{mac_id}/timer",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "time_status": "timeyes",
+		  "time_remind": "120",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "hour3",
+		"ShowName": "3",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sschd"
+		},
+		"Location": "/devices/{mac_id}/timer",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "time_status": "timeyes",
+		  "time_remind": "180",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "hour4",
+		"ShowName": "4",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sschd"
+		},
+		"Location": "/devices/{mac_id}/timer",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "time_status": "timeyes",
+		  "time_remind": "240",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "hour5",
+		"ShowName": "5",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sschd"
+		},
+		"Location": "/devices/{mac_id}/timer",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "time_status": "timeyes",
+		  "time_remind": "300",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "hour6",
+		"ShowName": "6",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sschd"
+		},
+		"Location": "/devices/{mac_id}/timer",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "time_status": "timeyes",
+		  "time_remind": "360",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "hour7",
+		"ShowName": "7",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sschd"
+		},
+		"Location": "/devices/{mac_id}/timer",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "time_status": "timeyes",
+		  "time_remind": "420",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "hour8",
+		"ShowName": "8",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sschd"
+		},
+		"Location": "/devices/{mac_id}/timer",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "time_status": "timeyes",
+		  "time_remind": "480",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "houroff",
+		"ShowName": "关闭",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sschd"
+		},
+		"Location": "/devices/{mac_id}/timer",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "time_status": "timeno",
+		  "time_remind": "0",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "Normal",
+		"ShowName": "正常",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "slight"
+		},
+		"Location": "/devices/{mac_id}/lightswitch",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "lightswitch": "lighton",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "Half",
+		"ShowName": "半关",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "slight"
+		},
+		"Location": "/devices/{mac_id}/lightswitch",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "lightswitch": "lighthalfon",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "LightOff",
+		"ShowName": "关闭",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "slight"
+		},
+		"Location": "/devices/{mac_id}/lightswitch",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "lightswitch": "lightoff",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "LiziOn",
+		"ShowName": "离子开",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sanion"
+		},
+		"Location": "/devices/{mac_id}/anionswitch",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "anionswitch": "anionon",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "LiziOff",
+		"ShowName": "离子关",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sanion"
+		},
+		"Location": "/devices/{mac_id}/anionswitch",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "anionswitch": "anionoff",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "VOCOn",
+		"ShowName": "开",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "svoc"
+		},
+		"Location": "/devices/{mac_id}/quietmode",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "quietmode": "quietmodeon",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "VOCOff",
+		"ShowName": "关",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "svoc"
+		},
+		"Location": "/devices/{mac_id}/quietmode",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "quietmode": "quietmodeoff",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "Filter1",
+		"ShowName": "滤网1",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sfilter"
+		},
+		"Location": "/devices/{mac_id}/filteroneswitch",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "filter_status": "filter",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "Filter2",
+		"ShowName": "滤网2",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sfilter"
+		},
+		"Location": "/devices/{mac_id}/filtertwoswitch",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "filter_status": "filter",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "Filter3",
+		"ShowName": "滤网3",
+		"Options": {
+		  "Level": "3",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "sfilter"
+		},
+		"Location": "/devices/{mac_id}/filterthreeswitch",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "filter_status": "filter",
+		  "source": "app"
+		}
+	  },
+	  {
+		"FunctionName": "TrunOff",
+		"ShowName": "关机",
+		"Options": {
+		  "Level": "1",
+		  "Action": "Y",
+		  "Method": "POST",
+		  "Group": "onoff"
+		},
+		"Location": "/devices/{mac_id}/powerswitch",
+		"Parameters": {
+		  "tokenid": "{tokenid}",
+		  "powerswitch": "poweroff",
+		  "source": "app"
+		}
+	  }
+	],
+	"Status":{
+			"FunctionName":"GetAllStatus",
+			"ShowName":"获取状态",
+			"Options":{"Level":"1","Action":"Y","Method":"GET"},
+			"Location":"/devices/{mac_id}/allstatus?tokenId={tokenid}",
+			"Parameters":"",
+			"Result":{"code":"100",
+				"status":"SUCCESS",
+				"powerSwitch":"poweron",
+				"light_status":"lighton",
+				"temperature":"283",
+				"humiditySwitch":"humidifyoff",
+				"water":"waterunderlevel",
+				"fall":"notfall",
+				"humidity":"53",
+				"aqiStatus":"good",
+				"VOC":"1",
+				"pmValue":"34",
+				"runningMode":"runmodelhandtwo",
+				"time_status":"timeoff",
+				"time_remaining":"108",
+				"filterOneSwitch":"0",
+				"filterTwoSwitch":"0",
+				"filterThreeSwitch":"1",
+				"message":"我是消息~~~",
+				"quietmode":"quietmodeon"
+				},
+			"Operations":[
+			]
+		},
+	"ShowInfo":{
+		"powerSwitch":"开机",
+		"light_status":"开灯效",
+		"temperature":"温度",
+		"humiditySwitch":"开湿度",
+		"water":"水位",
+		"fall":"倾倒",
+		"humidity":"湿度",
+		"aqiStatus":"AQI",
+		"VOC":"VOC",
+		"pmValue":"PM2.5",
+		"runningMode":"运行模式",
+		"time_status":"定时",
+		"time_remaining":"剩余时间",
+		"filterOneSwitch":"滤网1",
+		"filterTwoSwitch":"滤网2",
+		"filterThreeSwitch":"滤网3",
+		"message":"消息",
+		"quietmode":"静默模式"
+	}
+}

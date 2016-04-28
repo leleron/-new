@@ -1,0 +1,37 @@
+<div class="deviceNearby">
+    <ul class="list" id="nearbydevic">
+        <!--<li >-->
+            <!--&lt;!&ndash;<a><h6 class="topMessage">没有符合条件的设备</h6></a>&ndash;&gt;-->
+        <!--</li>-->
+        <p style="display: none">
+                        <textarea id="tpl_nearbydevice">
+                            {#if $T==""}
+                                <li>
+                                    <a><h6 class="topMessage">没有符合条件的设备</h6></a>
+                                </li>
+                            {#else}
+                                {#foreach $T as Item}
+                                    <li class="nearbydevice-info">
+                                        <a href="#" id="{$T.Item.nearbyDeviceNickName}" class="item_name"
+                                           data-deviceid="{$T.Item.nearbyDeviceProductId}">
+                                            {#if $T.Item.nearbyDeviceImg==""}
+                                            <img class="content_image_width" src="./images/mydevicelist/{$T.Item.nearbyDeviceProductCode}.png"/>
+                                            {#else}
+                                            <img class="content_image_width" src="{$T.Item.nearbyDeviceImg}"/>
+                                            {#/if}
+                                            <div class="info">
+                                            <span class="distance">{Math.round($T.Item.nearbyDeviceDistance*1000)}米</span>
+                                            <span class="{$T.Item.nearbyDeviceOnlineStatus}">{#if $T.Item.nearbyDeviceOnlineStatus=="online"}在线{#else}离线{#/if}</span>
+                                            <span class="nickname">{$T.Item.nearbyDeviceNickName}</span>
+                                            </div>
+                                            <div class="attention-info">
+                                                <input type="hidden" class="deviceId" value="{$T.Item.nearbyDeviceId}"/>
+                                            </div>
+                                        </a>
+                                    </li>
+                                {#/for}
+                            {/#if}
+                        </textarea>
+        </p>
+    </ul>
+</div>

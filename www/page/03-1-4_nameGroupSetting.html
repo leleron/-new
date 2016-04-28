@@ -1,0 +1,23 @@
+<div>
+    <div id="NameGroupDiv" align="center">
+        <!-- <img src="images/devicedemo.png">
+        </br>
+        </br>
+       <label for="alias" align="left">设备昵称</label>
+        <input type="text" name="alias" id="alias" value="" placeholder="我的空气净化器"/>
+        <label for="alias" align="left">设备分组</label>
+        <input type="text" id="proName" readOnly="true" value="我的设备"/>
+        <br>
+        <a href="#myDevice" class="button" >确定</a>-->
+    </div>
+</div>
+<p style="display: none" align="center">
+<textarea id="tpl_nameGroup">
+        <img src="images/myDeviceDtl/{$T.productCode}demo.png">
+        <label for="proName" align="left">设备昵称</label>
+        <input type="text" id="proName" value="{$T.productName}" />
+        <label for="proGroup" align="left">设备分组</label>
+        <input type="text" id="proGroup" readOnly="true" placeholder="我的设备"/>
+        <a id="nameGroupSure" class="button blue">确定</a>
+</textarea>
+</p>

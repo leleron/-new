@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResetPswViewController">
+            <connections>
+                <outlet property="btnNext" destination="PTQ-VC-IbX" id="brq-To-9Xh"/>
+                <outlet property="textNum" destination="4Kc-EP-0UO" id="vrZ-Ax-cxA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYk-2h-coP">
+                    <rect key="frame" x="0.0" y="16" width="658" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手机号/邮箱" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4Kc-EP-0UO">
+                            <rect key="frame" x="20" y="0.0" width="618" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.015686274509803921" green="0.047058823529411764" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="4Kc-EP-0UO" secondAttribute="bottom" id="CFh-QT-OLY"/>
+                        <constraint firstItem="4Kc-EP-0UO" firstAttribute="leading" secondItem="fYk-2h-coP" secondAttribute="leading" constant="20" id="DPM-Ty-auY"/>
+                        <constraint firstAttribute="height" constant="50" id="PKB-8q-ucA"/>
+                        <constraint firstAttribute="trailing" secondItem="4Kc-EP-0UO" secondAttribute="trailing" constant="20" id="qZp-Mr-Cfk"/>
+                        <constraint firstItem="4Kc-EP-0UO" firstAttribute="top" secondItem="fYk-2h-coP" secondAttribute="top" id="xJB-ds-yPC"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTQ-VC-IbX">
+                    <rect key="frame" x="191.5" y="123" width="217" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="byM-a8-z7j"/>
+                        <constraint firstAttribute="width" constant="217" id="urn-0h-8sW"/>
+                    </constraints>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0078431372549019607" green="0.074509803921568626" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fYk-2h-coP" secondAttribute="trailing" constant="-58" id="0fm-O9-akr"/>
+                <constraint firstItem="PTQ-VC-IbX" firstAttribute="top" secondItem="fYk-2h-coP" secondAttribute="bottom" constant="57" id="Gyg-3j-f3p"/>
+                <constraint firstAttribute="centerX" secondItem="PTQ-VC-IbX" secondAttribute="centerX" id="aN0-Nq-eVJ"/>
+                <constraint firstItem="fYk-2h-coP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="bbh-hI-Hwr"/>
+                <constraint firstItem="fYk-2h-coP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dvX-ok-t0b"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,62 @@
+<div id="deviceCardInfo" class="nameCard">
+    <!--<div align="center" class="ct"><a href="#"><img src="images/demodevice.png"></a><h2>我的空气净化器</h2></div>-->
+    <!--<p align="center">关注人数 <span class="a">25</span>空气质量 <span class="b">优</span></p>-->
+    <!--<div >-->
+        <!--<div align="center" class="nameCard">-->
+            <!--<a href="#" class="button orange ">控制</a>-->
+            <!--<a href="#" class="button blue" >关注</a>-->
+            <!--<a href="#" class="button" >重置WIFI</a>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<div align="center">
+    <a href="#wifiCon" class="deep_blue button" >配置网络</a>
+    <a href="#" class="blue button" id="control">添加</a>
+</div>
+
+<p style="display: none" align="center">
+    <textarea id="tpl_deviceCard">
+        <ul class="list">
+            <li class="bigli">
+                <a href="#">
+                    <img id="deviceCardImg">
+                        {#if $T.deviceImage==""}
+                        <img src="./images/mydevicelist/{$T.deviceProductCode}.png"/>
+                        {#else}
+                        <img src="{$T.deviceImage}">
+                        {#/if}
+                    </img>
+                    <h3>
+                        {$T.productCategory}{$T.deviceProductCode}
+                        <br>
+                        {$T.deviceNickName}
+                    </h3>
+                </a>
+            </li>
+        </ul>
+    </textarea>
+</p>
+<!--<div align="center" class="ct">-->
+            <!--<a id="deviceCardImg" href="#">-->
+                <!--{#if $T.deviceImage==""}-->
+                <!--<img src="./images/mydevicelist/{$T.deviceProductCode}.png"/>-->
+                <!--{#else}-->
+                <!--<img src="{$T.deviceImage}">-->
+                <!--{#/if}-->
+            <!--</a>-->
+            <!--<h2>{$T.deviceNickName}</h2>-->
+
+        <!--</div>-->
+    <!--<p align="center">关注人数 <span class="a">{$T.attentionCount}</span>-->
+        <!--空气质量 <span id="airQuality" class="b">暂无数据</span></p>-->
+    <!--<div >-->
+        <!--<div id="deviceCardButtonGroup" align="center" class="nameCard">-->
+            <!--<a id="controlSettingStatus" style="display: none">控制权限关闭</a>-->
+            <!--<a id="control" href="#" class="button orange">控制</a>-->
+            <!--<a id="concern" href="#" class="button blue" >关注</a>-->
+            <!--<a id="reWifi" href="#" class="button" >重置WIFI</a>-->
+        <!--</div>-->
+    <!--</div>-->
+        <!--<br>-->
+        <!--<br>-->
+        <!--<div><p id="nameCardMes" style="font-size: 25px;color: #14a205;margin:0 auto;display:none">添加成功！</p></div>-->

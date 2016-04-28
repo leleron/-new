@@ -1,0 +1,39 @@
+<div class="ui-content login">
+    <div class="ui-loginBox">
+        <div class="inset" align="center">
+            <input type="text" name="account" id="userName" required="required"
+                   pattern="^1[3|4|5|8][0-9]\d{4,8}$" title="请输入正确的手机号" placeholder="手机号码/用户邮箱">
+            <input type="password" name="password" id="userPassWord" required="required" maxlength="16"
+                   pattern="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$" title="密码必须为8-16位字母和数字的组合" placeholder="密码">
+        </div>
+        <div align="center">
+            <div><a href="" class="button" id="doLogin">登 录</a></div>
+        </div>
+        </br>
+        <a href="#" class="doRegister">注册</a>
+        <a href="#" id="todoForgetPassword">忘记密码</a>
+        </br>
+        <div class="grid thirdParty" align="center">
+
+            <div id="qq_Login" class="col4">
+                <a href="#">
+                    <img src="images/icons-png/qq_login.png"/>
+                    <p>QQ登录</p>
+                </a>
+            </div>
+            <div id="wx_Login" class="col4">
+                <a href="#">
+                    <img src="images/icons-png/wechat_login.png"/><p>微信登录</p></a>
+            </div>
+            <div id="jd_Login" class="col4">
+                <a href="#">
+                    <img src="images/icons-png/jd_login.png"/><p>京东登录</p></a>
+            </div>
+            <div id="weibo_Login" class="col4">
+                <a href="#">
+                    <img src="images/icons-png/weibo_login.png"/><p>微博登录</p></a>
+            </div>
+
+        </div>
+    </div>
+</div>

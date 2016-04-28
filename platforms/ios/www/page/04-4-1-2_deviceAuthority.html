@@ -1,0 +1,41 @@
+
+<div  class="deviceAuthority">
+    <div>
+        <ul class="list" id="Owner">
+            <!--<li class="divider" >设备主控</li>-->
+
+            <!--<li class="superadmin">-->
+                <!--<img src="images/owners/headPortrait1.PNG"/>-->
+
+                <!--<h2>设备主控昵称</h2>-->
+            <!--</li>-->
+            <!--<li class="divider" >设备可控</li>-->
+            <!--<li class="admin">-->
+                <!--<img src="images/owners/headPortrait1.PNG"/>-->
+
+                <!--<h2>设备可控1昵称</h2>-->
+            <!--</li>-->
+            <!--<li class="admin">-->
+                <!--<img src="images/owners/headPortrait1.PNG"/>-->
+
+                <!--<h2>设备可控2昵称</h2>-->
+            <!--</li>-->
+        </ul>
+    </div>
+</div>
+
+
+<p style="display: none" align="center">
+<textarea id="tpl_deviceAuthority">
+    <li class="divider" >设备主控</li>
+    <li id="{$T.primaryOwner.userId}" class="superadmin">
+        <img src="{$T.primaryOwner.userHeadPortrait}" style="width: 6rem;height: 4rem"/><h2>{$T.primaryOwner.userName}</h2>
+    </li>
+    <li class="divider" >设备可控</li>
+    {#foreach $T.secondaryOwnerList as Item}
+        <li id="assOwner{$T.Item.userId}" userName="{$T.Item.userName}" class="admin" display="block">
+            <img src="{$T.Item.userHeadPortrait}" style="width: 6rem;height: 4rem"/><h2>{$T.Item.userName}</h2>
+        </li>
+    {#/for}
+</textarea>
+</p>

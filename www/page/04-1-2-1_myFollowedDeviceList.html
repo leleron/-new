@@ -1,0 +1,54 @@
+<div class='popupDevice button-grouped vertical'>
+    <a href='#scanQRcode' class="button">扫一扫</a>
+    <a href='#manuallyAdd' class="button">手动添加</a>
+    <a href='#deviceSearch' class="button">添加关注</a>
+</div>
+
+
+<div id="myFollowedDeviceContent">
+    <div id="myFollowDeviceDiv" class="grid" style="font-size: .75rem;">
+        <!-- 我的设备 -->
+    </div>
+    <p style="display: none">
+                        <textarea id="tpl_FollowdeviceAdd">
+                        {#if $T==""}
+                            <p class="topMessage">没有关注的设备</p>
+                        {#else}
+                                {#foreach $T as Item}
+                                   <div id="dev{$T.Item.deviceId}" device-id="{$T.Item.deviceId}"
+                                        user-type="{$T.Item.userType}" class="col3 lt" align="center"
+                                        style="position: relative;">
+                                       <a href="#">
+                                           {#if $T.Item.image==""}
+                                           <img class="{$T.Item.runningStatus}"
+                                                src="./images/mydevicelist/{$T.Item.productCode}.png"/>
+                                           {#else}
+                                           <img class="{$T.Item.runningStatus}" src="{$T.Item.image}"/>
+                                           {#/if}
+                                       </a>
+
+                                       <p class="content_text">{$T.Item.deviceName}</p>
+                                   </div>
+                                 {#/for}
+                        {/#if}
+                                <input type="hidden" class="myDeviceId"/>
+                                <input type="hidden" class="myUserType"/>
+
+</textarea>
+    </p>
+</div>
+
+
+<div id="authorityMenu1" data-role="footer" data-position="fixed" style="display: none">
+    <ul class="list" data-icon="false" data-position="fixed" data-tap-toggle="false">
+        <li><a>删除设备</a></li>
+        <li><a>WIFI重置</a></li>
+    </ul>
+</div>
+<div id="authorityMenu2" data-role="footer" data-position="fixed" style="display: none">
+    <ul class="list" data-icon="false" data-position="fixed" data-tap-toggle="false">
+        <li><a>取消关注</a></li>
+    </ul>
+</div>
+
+<!--<script type="text/javascript" charset="utf-8" src="js/04-1-2-1_myFollowedDeviceList.js"></script>-->

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageVertifyViewController">
+            <connections>
+                <outlet property="btnGetCode" destination="4Yb-o2-4Oh" id="Swh-Ek-Lak"/>
+                <outlet property="btnNext" destination="825-Jo-HOa" id="otU-af-FGx"/>
+                <outlet property="phoneNum" destination="exY-ys-ldb" id="9h9-QJ-aD8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HpV-pY-Sqd" userLabel="phone">
+                    <rect key="frame" x="0.0" y="16" width="600" height="52"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yb-o2-4Oh" userLabel="btnGetVerifyCode">
+                            <rect key="frame" x="497" y="11" width="95" height="30"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.0078431372550000003" green="0.058823529409999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="95" id="OFs-Uq-ZGN"/>
+                            </constraints>
+                            <state key="normal" title="发送验证码">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="exY-ys-ldb" userLabel="txtPhoneNum">
+                            <rect key="frame" x="40" y="11" width="449" height="29"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.015686274510000001" green="0.047058823530000002" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="exY-ys-ldb" firstAttribute="top" secondItem="HpV-pY-Sqd" secondAttribute="top" constant="11" id="11h-lC-m6R"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="EX8-9d-jWg"/>
+                        <constraint firstItem="exY-ys-ldb" firstAttribute="leading" secondItem="HpV-pY-Sqd" secondAttribute="leading" constant="40" id="G3P-ay-bsZ"/>
+                        <constraint firstAttribute="trailing" secondItem="4Yb-o2-4Oh" secondAttribute="trailing" id="L2a-6L-Thm"/>
+                        <constraint firstAttribute="bottom" secondItem="4Yb-o2-4Oh" secondAttribute="bottom" constant="11" id="SP8-xX-wEk"/>
+                        <constraint firstItem="4Yb-o2-4Oh" firstAttribute="leading" secondItem="exY-ys-ldb" secondAttribute="trailing" constant="8" id="a4d-wq-g3N"/>
+                        <constraint firstAttribute="trailing" secondItem="4Yb-o2-4Oh" secondAttribute="trailing" constant="8" id="aK3-T1-360"/>
+                        <constraint firstAttribute="bottom" secondItem="exY-ys-ldb" secondAttribute="bottom" constant="12" id="dgE-3t-OUO"/>
+                        <constraint firstAttribute="height" constant="52" id="eYy-UB-w6T"/>
+                        <constraint firstItem="4Yb-o2-4Oh" firstAttribute="top" secondItem="HpV-pY-Sqd" secondAttribute="top" constant="11" id="pEM-x1-uEP"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="L2a-6L-Thm"/>
+                        </mask>
+                    </variation>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="825-Jo-HOa">
+                    <rect key="frame" x="192" y="100" width="217" height="50"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="11d-DL-bpe"/>
+                        <constraint firstAttribute="width" constant="217" id="MG5-v6-McE"/>
+                        <constraint firstAttribute="height" constant="50" id="kBD-m6-0MM"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="217" id="uBb-3V-lgQ"/>
+                    </constraints>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.0078431372549019607" green="0.074509803921568626" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HpV-pY-Sqd" secondAttribute="trailing" id="aP8-HF-5LP"/>
+                <constraint firstItem="HpV-pY-Sqd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="iaT-uw-wRj"/>
+                <constraint firstItem="825-Jo-HOa" firstAttribute="top" secondItem="HpV-pY-Sqd" secondAttribute="bottom" constant="32" id="icW-PA-WEo"/>
+                <constraint firstItem="HpV-pY-Sqd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nYv-5o-hN6"/>
+                <constraint firstAttribute="centerX" secondItem="825-Jo-HOa" secondAttribute="centerX" id="xXJ-MV-Wjf"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

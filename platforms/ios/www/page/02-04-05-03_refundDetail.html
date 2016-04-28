@@ -1,0 +1,99 @@
+<!--<html>-->
+<!--<head>-->
+<!--<meta charset="utf-8" />-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />-->
+<!--<title>飞科商城</title>-->
+<!--<link href="../css/base.css" rel="stylesheet" type="text/css">-->
+<!--<link href="../css/global.css" rel="stylesheet" type="text/css">-->
+<!--<script src="js/jquery-1.7.2.min.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<header class="all">-->
+<!--<a href="javascript:;" class="home">-->
+<!--<div class="home">-->
+<!--</div>-->
+<!--</a>-->
+<!--退款单-->
+<!--<a href="javascript:;" class="shortCar">-->
+<!--<div class="shortCar">-->
+<!--<span>1</span>-->
+<!--</div>-->
+<!--</a>-->
+<!--</header>-->
+
+<div id="refundDetailorderDetailDiv">
+</div>
+
+
+
+<p style="display: none">
+    <textarea id="refundDetail_orderDetailAdd">
+        <div class="orderDetail">
+            <strong class="b">退款单号：{$T.returns_order_sn}</strong>
+        </div>
+        <div class="orderDetail">
+            <strong>处理进度：<span>{$T.returns_statusString}</span></strong>
+            <strong>处理时间：{$T.lastupdate_time}</strong>
+        </div>
+
+        <div class="orderDetail">
+            <p>付款方式：{$T.pay_name}</p>
+            <p>商品价格：{$T.total_goods_price} 元</p>
+            <p>运费金额：{$T.shipping_fee} 元</p>
+            <p>最终交易金额：{$T.total_trans_price} 元</p>
+            <p>应付款金额：{$T.total_trans_price} 元</p>
+        </div>
+    </textarea>
+</p>
+
+<div id="refundDetailDiv" class="tkList">
+    <!--<ul>
+            <li>
+                <a href="#">
+                    <img src="images/mall/goods/FS359/FS359_000_01.jpg" />
+                    <strong>飞科电吹风FH6618</strong>
+                    <span>
+                        商城价：79元&nbsp;&nbsp;&nbsp;&nbsp;数量：1&nbsp;&nbsp;&nbsp;&nbsp;小计：79元
+
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/mall/goods/FS359/FS359_000_01.jpg" />
+                    <strong>飞科电吹风FH6618</strong>
+                    <span>
+                        商城价：79元&nbsp;&nbsp;&nbsp;&nbsp;数量：1&nbsp;&nbsp;&nbsp;&nbsp;小计：79元
+
+                    </span>
+                </a>
+            </li>
+        </ul>-->
+</div>
+
+<p style="display: none">
+    <textarea id="refundDetail_itemAdd">
+        <ul>
+            {#if $T==""}
+            <p class="topMessage">订单中不包含商品</p>
+            {#else}
+                {#foreach $T as Item}
+                <li class="tkListItem">
+                    <a goods_sn="{$T.Item.sn}" class="refundDetailItem">
+                        <img src="{$T.Item.goods_thumb}" />
+                        <strong>{$T.Item.goods_name}</strong>
+                        <span>
+                            商城价：{$T.Item.goods_price}元;<br/>
+                            数量：{$T.Item.goods_number};<br/>
+                            小计： {$T.Item.goodsTotalPrice} 元
+                        </span>
+                    </a>
+                </li>
+                {#/for}
+            {/#if}
+            </ul>
+    </textarea>
+</p>
+
+<!--</body>-->
+<!--</html>-->

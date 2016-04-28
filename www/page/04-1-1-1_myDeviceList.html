@@ -1,0 +1,117 @@
+﻿<!--<div class='popupDevice button-grouped vertical'>-->
+<!--<a href='' id="scanQRcodeLink" class="button" data-check="s_login">扫一扫</a>-->
+<!--<a href='#manuallyAdd' class="button" data-check="s_login">手动添加</a>-->
+<!--<a href='#deviceSearch' class="button" data-check="s_login">添加关注</a>-->
+<!--</div>-->
+
+<!--<div id="myDeviceContent" class="deviceList">-->
+<!--<div id="myDeviceDiv" class="grid" style="font-size: .75rem;">-->
+<!--</div>-->
+<!--<p style="display: none">-->
+<!--<textarea id="tpl_deviceAdd">-->
+<!--{#if $T==""}-->
+<!--<p class="topMessage">没有绑定设备</p>-->
+<!--{#else}-->
+<!--{#foreach $T as Item}-->
+<!--<div id="dev{$T.Item.deviceId}" device-id="{$T.Item.deviceId}"-->
+<!--user-type="{$T.Item.userType}" class="col3 lt" align="center"-->
+<!--style="position: relative;">-->
+<!--<a href="#">-->
+<!--{#if $T.Item.image==""}-->
+<!--<img src="./images/mydevicelist/{$T.Item.productCode}.png"/>-->
+<!--{#else}-->
+<!--<img src="{$T.Item.image}"/>-->
+<!--{#/if}-->
+<!--</a>-->
+
+<!--<p class="content_text">{$T.Item.deviceName}</p>-->
+<!--</div>-->
+<!--{#/for}-->
+<!--{/#if}-->
+<!--<input type="hidden" class="myDeviceId"/>-->
+<!--<input type="hidden" class="myUserType"/>-->
+
+<!--</textarea>-->
+<!--</p>-->
+<!--<p style="display: none">-->
+<!--<textarea id="tpl_main">-->
+<!--<div id="Div1" class="mainPage" style="height: 100%; width: 100%; z-index: 0;position: absolute!important;">-->
+<!--<div id="Stage_bigad" class="Stage_bigad_id"-->
+<!--style="position: absolute; margin: 0px; left: 0.2%; top: auto; width: 100%; height: 65%; right: auto; bottom: 0px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-transform: translateZ(0px); background-image: url(./images/bigad.png); background-color: rgba(0, 0, 0, 0); background-size: 100%; background-position: 0% 0%; background-repeat: no-repeat;">-->
+<!--</div>-->
+<!--<div id="Stage_toDemo" class="Stage_toDemo_id"-->
+<!--style="position: absolute; margin: 0px; left: 0%; top: auto; width: 100%; height: 26.6%; right: auto; bottom: 64.9%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-transform: translateZ(0px);">-->
+<!--<div id="Stage_hint" class="Stage_hint_id"-->
+<!--style="position: absolute; margin: 0px; left: auto; top: 40%; width: auto; height: 10%; right: 10%; bottom: auto; font-family: Arial, Helvetica, sans-serif; font-size: 0.9em; font-weight: 400; color: rgb(142, 142, 142); text-decoration: none; font-style: normal; word-wrap: break-word; text-align: left; white-space: normal; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-transform: translateZ(0px);">-->
+<!--您可以进行虚拟设备操作体验-->
+<!--</div>-->
+<!--<div id="Stage_try" class="Stage_try_id"-->
+<!--style="position: absolute; margin: 0px; left: auto; top: 15%; width: auto; height: 10%; right: 10%; bottom: auto; font-family: Arial, Helvetica, sans-serif; font-size: 1.5em; font-weight: 400; color: rgb(0, 0, 0); text-decoration: none; font-style: normal; word-wrap: break-word; text-align: left; white-space: normal; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-transform: translateZ(0px);">-->
+<!--试用体验设备-->
+<!--</div>-->
+<!--<div id="Stage_carat-left" class="Stage_carat-left_id"-->
+<!--style="position: absolute; margin: 0px; left: auto; top: -186.3%; width: 79%; height: 480.7%; right: -31.6%; bottom: auto; -webkit-transform-style: preserve-3d; -webkit-transform: translate(0px, 0px) translateZ(0px) rotate(0deg) scale(0.1, 0.1); transform: translate(0px, 0px) translateZ(0px) rotate(0deg) scale(0.1, 0.1); -webkit-tap-highlight-color: rgba(0, 0, 0, 0); background-image: url(./images/icons-svg/carat-left.svg); background-color: rgba(0, 0, 0, 0); background-size: 100% 100%; background-position: 0px 0px; background-repeat: no-repeat;"></div>-->
+<!--<div id="Stage_demoDevice" class="Stage_demoDevice_id"-->
+<!--style="position: absolute; margin: 0px; left: 2%; top: auto; width: 32.6%; height: 81.6%; right: auto; bottom: 25%; border-radius: 0%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-transform: translateZ(0px); background-image: url(./images/demodevice.png); background-color: rgba(0, 0, 0, 0); background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</textarea>-->
+<!--</p>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;<div class="swiper-slide red-slide">&ndash;&gt;-->
+<!--&lt;!&ndash;<div id="myFamilyDeviceContent" >&ndash;&gt;-->
+<!--&lt;!&ndash;<div id="attentionedDeviceDiv" class="grid ui-div-relative">&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; 我关注的设备 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+<!--<div id="authorityMenu1" data-role="footer" data-position="fixed" style="display: none">-->
+<!--<ul class="list" data-icon="false" data-position="fixed" data-tap-toggle="false">-->
+<!--<li><a>设备置顶</a></li>-->
+<!--<li><a>删除设备</a></li>-->
+<!--<li><a>WIFI重置</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--<div id="authorityMenu2" data-role="footer" data-position="fixed" style="display: none">-->
+<!--<ul class="list" data-icon="false" data-position="fixed" data-tap-toggle="false">-->
+<!--<li><a>设备置顶</a></li>-->
+<!--<li><a>取消关注</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<div class="addScan grid" style="display:none;">
+    <div class="col2">
+        <a href="#manuallyAdd"><img src="images/icons-png/manually_add.png"></a>
+    </div>
+    <div class="col2 scanQRcode">
+        <a href="#"><img src="images/icons-png/scan.png"></a>
+    </div>
+</div>
+
+<div id="myDeviceContent" class="swiper-container deviceList">
+   
+</div>
+
+<p style="display: none">
+    <textarea id="tpl_deviceList">
+        <div class="swiper-wrapper">
+            {#foreach $T as Item}
+                <div class="swiper-slide">
+                    {#if $T.Item.deviceName == ""}
+                    <div>{$T.Item.information}</div>
+                    {#else}
+                    <div>{$T.Item.deviceName}</div>
+                    {#/if}
+                    <div class="round_pic" macId="{$T.Item.macId}" productCategory="{$T.Item.productCategory}" runningStatus="{$T.Item.runningStatus}" deviceName="{$T.Item.deviceName}" deviceId="{$T.Item.deviceId}" userType="{$T.Item.userType}"><a><img src="images/icons-png/clean_robot_try.png"> </a></div>
+                    {#if $T.Item.runningStatus == "online"}
+                        <div class="connection_status">已连接</div>
+                    {#else}
+                        <div class="connection_status">未连接</div>
+                    {#/if}
+                </div>
+            {#/for}
+        </div>
+    </textarea>
+</p>

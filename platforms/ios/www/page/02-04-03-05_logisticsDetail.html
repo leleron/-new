@@ -1,0 +1,92 @@
+
+<div id="logisticsDetail0" class="orderDetail"> </div>
+
+<div class="wuliu">
+    <div class="leftCon">
+        <div id="logisticsDetail2" class="line">
+        </div>
+    </div>
+    <div id="logisticsDetail1" class="rightCon"> </div>
+</div>
+
+<p style="display: none">
+    <textarea id="tpl_logisticsdetail0">
+        <strong class="b">物流详情：{$T.data.type}</strong>
+        <strong class="b">运单号：{$T.data.no}</strong>
+    </textarea>
+    <textarea id="tpl_logisticsdetail1">
+        <ul>
+            {#foreach $T.data.route as Item}
+                <li>
+                    {$T.Item.accept_address}
+                    <p>{$T.Item.accept_time}</p>
+                </li>
+            {#/foreach}
+        </ul>
+    </textarea>
+    <textarea id="tpl_logisticsdetail2">
+        {#foreach $T.data.route as Item}
+            {#if $T.Item$index == 0}
+                <div class="wu start"></div>
+            {#elseif $T.Item$index == $T.data.route.length -1}
+                <div class="wu cur"></div>
+            {#else}
+                <div class="wu"></div>
+            {#/if}
+        {#/foreach}
+    </textarea>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

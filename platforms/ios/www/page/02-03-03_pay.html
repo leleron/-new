@@ -1,0 +1,35 @@
+
+<div class="orderDetail">
+    <strong class="b">订单提交成功！</strong>
+</div>
+
+<div id="orderDetailInfo" class="orderDetail"> </div>
+
+<div id="payType" class="selectPay"> </div>
+
+<div id="orderPrice" class="onPrici"> </div>
+
+<input id="selectPayType" type="hidden" value="" />
+<a id="actionPay" class="blueBtn orange">立即支付</a>
+<a id="cancelPay" class="blueBtn grey">稍后支付</a>
+
+<p style="display: none">
+    <textarea id="tpl_orderdetail">
+        <p>订单号码：{$T.orderId}<input type="hidden" class="payOrderId" value="{$T.orderId}" /></p>
+        <p>订单金额：{$T.orderPrice}元</p>
+        <p>配送信息：{$T.addressInfo}</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$T.personalInfo}</p>
+        <p>发票信息：{#if $T.invoice == 0}个人{#else}单位{#/if}</p>
+    </textarea>
+    <textarea id="tpl_orderprice">
+        应付总额：{$T.orderPrice}元
+        <input type="hidden" class="payOrderPrice" value="{$T.orderPrice}" />
+    </textarea>
+    <textarea id="tpl_paytype">
+        <ul>
+            {#foreach $T as Item}
+                {#if $T.Item.pay_code != "appwxpay"}<li id="{$T.Item.pay_code}">{$T.Item.pay_name}<span></span></li>{#/if}
+            {#/for}
+        </ul>
+    </textarea>
+</p>

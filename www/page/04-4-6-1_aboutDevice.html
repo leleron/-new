@@ -1,0 +1,147 @@
+<!--<div class="aboutDevice">-->
+    <!--<div id="deviceDtl">-->
+
+    <!--</div>-->
+    <!--<div class="" align="center">-->
+
+        <!--<a class="button blue">购买改设备</a>-->
+
+    <!--</div>-->
+<!--</div>-->
+
+
+
+<!--<p style="display: none" align="center">-->
+<!--<textarea id="tpl_aboutDevice">-->
+    <!--<ul class="list">-->
+        <!--<li class="bigli">-->
+            <!--<div align="center" id="devicePic">-->
+                <!--<a href="#" id="deviceDtlImg">-->
+                    <!--<img id="dtlP" src="{hlp.apdf($T.image)}"/>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</li>-->
+        <!--<li class="divider">-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<div class="grid">-->
+                <!--<div class="col1-3">-->
+                    <!--<h3>设备昵称</h3>-->
+                <!--</div>-->
+                <!--<div class="col2-3">-->
+                    <!--<a id="toEditDeviceName" href="#"><p id="deviceNike">{$T.deviceName}</p></a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<div class="grid" >-->
+                <!--<div class="col1-3">-->
+                    <!--<h3>二维码</h3>-->
+                <!--</div>-->
+                <!--<div id="barCode" class="col2-3">-->
+                    <!--&lt;!&ndash;<img style="with:35px; height: 35px" id="barCode" src="./images/myDeviceDtl/{$T.barCode}"/>&ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<div class="grid">-->
+                <!--<div class="col1-3">-->
+                    <!--<h3>版本信息</h3>-->
+                <!--</div>-->
+                <!--<div class="col2-3">-->
+                    <!--<p id="deviceVersion">{$T.deviceVersion}</p>-->
+                    <!--<a href="#" id="deviceVersionFlag"></a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<div class="grid">-->
+                <!--<div class="col1-3">-->
+                    <!--<h3>产品信息</h3>-->
+                <!--</div>-->
+                <!--<div class="col2-3">-->
+                    <!--<p>{$T.information}</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<div class="grid">-->
+                <!--<div class="col1-3">-->
+                    <!--<h3>规格参数</h3>-->
+                <!--</div>-->
+                <!--<div class="col2-3">-->
+                    <!--{#foreach $T.specifications as Item}-->
+                    <!--<p>{$T.Item.productSpecificationParam}:{$T.Item.productSpecificationValue}</p>-->
+                    <!--{#/for}-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<div class="grid">-->
+                <!--<div class="col1-3">-->
+                    <!--<h3>功能参数</h3>-->
+                <!--</div>-->
+                <!--<div class="col2-3">-->
+                    <!--{#foreach $T.functional as Item}-->
+                    <!--<p>{$T.Item.productFunctionParam}:{$T.Item.productFunctionValue}</p>-->
+                    <!--{#/for}-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</li>-->
+        <!--<li class="detail">-->
+            <!--<div class="grid">-->
+                <!--<div class="col1-3">-->
+                    <!--<h3>功能介绍</h3>-->
+                <!--</div>-->
+                <!--<div class="col2-3">-->
+                    <!--{#foreach $T.functionIntroduction as Item}-->
+                    <!--<p>{$T.Item.functionName}:{$T.Item.functionComments}</p>-->
+                    <!--{#/for}-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</li>-->
+        <!--<li class="divider"></li>-->
+    <!--</ul>-->
+<!--</textarea>-->
+<!--</p>-->
+
+
+<div id="" class="">
+    <!--<div align="center" class="ct"><a href="#"><img src="images/demodevice.png"></a><h2>我的空气净化器</h2></div>
+    <p align="center">关注人数 <span class="a">25</span>空气质量 <span class="b">优</span></p>
+    <div >
+        <div align="center" class="nameCard">
+            <a href="#" class="button orange ">控制</a>
+            <a href="#" class="button blue" >关注</a>
+            <a href="#" class="button" >重置WIFI</a>
+        </div>
+    </div>-->
+    <div align="center">
+        <a href="#" class="blue button">删除BayMax设备</a>
+    </div>
+</div>
+
+<p style="display: none" align="center">
+    <textarea id="tpl_deviceCard">
+        <!--<div align="center" class="ct">-->
+        <ul class="list">
+            <li class="bigli">
+                <a href="#">
+                    <img id="deviceCardImg">
+                    {#if $T.deviceImage==""}
+                    <img src="./images/mydevicelist/{$T.deviceProductCode}.png"/>
+                    {#else}
+                    <img src="{$T.deviceImage}">
+                    {#/if}
+                    </img>
+                    <h3>
+                        {$T.deviceNickName}
+                        <br>
+                        飞科智能净化器
+                    </h3>
+                </a>
+            </li>
+        </ul>
+
+    </textarea>
+</p>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeviceErrorListViewController">
+            <connections>
+                <outlet property="footerView" destination="zAM-uU-U4q" id="Y36-PR-HL1"/>
+                <outlet property="lblHint" destination="DHL-Ye-si4" id="AY6-br-b0v"/>
+                <outlet property="tableView" destination="sMK-u0-set" id="g5b-AT-YRV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sMK-u0-set">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.1137254902" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="mRz-JZ-pXl"/>
+                        <outlet property="delegate" destination="-1" id="iM4-6B-vVG"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAM-uU-U4q">
+                    <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNg-KN-B8m">
+                            <rect key="frame" x="8" y="10" width="75" height="30"/>
+                            <animations/>
+                            <state key="normal" title="标记为已读"/>
+                            <connections>
+                                <action selector="mark2Readed:" destination="-1" eventType="touchUpInside" id="hUV-Ib-snS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbU-oM-yaa">
+                            <rect key="frame" x="562" y="10" width="30" height="30"/>
+                            <animations/>
+                            <state key="normal" title="删除"/>
+                            <connections>
+                                <action selector="delete:" destination="-1" eventType="touchUpInside" id="Ewn-0N-SaC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.01176470588" green="0.058823529409999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="hNg-KN-B8m" firstAttribute="top" secondItem="zAM-uU-U4q" secondAttribute="top" constant="10" id="DwB-xd-N92"/>
+                        <constraint firstItem="hNg-KN-B8m" firstAttribute="leading" secondItem="zAM-uU-U4q" secondAttribute="leading" constant="8" id="V8G-Rc-Pj7"/>
+                        <constraint firstAttribute="height" constant="50" id="WBr-MQ-J1Y"/>
+                        <constraint firstAttribute="bottom" secondItem="hNg-KN-B8m" secondAttribute="bottom" constant="10" id="g6U-gY-fUA"/>
+                        <constraint firstItem="DbU-oM-yaa" firstAttribute="top" secondItem="zAM-uU-U4q" secondAttribute="top" constant="10" id="gTp-7U-1js"/>
+                        <constraint firstAttribute="trailing" secondItem="DbU-oM-yaa" secondAttribute="trailing" constant="8" id="j5q-4X-Ifi"/>
+                        <constraint firstAttribute="bottom" secondItem="DbU-oM-yaa" secondAttribute="bottom" constant="10" id="rap-Mj-UZT"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前设备无故障消息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHL-Ye-si4">
+                    <rect key="frame" x="171.5" y="65" width="257" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="257" id="gRG-b5-lZ4"/>
+                        <constraint firstAttribute="height" constant="21" id="oWJ-3X-PST"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.01176470588" green="0.058823529409999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sMK-u0-set" secondAttribute="bottom" id="09y-xo-3GC"/>
+                <constraint firstItem="DHL-Ye-si4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2q3-UZ-H67"/>
+                <constraint firstItem="DHL-Ye-si4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="BWk-tv-trr"/>
+                <constraint firstItem="sMK-u0-set" firstAttribute="leading" secondItem="zAM-uU-U4q" secondAttribute="leading" id="FYI-Ze-lAd"/>
+                <constraint firstAttribute="trailing" secondItem="zAM-uU-U4q" secondAttribute="trailing" id="GTB-Fg-KEZ"/>
+                <constraint firstItem="sMK-u0-set" firstAttribute="trailing" secondItem="zAM-uU-U4q" secondAttribute="trailing" id="GuY-JX-rjx"/>
+                <constraint firstItem="sMK-u0-set" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LbV-4d-ufY"/>
+                <constraint firstItem="zAM-uU-U4q" firstAttribute="top" secondItem="sMK-u0-set" secondAttribute="bottom" constant="-50" id="gOO-Xc-TYw"/>
+                <constraint firstItem="zAM-uU-U4q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xzc-hW-Q52"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

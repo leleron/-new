@@ -1,0 +1,72 @@
+<div class="myInfo">
+    <ul class="list" id="userInfo">
+    </ul>
+    <ul class="list" id="flycoAccountBind" style="display: block">
+        <li class="bigli">
+            <img src="images/icons-png/flycoround.png">
+            <label>飞科智能账号</label>
+            <a>关联</a>
+        </li>
+    </ul>
+    <ul class="list" id="thirdAccountBind" style="display: block">
+        <li class="tpTitle">关联第三方账户</li>
+        <li id="qq">
+            <label>QQ账户</label>
+            <a>关联</a>
+        </li>
+        <li id="weChat">
+            <label>微信账户</label>
+            <a>关联</a>
+        </li>
+        <li id="weBo">
+            <label>微博账户</label>
+            <a>关联</a>
+        </li>
+        <li id="jd">
+            <label>京东账户</label>
+            <a>关联</a>
+        </li>
+    </ul>
+    <ul class="list" align="center">
+        <li>
+        <p id="doLogout">退出登录</p>
+        <!--<a class="button blue" id="saveUpdate">保存</a>-->
+        </li>
+    </ul>
+</div>
+
+<p style="display: none">
+        <textarea id="tpl_userInfo">
+            <li class="bigli">
+                <label>头像</label>
+                <a onclick="changeAvatar()"> <!--data-transition="up-reveal"-->
+                    <img id="showicon" src="" style="width:90px;height:90px;"/>
+                </a>
+            </li>
+            <li>
+                <label>昵称</label>
+                <a href="#editName" id="myInfoName" data-transition="up-reveal">
+                    {$T.REAL_NAME}
+                </a>
+            </li>
+            <!--<li>-->
+                <!--<label>性别</label>-->
+                <!--<a href="#editGender" id="myInfoName" data-transition="up-reveal">-->
+                    <!--&lt;!&ndash;{$T.REAL_NAME}&ndash;&gt;-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<label>地址</label>-->
+                <!--<a href="#editAddress" id="myInfoName" data-transition="up-reveal">-->
+                    <!--&lt;!&ndash;{$T.REAL_NAME}&ndash;&gt;-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<label>账户安全</label>-->
+                <!--<a href="#accountBind" id="myInfoName" data-transition="up-reveal">-->
+                    <!--&lt;!&ndash;{$T.REAL_NAME}&ndash;&gt;-->
+                <!--</a>-->
+            <!--</li>-->
+
+        </textarea>
+</p>

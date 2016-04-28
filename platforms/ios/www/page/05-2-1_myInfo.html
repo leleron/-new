@@ -1,0 +1,35 @@
+<div class="myInfo">
+    <ul class="list" id="userInfo">
+
+    </ul>
+</div>
+
+<p style="display: none">
+        <textarea id="tpl_userInfo">
+            <li class="divider"></li>
+            <li class="grid bigli">
+                <div class="col1-4 ">
+                    <label>头像：</label>
+                </div>
+                <div class="col3-4">
+                    <a onclick="changeAvatar()"> <!--data-transition="up-reveal"-->
+                        <img id="showicon" src="" style="width:90px;height:90px;"/>
+                    </a>
+                </div>
+            </li>
+            <li class="grid">
+                <div class="col1-4">
+                    <label>名称：</label>
+                </div>
+                <div class="col3-4">
+                    <a href="#editName" id="myInfoName" data-transition="up-reveal">
+                        {$T.REAL_NAME}
+                    </a>
+                </div>
+            </li>
+            <div align="center">
+                <a class="button blue logout width80" id="doLogout">退出登录</a>
+                <!--<a class="button blue" id="saveUpdate">保存</a>-->
+            </div>
+        </textarea>
+</p>

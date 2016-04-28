@@ -1,0 +1,138 @@
+<!--<html>-->
+
+<!--<head>-->
+
+    <!--<meta charset="utf-8" />-->
+
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />-->
+
+    <!--<title>飞科商城</title>-->
+
+    <!--<link href="../css/base.css" rel="stylesheet" type="text/css">-->
+
+    <!--<link href="../css/global.css" rel="stylesheet" type="text/css">-->
+
+    <!--<script src="js/jquery-1.7.2.min.js"></script>-->
+
+<!--</head>-->
+
+
+
+<!--<body>-->
+
+<!--<header class="all">-->
+
+    <!--<a href="javascript:;" class="home">-->
+
+        <!--<div class="home">-->
+
+        <!--</div>-->
+
+    <!--</a>-->
+
+    <!--商品分类-->
+
+    <!--<a href="javascript:;" class="shortCar">-->
+
+        <!--<div class="shortCar">-->
+
+            <!--<span>1</span>-->
+
+        <!--</div>-->
+
+    <!--</a>-->
+
+<!--</header>-->
+
+
+
+
+
+<div class="proFL">
+
+    <ul id="goodsCategory">
+
+    </ul>
+
+</div>
+
+<p style="display: none">
+    <textarea id="tpl_goodsCategory">
+        {#foreach $T as Item}
+            <li id="cat{$T.Item.cat_id}">
+
+                <a href="#" class="catInfo">
+
+                    <img src="{$T.Item.cat_img}"/>
+
+                    <p>{$T.Item.cat_name}</p>
+
+                </a>
+
+            </li>
+        {#/for}
+    </textarea>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+<!--</body>-->
+
+
+
+<!--</html>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

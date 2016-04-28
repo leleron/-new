@@ -1,0 +1,26 @@
+
+<div id="myUnPayOrdersList" class="tkList"> </div>
+
+<p style="display: none">
+    <textarea id="tpl_myunpayorderslist">
+        <ul>
+            {#foreach $T as Item}
+                {#if $T.Item.code == 1}
+                    <li id="{$T.Item.order_sn}" order-status="{$T.Item.code}">
+                        <a href="#">
+                            <img src="{$T.Item.goods_thumb}" />
+                            <strong>订单日期：{$T.Item.add_time}</strong>
+                                    <span>
+                                        订单编号：{$T.Item.order_sn}
+                                        <br/>
+                                         总价：{$T.Item.total_fee}元<br/>
+                                        状态：{$T.Item.status}
+                                    </span>
+                            <em></em>
+                        </a>
+                    </li>
+                {#/if}
+            {#/for}
+        </ul>
+    </textarea>
+</p>

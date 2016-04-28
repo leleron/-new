@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FKUpdateDeviceViewController">
+            <connections>
+                <outlet property="CenterInfoLabel" destination="9Tw-Mj-qJM" id="TBs-uf-nV4"/>
+                <outlet property="downLoadButton" destination="wv9-I3-mip" id="cBg-I1-1mx"/>
+                <outlet property="firmVersionLabel" destination="6YY-Ue-vmB" id="gfJ-4z-63J"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的设备固件是最新版本" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tw-Mj-qJM">
+                    <rect key="frame" x="0.0" y="323" width="375" height="20.5"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO.png" translatesAutoresizingMaskIntoConstraints="NO" id="n3K-h1-fB2">
+                    <rect key="frame" x="100" y="120" width="175" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="LjV-33-P7m"/>
+                        <constraint firstAttribute="width" constant="175" id="fRf-7Z-p8X"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YY-Ue-vmB">
+                    <rect key="frame" x="0.0" y="156" width="375" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="IhA-QT-Zkp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wv9-I3-mip">
+                    <rect key="frame" x="78.5" y="314" width="217" height="40"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="217" id="8tS-F3-RNt"/>
+                        <constraint firstAttribute="height" constant="40" id="pPL-RC-6XX"/>
+                    </constraints>
+                    <state key="normal" title="立即下载">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="downLoad:" destination="-1" eventType="touchUpInside" id="15l-fU-tWF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.0078431372550000003" green="0.074509803920000006" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="n3K-h1-fB2" secondAttribute="centerX" id="0cI-ma-9VT"/>
+                <constraint firstItem="6YY-Ue-vmB" firstAttribute="top" secondItem="n3K-h1-fB2" secondAttribute="bottom" constant="15" id="Ahv-hb-P4m"/>
+                <constraint firstItem="n3K-h1-fB2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="LAy-96-g1g"/>
+                <constraint firstAttribute="centerY" secondItem="wv9-I3-mip" secondAttribute="centerY" id="TTY-tl-UmM"/>
+                <constraint firstAttribute="trailing" secondItem="6YY-Ue-vmB" secondAttribute="trailing" id="XFz-TZ-lt2"/>
+                <constraint firstItem="9Tw-Mj-qJM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YrJ-5Q-YxA"/>
+                <constraint firstItem="6YY-Ue-vmB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="i6g-py-Uz0"/>
+                <constraint firstAttribute="centerX" secondItem="wv9-I3-mip" secondAttribute="centerX" id="jmJ-DO-lJO"/>
+                <constraint firstAttribute="centerY" secondItem="9Tw-Mj-qJM" secondAttribute="centerY" id="rAb-gb-mj5"/>
+                <constraint firstAttribute="trailing" secondItem="9Tw-Mj-qJM" secondAttribute="trailing" id="u9o-PS-AhH"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LOGO.png" width="175" height="21"/>
+    </resources>
+</document>

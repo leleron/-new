@@ -1,0 +1,93 @@
+<div id="newProductBannerList" class="bannerList">
+
+</div>
+
+<div id="newProductInfo">
+
+</div>
+
+<p style="display: none">
+    <textarea id="tpl_newProductInfo">
+        {#foreach $T.product_goods as Item}
+            <div class="newPro newProductPro" id="{$T.Item.goods_sn}">
+
+                <h1>
+
+                    <span>{$T.Item$index+1}</span>
+
+                    {$T.Item.goods_name}
+
+                </h1>
+
+                <div class="imgBg NewProductImg">
+
+                    <img class="{$T.Item.goods_sn}" src="{$T.Item.goods_promo_img}" />
+
+                    <div class="newProIcon"></div>
+
+                </div>
+
+                <div class="price">
+
+                    <strong>{$T.Item.shop_price}</strong>元
+
+                    <span>库存{$T.Item.inventory_num}件</span>
+
+                </div>
+
+                <a id="newProduct_buyNow" class="blueBtn" sn="{$T.Item.goods_sn}" sku_sn="{$T.Item.sku_sn}">立即购买</a>
+                <input type="hidden" class="salesType" value="{$T.Item.sales_type}" />
+
+            </div>
+
+        {#/for}
+    </textarea>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

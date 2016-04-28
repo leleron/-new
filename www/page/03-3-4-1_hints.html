@@ -1,0 +1,14 @@
+<div  class="hints" id="div_hints">
+
+</div>
+
+<p style="display: none" align="center">
+    <textarea id="tpl_hints">
+        <ul class="list" >
+            <li class="divider"></li>
+            {#foreach $T as Item}
+            <li><a id="{$T.Item.helpInfoId}" href="#hintsDetail">{$T.Item.infoType}</a></li>
+            {#/for}
+        </ul>
+    </textarea>
+</p>

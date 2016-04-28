@@ -1,0 +1,90 @@
+<!--<script>
+    $(function(){
+        $('#accountBind').find('.bindButton').on('click',function(){
+            if($(this).find('.bindInfo').text()=="绑定"){
+                $(this).find('.bindInfo').text("解绑");
+                $(this).find('.addStatus').css({
+                    background: "url('images/icons-png/round-delete.png') center no-repeat"
+                });
+            }else{
+                $(this).find('.bindInfo').text("绑定");
+                $(this).find('.addStatus').css({
+                    background: "url('images/icons-png/round-add.png') center no-repeat"
+                });
+            }
+        });
+    });
+</script>-->
+<div class="container accountBind">
+    <ul class="list">
+        <li class="divider">当前登录账号</li>
+        <div>
+            <li><a href="#"> <img id="currentAccountImg" src="">
+
+                <h2>账号</h2>
+
+                <p id="currentAccount"></p>
+            </a></li>
+        </div>
+
+        <li class="divider">第三方账号</li>
+        <li id="flyco">
+            <img src='images/icons-png/flyco.png'>
+
+            <h2>飞科</h2>
+            <a href="#">
+                <span class="bindButton" id="fkAccountBind"><span class="addStatus"></span><span class="bindInfo">绑定</span></span>
+            </a>
+        </li>
+        <li id="jd" class="thirdAccountli">
+            <img src='images/icons-png/jd.png'>
+
+            <h2>京东</h2>
+            <a href="#">
+                <span class="bindButton" id="jdAccountBind"><span class="addStatus"></span><span class="bindInfo">绑定</span></span>
+            </a>
+        </li>
+
+        <li id="wechat" class="thirdAccountli">
+            <img src="images/icons-png/wechat.png">
+
+            <h2>微信</h2>
+            <a href="#">
+                <span class="bindButton" id="wxAccountBind"><span class="addStatus"></span><span class="bindInfo">绑定</span></span>
+            </a>
+        </li>
+
+        <li id="qq" data-icon="plus" class="thirdAccountli">
+            <img src="images/icons-png/qq.png">
+
+            <h2>QQ</h2>
+            <a href="#">
+                <span class="bindButton" id="qqAccountBind"><span class="addStatus"></span><span class="bindInfo">绑定</span></span>
+            </a>
+        </li>
+
+
+        <!--<li data-icon="plus">-->
+            <!--<img src="images/icons-png/wechat.png">-->
+
+            <!--<h2>支付宝</h2>-->
+            <!--<a href="#">-->
+                <!--<span class="bindButton">绑定</span>-->
+            <!--</a>-->
+        <!--</li>-->
+
+    </ul>
+    <p class="message">您可以同时绑定多个帐号，并使用绑定账号登录；用任一绑定账号登录都可以查看所有历史数据和分析报告</p>
+</div>
+<!--
+<p style="display: none">
+    <textarea id="tpl_currentAccount">
+        <li><a href="#"> <img id="currentAccountImg" src="images/icons-png/flyco.png">
+
+            <h2>账号</h2>
+
+            <p>{$T}</p>
+        </a></li>
+
+    </textarea>
+</p>-->

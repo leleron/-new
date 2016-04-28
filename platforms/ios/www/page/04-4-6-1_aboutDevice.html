@@ -1,0 +1,189 @@
+<div class="aboutDevice">
+    <div id="deviceDtl">
+        <!-- <div class="ui-grid-solo">
+             <div class="ui-block-a" align="center" id="devicePic">
+                 <a href="#"><img src="images/demodevice.png"/>
+                 </a>
+             </div>
+         </div> -->
+
+        <!--<ul data-role="listview">
+            <li class="divider" >
+            </li>
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <h2>设备主人</h2>
+                    </div>
+                    <div class="ui-block-b">
+                        <p id="">设备主人名字</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <h2>二维码</h2>
+                    </div>
+                    <div class="ui-block-b">
+                        <img id="qrcode"></img>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <h2>版本信息</h2>
+                    </div>
+                    <div class="ui-block-b">
+                        <p id="">1.1</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <h2>产品信息</h2>
+                    </div>
+                    <div class="ui-block-b">
+                        <p>飞科空气净化器</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <h2>规格参数</h2>
+                    </div>
+                    <div class="ui-block-b">
+                        <p>高配版</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <h2>功能参数</h2>
+                    </div>
+                    <div class="ui-block-b">
+                        <p>空气加湿，空气净化</p>
+                    </div>
+                </div>
+            </li>
+            <li class="detail">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <h2>功能介绍</h2>
+                    </div>
+                    <div class="ui-block-b">
+                        <p>飞科空气净化器高配版配备空气加湿、空气净化等功能</p>
+                    </div>
+                </div>
+            </li>
+            <li class="divider" ></li>
+        </ul>-->
+    </div>
+    <div class="" align="center">
+
+        <a class="button blue width80">购买改设备</a>
+
+    </div>
+</div>
+
+
+
+
+
+<p style="display: none" align="center">
+<textarea id="tpl_aboutDevice">
+    <ul class="list">
+        <li class="bigli">
+            <div align="center" id="devicePic">
+                <a href="#" id="deviceDtlImg">
+                    <img id="dtlP" src="{hlp.apdf($T.image)}"/>
+                </a>
+            </div>
+        </li>
+        <li class="divider">
+        </li>
+        <li>
+            <div class="grid">
+                <div class="col1-3">
+                    <h3>设备昵称</h3>
+                </div>
+                <div class="col2-3">
+                    <a id="toEditDeviceName" href="#"><p id="deviceNike">{$T.deviceName}</p></a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="grid" >
+                <div class="col1-3">
+                    <h3>二维码</h3>
+                </div>
+                <div id="barCode" class="col2-3">
+                    <!--<img style="with:35px; height: 35px" id="barCode" src="./images/myDeviceDtl/{$T.barCode}"/>-->
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="grid">
+                <div class="col1-3">
+                    <h3>版本信息</h3>
+                </div>
+                <div class="col2-3">
+                    <p id="deviceVersion">{$T.deviceVersion}</p>
+                    <a href="#" id="deviceVersionFlag"></a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="grid">
+                <div class="col1-3">
+                    <h3>产品信息</h3>
+                </div>
+                <div class="col2-3">
+                    <p>{$T.information}</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="grid">
+                <div class="col1-3">
+                    <h3>规格参数</h3>
+                </div>
+                <div class="col2-3">
+                    {#foreach $T.specifications as Item}
+                    <p>{$T.Item.productSpecificationParam}:{$T.Item.productSpecificationValue}</p>
+                    {#/for}
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="grid">
+                <div class="col1-3">
+                    <h3>功能参数</h3>
+                </div>
+                <div class="col2-3">
+                    {#foreach $T.functional as Item}
+                    <p>{$T.Item.productFunctionParam}:{$T.Item.productFunctionValue}</p>
+                    {#/for}
+                </div>
+            </div>
+        </li>
+        <li class="detail">
+            <div class="grid">
+                <div class="col1-3">
+                    <h3>功能介绍</h3>
+                </div>
+                <div class="col2-3">
+                    {#foreach $T.functionIntroduction as Item}
+                    <p>{$T.Item.functionName}:{$T.Item.functionComments}</p>
+                    {#/for}
+                </div>
+            </div>
+        </li>
+        <li class="divider"></li>
+    </ul>
+</textarea>
+</p>

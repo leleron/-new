@@ -1,0 +1,69 @@
+<div class="ui-content login">
+    <div class="ui-loginBox">
+        <div style="padding:35px 0;text-align: center;background: #efeff0;">
+            <img src="images/logo2.png" style="width:40%;">
+        </div>
+        <div id="loginType">
+            <div id="ptlogin" class="tab-header active">注册用户登录</div><div id="dtlogin" class="tab-header">手机动态验证码登录</div>
+        </div>
+        <div id="login1">
+            <input type="text" name="account" id="userName" required="required"
+                   pattern="^1[3|4|5|8][0-9]\d{4,8}$" title="请输入正确的手机号/邮箱" placeholder="请输入手机号码/邮箱">
+            <input type="password" name="password" id="userPassWord" required="required" maxlength="20"
+                   pattern="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$" title="密码必须为8-20位字母和数字的组合" placeholder="输入密码">
+        </div>
+        <div id="login2" style="display: none">
+            <input type="text" name="account" id="duserName" required="required"
+                   pattern="^1[3|4|5|8][0-9]\d{4,8}$" title="请输入正确的手机号" placeholder="请输入手机号码">
+            <input type="text" name="password" id="dtCode" required="required" maxlength="16" placeholder="输入验证码">
+            <div class="getCode" id="free_code1">获取动态验证码</div>
+        </div>
+        <div align="center">
+            <div><a href="" class="button" id="doLogin">登录</a></div>
+            <div><a href="" class="button" id="doDtLogin" style="display: none;">登录</a></div>
+        </div>
+        <div style="border-bottom: 1px solid #dfdfdf;margin:0 5%;padding:15px 0">
+            <a href="#fastRegister" id="fastRegist">快速注册</a>
+            <a href="#regetPassword" id="hasForgetPassword">忘记密码？</a>
+        </div>
+        <div class="others" align="left" style="padding:0 5% 20px 5%;color:#7e7d7d;">您还可以选择已下方式登录</div>
+        <div class="grid" align="center">
+            <!--<div  class="col4">-->
+            <!--<a href="#" class="ui-btn ui-icon-icon-notext padding5" >-->
+            <!--<img src="images/icons-png/jd.png" /></a>-->
+            <!--</div>-->
+            <!--<div class="col4">-->
+            <!--<a href="#" class="ui-btn ui-icon-icon-notext padding5" >-->
+            <!--<img src="images/icons-png/wechat.png" /></a>-->
+            <!--</div>-->
+            <!--<div  class="col4">-->
+            <!--<a href="#" class="ui-btn ui-icon-icon-notext padding5" >-->
+            <!--<img src="images/icons-png/alipay.png" /></a>-->
+            <!--</div>-->
+            <!--<div id ="qq_Login" class="col4">-->
+            <!--<a href="#" class="ui-btn ui-icon-icon-notext padding5" >-->
+            <!--<img src="images/icons-png/qq.png" /></a>-->
+            <div id="wx_Login" class="col2">
+                <a href="#">
+                    <img src="images/login1/weixin.png"/></a>
+                <div>微信</div>
+            </div>
+            <div id="wb_Login" class="col2">
+                <a href="#">
+                    <img src="images/login1/wb.png"/></a>
+                <div>微博</div>
+            </div>
+            <!--<div id="qq_Login" class="col3">-->
+                <!--<a href="#">-->
+                    <!--<img src="images/login1/qq.png"/></a>-->
+                <!--<div>QQ</div>-->
+            <!--</div>-->
+
+            <!--<div id="jd_Login" class="col4">-->
+                <!--<a href="#">-->
+                    <!--<img src="images/login1/jd.png"/></a>-->
+                <!--<div>京东</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>

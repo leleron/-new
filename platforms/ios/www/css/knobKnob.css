@@ -1,0 +1,230 @@
+/*04-3-1-1_deviceIndex.html*/
+#deviceIndex {
+	background: url('../images/bg.jpg') #1f2129;
+	/*position: relative;*/
+	/*font-size:20px;*/
+	text-align: center;
+}
+#deviceIndex a{
+	color:#808080;
+}
+
+#deviceIndex .active a{
+	color:#fff;
+}
+
+#deviceIndex #knobs{
+	margin-top:110px;
+}
+
+
+#deviceIndex #standby{
+	margin: 18% auto;
+	padding: 5%;
+	font-size:2rem;
+	-webkit-animation-name: glow;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+#deviceIndex .button {
+	width: 3rem;
+	height: 3rem;
+	line-height:3rem;
+	/*margin-top: 3rem;*/
+	border-radius:50%;
+	transition:0.2s;
+	/*padding: 1rem;*/
+	margin: 0 1px 6px;
+}
+
+#deviceIndex #timingButtons .button {
+	height: 2rem;
+	width: 2rem;
+	line-height: 2rem;
+	padding: 10px;
+	margin:0 10px 6px;
+}
+
+#deviceIndex #lightButtons .button,
+#deviceIndex #ionButtons .button,
+#deviceIndex #sensorButtons .button{
+	margin-top: 3rem;
+}
+
+
+#deviceIndex .button.white {
+	color: #1f2129;
+	background: #fff;
+	border-color: #fff;
+}
+
+#deviceIndex .button.transparent {
+	color: #fff;
+	background: transparent;
+	border-color: #fff;
+}
+
+
+
+#purifierScreen ul li{
+	text-align: left;
+	margin: 0 0 5% 0;
+	float: left;
+	width: 55%;
+
+}
+
+#purifierScreen ul li span{
+	text-align: right;
+}
+
+
+/*----------------------------
+	knobKnob Styles
+-----------------------------*/
+
+
+.knob{
+	width:240px;
+	height:240px;
+	position:relative;
+}
+
+.knob .top{
+	position:absolute;
+	top:0;
+	left:0;
+	width: 240px;
+	height: 240px;
+	/* background: url('../images/knob.png') no-repeat; */
+	z-index:10;
+	cursor:default !important;
+}
+
+.knob .base{
+	width:240px;
+	height:240px;
+	border-radius:50%;
+	/*box-shadow:0 5px 0 #4a5056,5px 5px 5px #000;*/
+	box-shadow:5px 0 0 #141A20,5px 0 15px #000;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+}
+
+.knob .top:after{
+	content:'';
+	width:10px;
+	height:10px;
+	background-color:#666;
+	position:absolute;
+	top:50%;
+	left:10px;
+	margin-top:-5px;
+	border-radius: 50%;
+	cursor:default !important;
+	box-shadow: 0 0 1px #5a5a5a inset;
+}
+
+.knob [draggable] {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+/*----------------------------
+	Color Bars
+-----------------------------*/
+
+
+#bars{
+	 height: 100%;
+	margin: 0 auto;
+	position: relative;
+	/* width: 228px; */
+}
+
+#bars #purifierScreen{
+	height: 30%;
+	color: #fff;
+	border: 2px solid #1f3333;
+	border-radius: 30px;
+	margin: 5%;
+	padding: 5% 7%;
+	box-shadow:0 1px 10px 0 #000 inset;
+}
+
+.control{
+	/*width:90px;*/
+	/*height:90px;*/
+	position:relative;
+	/*top:50%;*/
+	/*left:50%;*/
+	/*margin: 30%;*/
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.colorBar{
+	/*width:20px;*/
+	/*height:8px;*/
+	position:absolute;
+	opacity:1;
+	-moz-transition:0.3s;
+	-webkit-transition:0.3s;
+	-o-transition:0.3s;
+	transition:0.3s;
+	transform: rotate(270deg);
+	color: #808080;
+}
+
+.colorBar.active{
+	color:#FFFFFF;
+	text-shadow:0 0 10px #000DFF;
+}
+
+
+
+/*动画*/
+@-webkit-keyframes glow {
+	0% {
+		-webkit-text-shadow: 0 0 12px rgba(72, 106, 170, 0.5);
+		text-shadow: 0 0 12px rgba(72, 106, 170, 0.5);
+	}
+	100% {
+		-webkit-text-shadow: 0 0 12px rgba(72, 106, 170, 1.0), 0 0 18px rgba(0, 140, 255, 1.0);
+		text-shadow: 0 0 12px rgba(72, 106, 170, 1.0), 0 0 18px rgba(0, 140, 255, 1.0);
+	}
+}
+
+@-webkit-keyframes boxglow {
+	0% {
+		-webkit-box-shadow: 0 0 12px rgba(72, 106, 170, 0.5);
+		box-shadow: 0 0 12px rgba(72, 106, 170, 0.5);
+	}
+	100% {
+		-webkit-box-shadow: 0 0 12px rgba(72, 106, 170, 1.0), 0 0 18px rgba(0, 140, 255, 1.0);
+		box-shadow: 0 0 12px rgba(72, 106, 170, 1.0), 0 0 18px rgba(0, 140, 255, 1.0);
+	}
+}
+
+.shining{
+	-webkit-animation-name: glow;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+.on{
+	-webkit-animation-name: boxglow;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+}

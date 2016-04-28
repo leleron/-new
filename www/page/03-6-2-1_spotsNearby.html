@@ -1,0 +1,50 @@
+
+<div >
+    <div id="allmap" style="height: 200px">
+        <!--<h2>我定位到的地址</h2>-->
+        <!--<a href="#" >-->
+        <!--<p align="right"> 定位地址不对？</p>-->
+        <!--</a>-->
+    </div>
+
+    <!--<div align="right" class="grid">-->
+        <!--<input class="col2-3" id="currentDddress" >-->
+        <!--<a href="#"><p id="resetPosition" class="col1-3">定位地址不对？</p></a>-->
+    <!--</div>-->
+
+    <div class="button-grouped searchbox">
+        <input type="text" class="searchInput" id="currentDddress">
+        <a class="search button blue" id="resetPosition"></a>
+    </div>
+
+
+    <div class="spotsNearby">
+        <ul class="list"  id="spotListView">
+            <!--<li> <a href="#">
+            <h1>飞科上海市长宁区维修网点<p class="ui-li-aside">325m</p></h1>
+            <p><span>上海市长宁区某区某路某号</span>维修网点</p>
+            <p>021-87563240</p>
+            </a> </li>
+            <li> <a href="#">
+            <h1>飞科上海市虹口区维修网<p class="ui-li-aside">1100m</p></h1>
+            <p><span>上海市虹口区某路某号</span>维修网点</p>
+            <p>021-87654321</p>
+            </a> </li>-->
+        </ul>
+    </div>
+</div>
+
+
+<p style="display: none">
+    <textarea id="tpl_nearbyBranchList">
+        {#foreach $T as Item}
+        <li>
+            <a href="#">
+                <h1><span>{$T.Item.branchName}</span>维修网点<p class="ui-li-aside">{$T.Item.distance}km</p></h1>
+                <p>{$T.Item.location}</p>
+                <p>{$T.Item.phoneNumber}</p>
+            </a>
+        </li>
+        {#/for}
+    </textarea>
+</p>

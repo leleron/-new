@@ -1,0 +1,64 @@
+<!--<html>-->
+<!--<head>-->
+    <!--<meta charset="utf-8" />-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />-->
+    <!--<title>飞科商城</title>-->
+    <!--<link href="../css/base.css" rel="stylesheet" type="text/css">-->
+    <!--<link href="../css/global.css" rel="stylesheet" type="text/css">-->
+    <!--<script src="js/jquery-1.7.2.min.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<header class="all">-->
+    <!--<a href="javascript:;" class="home">-->
+        <!--<div class="home">-->
+        <!--</div>-->
+    <!--</a>-->
+    <!--追加评价-->
+    <!--<a href="javascript:;" class="shortCar">-->
+        <!--<div class="shortCar">-->
+            <!--<span>1</span>-->
+        <!--</div>-->
+    <!--</a>-->
+<!--</header>-->
+
+
+<div class="subPJ" id="evaluateMoreDiv">
+    <img id="evaluateMoreGoodsThumb" style="margin: 30px 0"/>
+    
+    <input id="evaluateMoreOrderSn" type="hidden" />
+    <input id="evaluateMoreGoodSn" type="hidden" />
+    <input id="evaluateMoreCommentId" type="hidden" />
+
+    <div id="evaluateMore_comment_rank" style="display: none">
+        <div class="starGrey" id="evaluateMoreRankStar1"></div>
+        <div class="starGrey" id="evaluateMoreRankStar2"></div>
+        <div class="starGrey" id="evaluateMoreRankStar3"></div>
+        <div class="starGrey" id="evaluateMoreRankStar4"></div>
+        <div class="starGrey" id="evaluateMoreRankStar5"></div>
+    </div>
+    <textarea id="evaluateMore_textarea" maxlength="140" placeholder="喜欢此商品吗？说说您的使用感受吧，还可以随手晒几张照片哦"></textarea>
+    <span id="evaluateMore_textCount">140字</span>
+    <div id="evaluateMore_photo" class="photo"></div>
+</div>
+
+<div id="evaluateMore_UploadImage" style="text-align: center;">
+    <!--<img src="../images/mall/goods/FS359/FS359_000_01--w_50_h_50.jpg" style="width: 50px; height: 50px" />
+    <img src="../images/mall/goods/FS359/FS359_000_01--w_50_h_50.jpg" style="width: 50px; height: 50px" />
+    <img src="../images/mall/goods/FS359/FS359_000_01--w_50_h_50.jpg" style="width: 50px; height: 50px" />
+    <img src="../images/mall/goods/FS359/FS359_000_01--w_50_h_50.jpg" style="width: 50px; height: 50px" />
+    <input type="file" id="evaluateMoreFileUpload" style="display: none" name="evaluateMoreFileUpload" />-->
+</div>
+
+<a onclick="SubmitEvaluation(1)" class="blueBtn">提交</a>
+
+<div id="SelectImageSource" class="layOutDel" style="display: none">
+    <div class="bg"></div>
+    <div class="bd">
+        <div class="t">请选择添加照片的方式:</div>
+        <a id="fromLib" style="width: 35%" class="btnOk">从照片中选择</a>
+        <a id="fromCarm" style="width: 35%" class="btnOk">使用手机拍照</a>
+        <a style="width: 30%" class="btnNo">取消</a>
+    </div>
+</div>
+<!--</body>-->
+<!--</html>-->

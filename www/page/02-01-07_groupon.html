@@ -1,0 +1,27 @@
+
+<div class="ad_img"> </div>
+
+<div id="tuanInfo"> </div>
+
+<p style="display: none">
+    <textarea id="tpl_groupshopping">
+        {#foreach $T.product_goods as Item}
+            <div class="newPro tuanPro">
+                <h1>
+                    <span>{$T.Item$index+1}</span>
+                    {$T.Item.goods_name}
+                </h1>
+                <div class="imgBg groupImg">
+                    <img id="{$T.Item.goods_sn}" src="{$T.Item.goods_promo_img}" />
+                    <div class="tuanProIcon"></div>
+                </div>
+                <div class="price">
+                    <strong>{$T.Item.promo_price}</strong>元<del>{$T.Item.shop_price}元</del>
+                    <span>库存{$T.Item.promo_number}件</span>
+                </div>
+                <a href="#" class="blueBtn tuanBtn" sn="{$T.Item.goods_sn}" sku_sn="{$T.Item.sku_sn}">立即购买</a>
+                <a href="javascript:;" class="blueBtn desTuanBtn"><span>{$T.Item.sales_number}</span>&nbsp;人已买</a>
+            </div>
+        {#/for}
+    </textarea>
+</p>

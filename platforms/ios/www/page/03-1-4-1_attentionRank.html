@@ -1,0 +1,34 @@
+<div class="attentionRank">
+    <ul class="list" id="attentdevic">
+
+
+        <p style="display: none">
+                        <textarea id="tpl_attentdevice">
+                            {#if $T==""}
+                                    <h6 class="topMessage">没有符合条件的设备</h6>
+                            {#else}
+                                {#foreach $T as Item}
+                                <li class="attentionrank-info">
+                                    <a href="#" id="{$T.Item.attentionrankDeviceNickName}" class="item_name"
+                                       data-deviceid="{$T.Item.attentionrankDeviceNickName}">
+                                        {#if $T.Item.attentionrankDeviceImage==""}
+                                        <img  class="content_image_width" src="./images/mydevicelist/{$T.Item.attentionrankProductCode}.png"/>
+                                        {#else}
+                                        <img  class="content_image_width" src="{$T.Item.attentionrankDeviceImage}"/>
+                                        {#/if}
+                                        <div class="info">
+                                            <span >{$T.Item.attentionrankDevicePeople}人关注</span>
+                                            <span class="{$T.Item.attentionrankDeviceOnlineStatus}">{#if $T.Item.attentionrankDeviceOnlineStatus=="online"}在线{#else}离线{#/if}</span>
+                                            <span>{$T.Item.attentionrankDeviceNickName}</span>
+                                        </div>
+                                        <div class="attention-info">
+                                            <input type="hidden" class="deviceId" value="{$T.Item.attentionrankDeviceId}"/>
+                                        </div>
+                                    </a>
+                                </li>
+                                {#/for}
+                            {/#if}
+                        </textarea>
+        </p>
+    </ul>
+</div>

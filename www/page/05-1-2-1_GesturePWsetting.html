@@ -1,0 +1,22 @@
+<div class="gesturePWsetting">
+    <div id="gesturePWset">
+        <!--<a style="display:inline-block;border-radius: 50%;overflow: hidden;"><img src="images/icons-png/qq.png"></a>-->
+        <!--<p style="color:red;text-align: center;padding-top: 5%;">密码错误，还可以重试三次</p>-->
+    </div>
+    <p style="display: none">
+                        <textarea id="tpl_gesturepwset">
+                                {#if $T!=""}
+                                <a style=""><img
+                                        src="images/icons-png/qq.png"></a>
+                                <p style="">{$T}</p>
+                                <p style="">密码总共可以输错3次！</p>
+                                {#else}
+                                <a><img src="images/icons-png/qq.png"></a>
+                                {/#if}
+                        </textarea>
+    </p>
+</div>
+
+<div class="outer">
+    <div id="patternContainerset" style="margin: -1rem auto;"></div>
+</div>

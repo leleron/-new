@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MXp-K4-h6S" customClass="ListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nba-NY-IQn">
+                    <rect key="frame" x="16" y="4" width="41" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="61" id="HDf-v0-aSO"/>
+                        <constraint firstAttribute="height" constant="41" id="Xak-mc-35X"/>
+                        <constraint firstAttribute="width" secondItem="Nba-NY-IQn" secondAttribute="height" multiplier="1:1" id="fDt-qf-fBs"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="HDf-v0-aSO"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3E2-NV-CXJ">
+                    <rect key="frame" x="79" y="15" width="229" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Gxu-oV-USS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="增加" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoU-CZ-Lkj">
+                    <rect key="frame" x="332" y="14" width="34" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.18039215689999999" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Nba-NY-IQn" firstAttribute="centerY" secondItem="MXp-K4-h6S" secondAttribute="centerY" id="ChT-sk-vir"/>
+                <constraint firstItem="3E2-NV-CXJ" firstAttribute="centerY" secondItem="MXp-K4-h6S" secondAttribute="centerY" id="Ded-Ot-gxm"/>
+                <constraint firstItem="hoU-CZ-Lkj" firstAttribute="centerY" secondItem="MXp-K4-h6S" secondAttribute="centerY" id="EJf-lU-B4H"/>
+                <constraint firstItem="3E2-NV-CXJ" firstAttribute="leading" secondItem="Nba-NY-IQn" secondAttribute="trailing" constant="22" id="Hq2-YQ-EQ6"/>
+                <constraint firstAttribute="trailing" secondItem="hoU-CZ-Lkj" secondAttribute="trailing" constant="25" id="IiC-yN-nsl"/>
+                <constraint firstItem="hoU-CZ-Lkj" firstAttribute="leading" secondItem="3E2-NV-CXJ" secondAttribute="trailing" constant="24" id="yYj-tK-f2T"/>
+                <constraint firstItem="Nba-NY-IQn" firstAttribute="leading" secondItem="MXp-K4-h6S" secondAttribute="leading" constant="16" id="zqW-wv-n8a"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgIcon" destination="Nba-NY-IQn" id="Qt9-Hx-tga"/>
+                <outlet property="lblAdd" destination="hoU-CZ-Lkj" id="NZI-Y5-9bS"/>
+                <outlet property="lblName" destination="3E2-NV-CXJ" id="kEH-vE-YlH"/>
+            </connections>
+            <point key="canvasLocation" x="215.5" y="-290"/>
+        </view>
+    </objects>
+</document>

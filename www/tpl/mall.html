@@ -1,0 +1,22 @@
+﻿$(function () {
+    $.afui.launch();
+
+    // news_top
+    $("#main").on("panelload", function (e) {
+    });
+
+    // news_top
+    $("#UserCenter").on("panelload", function (e) {
+        // $.afui.loadContent("#main");
+
+        var uid = hlp.getparam(1);
+
+        // tpl_mtlist
+        svc.getuserprofile(uid, function (r) {
+
+            hlp.binddata(r, "#mtlist", "tpl_mtlist");
+
+        });
+    });
+
+});

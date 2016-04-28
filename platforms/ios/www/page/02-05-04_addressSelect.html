@@ -1,0 +1,26 @@
+
+<section>
+    <ul id="addressChoose" class="addressMa"> </ul>
+    <a href="#" class="blueBtn addrSubmit">提交</a>
+    <input id="selectAddressId" type="hidden" value="" />
+</section>
+
+<p style="display: none">
+    <textarea id="tpl_addresschoose">
+            {#foreach $T as Item}
+                <li id="{$T.Item.address_id}">
+                    <a href="#">
+                        {$T.Item.country_name}&nbsp;{$T.Item.province_name}&nbsp;{$T.Item.city_name}<br/>
+                        {$T.Item.address}<!--（{$T.Item.zipcode}）-->{$T.Item.consignee} {$T.Item.mobile}
+                        <!--<span></span>-->
+                    </a>
+                </li>
+            {#/for}
+            <li class="addBtn">
+                <a href="#addressAdd">
+                    添加地址
+                    <span></span>
+                </a>
+            </li>
+    </textarea>
+</p>

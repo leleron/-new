@@ -1,0 +1,47 @@
+<div class="deviceSearchResult">
+    <div id="devicelist">
+        <ul class="list" id="thelist">
+            <!--<li><a href="#nameCard">BayMax</a></li>-->
+            <!--<li><a href="#nameCard">钢铁侠</a></li>-->
+            <!--<li><a href="#nameCard">007</a></li>-->
+            <!--<p style="display: none">-->
+                        <!--<textarea id="tpl_nickdevice">-->
+                            <!--{#if $T==""}-->
+                                    <!--<h6 class="topMessage">没有符合条件的设备1</h6>-->
+                            <!--{#else}-->
+                                <!--{#foreach $T as Item}-->
+                                    <!--<li class="nickdev-info">-->
+                                        <!--<a href="#" id="{$T.Item.deviceId}" class="item_name"-->
+                                           <!--data-deviceid="{$T.Item.nickName}">-->
+                                            <!--{#if $T.Item.image==""}-->
+                                            <!--<img class="content_image_width" src="./images/mydevicelist/{$T.Item.productCode}.png"/>-->
+                                            <!--{#else}-->
+                                            <!--<img class="content_image_width" src="{$T.Item.image}"/>-->
+                                            <!--{#/if}-->
+                                            <!--<h2>{$T.Item.nickName}<br><br>{$T.Item.userName}</h2>-->
+                                            <!--<span class="{$T.Item.onLineStatus}">{#if $T.Item.onLineStatus=="online"}在线{#else}离线{#/if}</span>-->
+                                            <!--<div class="nickdevice-info">-->
+                                                <!--<input type="hidden" class="deviceId" value="{$T.Item.deviceId}"/>-->
+                                            <!--</div>-->
+                                        <!--</a>-->
+                                    <!--</li>-->
+                                <!--{#/for}-->
+                            <!--{/#if}-->
+                        <!--</textarea>-->
+            <!--</p>-->
+        </ul>
+        <p style="display: none">
+                <textarea id="tpl_thelist">
+                        {#foreach $T as Item}
+                            <li id="{$T.Item.deviceId}">
+                                <a href="#">{$T.Item.name}</a>
+                                <!--<p class="content_text">{$T.Item.productName}</p>-->
+                                <i></i>
+                            </li>
+                        {#/for}
+                    <div align="center">
+                    <a href="#wifiCon" class="blue button">配置新设备</a></div>
+                </textarea>
+        </p>
+    </div>
+</div>

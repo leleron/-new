@@ -1,0 +1,605 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>飞科智能家电</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!--在iPhone的浏览器中页面将以原始大小显示，不允许缩放。-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 避免IE使用兼容模式 -->
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"/>-->
+    <!--telephone=no，则手机号码不被显示为拨号链接-->
+    <meta name="format-detection" content="telephone=no"/>
+
+    <!--苹果相关-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!--ios设备对meta定义的私有属性：（可以添加至主屏幕）-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!--顶部导航条颜色设置-测试中-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <!-- Allow iframe to http://kf2.flyco.com/ -->
+    <!--    <meta http-equiv="Content-Security-Policy" content="frame-src http://kf2.flyco.com/">-->
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/icons.css"/>
+    <link rel="stylesheet" type="text/css" href="css/af.ui.css"/>
+
+    <!--页面通用CSS-->
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+
+
+    <!--商城通用CSS-->
+    <link href="css/base.css" type="text/css" rel="stylesheet"/>
+    <link href="css/global.css" type="text/css" rel="stylesheet"/>
+
+    <!--插件CSS-->
+    <link rel="stylesheet" type="text/css" href="css/mobiscroll.custom-2.16.1.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bMap.css">
+    <link rel="stylesheet" type="text/css" href="css/patternLock.css">
+    <link rel="stylesheet" href="css/knobKnob.css"/>
+    <link rel="stylesheet" href="css/new.css"/>
+
+
+    <!--app framework JS-->
+    <script type="text/javascript" charset="utf-8" src="js/libs/jquery-2.1.3.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/jquery.scrollLoading.js"></script>  <!--图片延迟加载 --> 
+    <script type="text/javascript" charset="utf-8" src="js/libs/fastclick.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/af.shim.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/af.ui.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/af.desktopBrowsers.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/af.actionsheet.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/af.animation.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/af.touchEvents.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/af.popup.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/af.drawer.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/af.toast.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/af.animateheader.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/af.splashscreen.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/af.swipereveal.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/af.lockscreen.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/jquery.storageapi.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/jquery-jtemplates.js"></script>
+    <!--<script type="text/javascript" charset="utf-8" src="js/libs/jquery.media.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="js/libs/pdfobject.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/libs/canvas2image.js"></script>
+
+    <!--商城js-->
+    <script src="js/libs/jquery.validate.js"></script>
+    <script src="js/libs/ajaxfileupload.js"></script>
+    <script src="js/libs/jqzoom.pack.1.0.1.js"></script>
+    <script src="js/libs/jquery.scrollLoading.js"></script>
+    <!--<script src="js/libs/idangerous.swiper.min.js"></script>-->
+    <script src="js/bll/mall/common.js"></script>
+    <script src="js/bll/mall/public.js"></script>
+    <script src="js/bll/mall/baison.js"></script>
+    <script src="js/bll/mall/lrscroll.js"></script>
+    <!--<script src="js/bll/mall/touch.js"></script>-->
+    <!--<script src="js/bll/mall/detail.js"></script>-->
+    <script src="js/bll/mall/rate.js"></script>
+    <script src="js/bll/mall/lists.js"></script>
+    <script src="js/bll/mall/public.js"></script>
+    <script src="js/bll/mall/address.js"></script>
+    <script src="js/bll/mall/cart.js"></script>
+    <script src="js/bll/mall/order.js"></script>
+    <script src="js/bll/mall/tab.js"></script>
+    <script src="js/bll/mall/mem_center.js"></script>
+    <script src="js/bll/mall/auto-img.js"></script>
+    <script src="js/bll/mall/lists.js"></script>
+
+    <script src="js/bll/mall/personal-mall.js"></script>
+    <script src="js/bll/mall/shopping-car.js"></script>
+    <script src="js/bll/mall/commodity-query.js"></script>
+
+    <!--插件 js-->
+    <script type="text/javascript" src="js/libs/swiper.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=OQnMCFprdcwBgLeYcwy2r5Mx"></script>
+    <!--<script type="text/javascript" src="js/libs/bMap.js"></script>-->
+    <script type="text/javascript" src="js/libs/convertor.js"></script>
+    <script type="text/javascript" src="js/libs/patternLock.js"></script>
+
+    <script src="js/libs/transform.js"></script>
+    <script src="js/libs/knobKnob.jquery.js"></script>
+    <script src="js/libs/knob.js"></script>
+
+
+
+    <script type="text/javascript" src="js/libs/mobiscroll.custom-2.16.1.min.js"></script>
+    <!--<script type="text/javascript" src="js/libs/swiper.jquery.js"></script>-->
+    <script type="text/javascript" src="js/util/config.js"></script>
+    <script type="text/javascript" src="js/util/local.js"></script>
+    <script type="text/javascript" src="js/util/services.js"></script>
+    <script type="text/javascript" src="js/util/util.js"></script>
+    <script type="text/javascript" src="js/bll/my.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.qrcode.min.js"></script>
+    <script type="text/javascript" src="js/bll/main.js"></script>
+    <script type="text/javascript" src="js/bll/device.js"></script>
+    <script type="text/javascript" src="js/bll/public.js"></script>
+    <script type="text/javascript" src="js/bll/detect.js"></script>
+    <script type="text/javascript" src="js/bll/common.js"></script>
+    <script type="text/javascript" src="js/bll/mall.js"></script>
+    <!-- 设备  js -->
+    <script type="text/javascript" src="js/bll/deviceengine.js"></script>
+    <script type="text/javascript" src="js/libs/stringutf8.js"></script>
+    <!--<script type="text/javascript" src="js/libs/Connection.js"></script>-->
+    <!--<script type="text/javascript" src="js/libs/network.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+    <!--android build请引入以下JS-->
+    <!--<script type="text/javascript" charset="utf-8" src="js/libs/AndroidPlugins.js"></script>-->
+
+    <!--iOS build请引入以下JS-->
+    <script type="text/javascript" charset="utf-8" src="js/libs/iOSPlugins.js"></script>
+
+
+    <script>
+        $.afui.useOSThemes = false;
+        $.afui.loadDefaultHash = true;
+        $.afui.autoLaunch = false;
+
+        //check search
+        var search = document.location.search.toLowerCase().replace("?", "");
+        if (search.length > 0) {
+
+            $.afui.useOSThemes = true;
+            if (search == "win8")
+                $.os.ie = true;
+            else if (search == "firefox")
+                $.os.fennec = "true";
+            $.afui.ready(function () {
+                $(document.body).get(0).className = (search);
+            });
+        }
+
+        $(document).ready(function () {
+            $.afui.launch();
+
+            document.addEventListener("deviceready", onDeviceReady, false);
+        });
+        //if($.os.ios)
+        $.afui.animateHeader(false);
+
+        function onDeviceReady() {
+            // 注册回退按钮事件监听器
+            document.addEventListener("backbutton", onBackKeyDown, false);
+        }
+        //返回键
+        function onBackKeyDown() {
+            var menuButton = $(".selected").length;
+            var toastFlg = $(".afToast").length;
+            var currentPage = window.location.hash;
+            if (myPopup != null) {
+                myPopup.hide();
+                myPopup = null;
+            } else if (currentPage == "#commodityDetails1") {
+                var gdImg = $("#goodsDetail .imgI img");
+                if (gdImg.hasClass("bigImg")) {
+                    gdImg.removeClass("bigImg");
+                    gdImg = null;
+                } else {
+                    others(menuButton, toastFlg);
+                }
+            } else if (currentPage == "#evaluatedList") {
+                var dlImg = $("#evaluatedList .imgI img");
+                if (dlImg.hasClass("scaredEvaluteImg")) {
+                    dlImg.removeClass("scaredEvaluteImg");
+                    dlImg.addClass("defaultEvaluteImg");
+                    dlImg = null;
+                } else {
+                    others(menuButton, toastFlg);
+                }
+            }
+            else if (currentPage == "#orderDetail3"||currentPage =="#refundList"||currentPage =="#returnList"||currentPage =="#orderDetail4" && loj.orderActioned) {
+                $.afui.loadContent("#my");
+            } else if(currentPage == "#unpayedOrder"||currentPage =="#orderDetail1" && loj.payActioned){
+                $.afui.loadContent("#my");
+            } else if(currentPage == "#pay"){
+                loj.payActioned = true;
+                hlp.panelObj["order"] = { "sn": $("#pay .payOrderId").val() };
+                $.afui.loadContent("#unpayedOrder");
+            }else if(currentPage == "#login"){
+                $.afui.loadContent("#my");
+            } else{
+                others(menuButton, toastFlg);
+            }
+        }
+        //返回键
+        function others(menuButton, toastFlg) {
+            if (menuButton > 0) {
+                if(toastFlg>0){
+                    if(loj.sessionId!=""){
+                        clearnShoppingCart();
+                    }
+                    navigator.app.exitApp();
+                }else{
+                    showToast("再按一次返回鍵退出应用！");
+                }
+            } else {
+                if(hlp.specialGoBack==""){
+                    $.afui.goBack();
+                }else if(hlp.specialGoBack=="login"){
+                    $.afui.popup({
+                        title: "提示",
+                        message: "是否放弃本次操作?",
+                        cancelText: "取&nbsp;&nbsp;消",
+                        doneText: "确&nbsp;&nbsp;定",
+                        cancelCallback: function () {
+                            hlp.log("do reset password");
+                            return;
+                        },
+                        doneCallback: function () {
+                            hlp.log("Give up reset password");
+                            $.afui.loadContent("#login");
+                        }
+                    });
+                }else if(hlp.specialGoBack=="mallIndex"){
+                    $.afui.loadContent("#mallIndex");
+                }
+            }
+        }
+        $(document).on('deviceready',function(){
+            $.afui.loadContent("#mallIndex");
+                GetLoginInfo(function(result){
+                    if(result.tokenId){
+                        loj.setOnline(result,result.loginType);
+                    }else{
+                        loj.setOffline();
+                    }
+                },function(result){});
+        });
+        function showLoginController1(){
+            showLoginController(function(result){},function(result){});
+        }
+        function setOffline(){
+            loj.setOffline();
+        }
+        function setOnline(){
+            GetLoginInfo(function(result){
+                if(result.tokenId){
+                    loj.setOnline(result,result.loginType);
+                }else{
+                    loj.setOffline();
+                }
+            },function(result){});
+        }
+
+    </script>
+
+
+    <!--Adobe Edge Runtime-->
+    <!--<script type="text/javascript" charset="utf-8" src="js/libs/edge.6.0.0.min.js"></script>-->
+    <!--<link rel="stylesheet" type="text/css" href="css/adobe_edge_animate.css">-->
+    <!--<script type="text/javascript" charset="utf-8" src="js/bll/adobe_edge_animate.js"></script>-->
+    <!--Adobe Edge Runtime End-->
+
+</head>
+<body>
+<!--<div id="splashscreen">-->
+<!--<div id="Stage" class="loading">-->
+<!--<div id="Stage_flycoIntelligentAppliance" class="edgeLoad-loading"></div>-->
+<!--<div id="Stage_copyright" class="edgeLoad-loading">上海飞科电器股份有限公司</div>-->
+<!--<div id="Stage_FLYCOCOM" class="edgeLoad-loading">FLYCO.COM</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--含history的mainview-->
+<div class="view" id="mainview">
+    <header>
+        <h1>首页</h1>
+        <!--<a onclick="showDevice()" class="plusButton" data-check="s_login" style="display:none;"></a>-->
+        <a onclick="showMallPanel()" class="showMallButton"></a>
+        <a onclick="showSearch()" class="searchButton" style="display:none;"></a>
+        <!--<a onclick="showShare()" class="shareButton" style="display:none;"></a>-->
+        <a href="#mallCategory" class="categoryButton" style="display:none;"></a>
+        <a href="#" class="cartButton" style="display:none;">
+            <div class="shortCar">
+                <span id="quantityNewInCart">1</span>
+            </div>
+        </a>
+        <a class="bianji" style="display:none;" >编辑</a>
+        <!--<span id="online" class="online" style="display:none;">在线</span>-->
+        <!--<span id="offline" class="offline" style="display:none;">离线</span>-->
+
+        <input type="text" id="headSearch" style="display:none;" maxlength="20" placeholder="剃须刀"/>
+        <a href="#mallSearchResult" class="headSearchIcon" style="display:none;"></a>
+
+        <a class="jumpBackButton" style="display: none" href="#mallIndex"></a>
+        <a id="myInfoUpdate" class="saveButton" style="display:none;"></a>
+
+        <!--<a href="#deviceSetting" class="moreButton" style="display: none"></a>-->
+    </header>
+    <div class="down-list" onclick="showMallPanel('myPanel');" style="display: none">
+        <ul class="member">
+            <li>
+                <a href="#myOrders">
+                    <span class="icon icon1"></span>
+                    我的订单
+                    <i></i>
+                </a>
+            </li>
+            <li>
+                <a href="#unpayedOrderList">
+                    <span class="icon icon2"></span>
+                    待付款订单
+                    <i></i>
+                </a>
+            </li>
+            <li>
+                <a href="#afterSalesService">
+                    <span class="icon icon3"></span>
+                    售后服务单
+                    <i></i>
+                </a>
+            </li>
+            <li>
+                <a href="#addressManage">
+                    <span class="icon icon4"></span>
+                    地址管理
+                    <i></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="member">
+
+            <li>
+                <a href="#myFavorite">
+                    <span class="icon icon5"></span>
+                    我的收藏
+                    <i></i>
+                </a>
+            </li>
+            <li>
+                <a href="#evaluation">
+                    <span class="icon icon6"></span>
+                    商品评价
+                    <i></i>
+                </a>
+            </li>
+            <li>
+                <a href="#checkin">
+                    <span class="icon icon7"></span>
+                    我的签到
+                    <i></i>
+                </a>
+            </li>
+            <li>
+                <a href="#myPoints">
+                    <span class="icon icon8"></span>
+                    我的积分
+                    <i></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="pages">
+
+        <!--设备-->
+        <div class="panel" id="mallIndex" data-title=商城 data-include="page/02-01_mallIndex.html" data-selected="true"></div>
+        <!--<div class="panel darkblue" id="deviceList" data-title="我的设备" data-include="page/04-1-1-1_myDeviceList.html" data-selected="true"></div>-->
+        <!-- 我关注的设备页面 -->
+        <div class="panel darkblue" id="followDeviceList" data-title="我关注的设备" data-include="page/04-1-2-1_myFollowedDeviceList.html"></div>
+
+        <!--登录-->
+        <div class="panel darkblue" id="login" data-title="用户登录" data-include="page/05-1-2_loginPage.html"></div>
+
+
+        <!--我的-->
+        <div class="panel darkblue" id="my" data-title="我的" data-include="page/05-1-1_myPage.html"></div>
+
+        <!--发现-->
+        <div class="panel darkblue" id="addMenu" data-title="添加设备" data-include="page/03-1-0_addMenu.html"></div>
+        <div class="panel darkblue" id="manuallyAdd" data-title="手动添加" data-include="page/03-1-1_manuallyAdd.html"></div>
+        <div class="panel darkblue" id="deviceSearch" data-title="添加关注" data-include="page/03-2-0_deviceSearch.html"></div>
+        <div class="panel darkblue" id="deviceSearchResult" data-title="设备列表" data-include="page/03-2-1_deviceSearchResult.html"></div>
+        <div class="panel darkblue" id="scanQRcode" data-title="扫一扫" data-include="page/03-1-2_scanQRcode.html"></div>
+        <div class="panel darkblue" id="wifiCon" data-title="连接WIFI" data-include="page/03-1-3_wifiConfiguration.html"></div>
+        <div class="panel darkblue" id="connecting" data-title="正在连接" data-include="page/03-1-3-2_connecting.html"></div>
+
+        <div class="panel darkblue" id="nameGroup" data-title="设置昵称和分组" data-include="page/03-1-4_nameGroupSetting.html"></div>
+        <div class="panel darkblue" id="nameCard" data-title="设备名片" data-include="page/03-1-5_nameCard.html"></div>
+        <div class="panel darkblue" id="deviceNearby" data-title="附近设备" data-include="page/03-1-3-1_deviceNearby.html"></div>
+        <!--这里两个页面重复了，选一个关注度排行，另一个删掉-->
+        <div class="panel darkblue" id="followRank" data-title="关注度排行" data-include="page/03-4-1_followRank.html"></div>
+        <div class="panel darkblue" id="attentionRank" data-title="关注度排行" data-include="page/03-1-4-1_attentionRank.html"></div>
+        <div class="panel darkblue" id="hints" data-title="帮助信息" data-include="page/03-3-4-1_hints.html"></div>
+        <div class="panel darkblue" id="hintsDetail" data-title="帮助信息" data-include="page/03-3-4-2_hintsDetail.html"></div>
+        <div class="panel darkblue" id="QRcode" data-title="二维码生成器" data-include="page/03-3-6-1_QRcodeGen.html"></div>
+        <div class="panel darkblue" id="miscellaneous" data-title="服务" data-include="page/03-6-1_miscellaneous.html"></div>
+        <div class="panel darkblue" id="spotsNearby" data-title="附近网点" data-include="page/03-6-2-1_spotsNearby.html"></div>
+        <div class="panel darkblue" id="chatHelp" data-title="在线咨询" data-include="page/03-6-1-2_chatHelp.html"></div>
+        <div class="panel darkblue" id="activity" data-title="活动列表" data-include="page/03-5-1_activity.html"></div>
+
+        <!--设备-->
+
+        <div class="panel darkblue" id="myFamilyDevice" data-title="我关注的设备清单" data-include="page/04-1-2-1_myFollowedDeviceList.html"></div>
+        <div class="panel darkblue" id="cleanerIndex" data-title="净化器名" data-include="page/04-3-1-1-1_cleanerIndex.html"></div>
+
+        <div class="panel darkblue" id="deviceAuthority" data-title="设备管理" data-include="page/04-4-1-2_deviceAuthority.html"></div>
+        <div class="panel darkblue" id="deviceFans" data-title="设备粉丝" data-include="page/04-4-2-1_deviceFans.html"></div>
+        <div class="panel darkblue" id="deviceLog" data-title="设备日志" data-include="page/04-4-3-1_deviceLog.html"></div>
+        <div class="panel darkblue" id="deviceErrorList" data-title="设备消息" data-include="page/04-4-4-1_deviceErrorList.html"></div>
+        <div class="panel darkblue" id="deviceErrorDetail" data-title="消息详情" data-include="page/04-4-4-2_deviceErrorDetail.html"></div>
+        <div class="panel darkblue" id="deviceSetting" data-title="设备设置" data-include="page/04-4-5-1_deviceSetting.html"></div>
+        <div class="panel darkblue" id="timing" data-title="定时开关" data-include="page/04-4-5-2_timing.html"></div>
+        <div class="panel darkblue" id="aboutDevice" data-title="固件升级" data-include="page/04-4-6-1_aboutDevice.html"></div>
+        <div class="panel darkblue" id="editDeviceName" data-title="修改设备昵称" data-include="page/04-4-6-2_aboutDeviceEditName.html"></div>
+        <div class="panel darkblue" id="userManager" data-title="" data-include="page/06_userManagement.html"></div>
+
+
+        <!--我的-->
+        <div class="panel darkblue" id="regist" data-title="新用户注册" data-include="page/05-1-3_registVeri.html"></div>
+        <div class="panel darkblue" id="policy" data-title="飞科用户协议" data-include="page/05-1-3-1_policy.html"></div>
+        <div class="panel darkblue" id="registPassword" data-title="注册" data-include="page/05-1-3-1_registPassword.html"></div>
+        <div class="panel darkblue" id="myInfo" data-title="个人信息" data-include="page/05-2-1_myInfo.html"></div>
+        <div class="panel darkblue" id="userMessage" data-title="消息中心" data-include="page/05-3-1_userMessage.html"></div>
+        <div class="panel darkblue" id="userMessageDetail" data-title="消息详情" data-include="page/05-3-2_userMessageDetail.html"></div>
+        <div class="panel darkblue" id="forgetPassword" data-title="重置密码" data-include="page/05-1-4_forgotPassword.html"></div>
+        <div class="panel darkblue" id="phoneVer" data-title="验证手机号" data-include="page/05-1-4-1_phoneVer.html"></div>
+        <div class="panel darkblue" id="mailVer" data-title="验证邮箱" data-include="page/05-1-4-1_mailVer.html"></div>
+        <div class="panel darkblue" id="resetPassword" data-title="设置新密码" data-include="page/05-1-4-2_resetPassword.html"></div>
+        <div class="panel darkblue" id="accountBind" data-title="账号绑定" data-include="page/05-8-2_accountBind.html"></div>
+        <div class="panel darkblue" id="mySettings" data-title="系统设置" data-include="page/05-8-1_mySettings.html"></div>
+        <div class="panel darkblue" id="flycoAccountAuth" data-title="飞科账户授权" data-include="page/05-8-3_authorization.html"></div>
+        <div class="panel darkblue" id="feedback" data-title="意见反馈" data-include="page/05-9-1_feedback.html"></div>
+        <div class="panel darkblue" id="aboutUs" data-title="关于我们" data-include="page/05-10-1_aboutUs.html"></div>
+        <div class="panel darkblue" id="update" data-title="系统更新" data-include="page/05-10-2_update.html"></div>
+        <div class="panel darkblue" id="afterSaleService" data-title="售后服务" data-include="page/05-5-1_afterSaleService.html"></div>
+        <div class="panel darkblue" id="editName" data-title="昵称" data-include="page/05-2-1-1_myInfoEditName.html"></div>
+        <div class="panel darkblue" id="editAvatar" data-title="头像" data-include="page/05-2-1-2_myInfoEditAvatar.html"></div>
+
+
+
+        <!--商城-->
+
+        <div class="panel" id="mallSearchResult" data-title="" data-include="page/02-01-01_mallSearchResult.html"></div>
+        <div class="panel" id="mallCategory" data-title="商品分类" data-include="page/02-01-03_mallCategory.html"></div>
+        <div class="panel" id="mallList" data-title="电动剃须刀" data-include="page/02-01-04_mallList.html"></div>
+        <div class="panel" id="newProduct" data-title="新品" data-include="page/02-01-05_newProduct.html"></div>
+        <div class="panel" id="secKill" data-title="秒杀" data-include="page/02-01-06_secKill.html"></div>
+        <div class="panel" id="groupon" data-title="特惠" data-include="page/02-01-07_groupon.html"></div>
+
+        <div class="panel" id="mallMyCart" data-title="购物车" data-include="page/02-03-01_mallMyCart.html"></div>
+        <div class="panel" id="mallMyCartNull" data-title="购物车" data-include="page/02-03-01-02_mallMyCartNull.html"></div>
+        <div class="panel" id="notLoginBuy" data-title="手机验证" data-include="page/02-03-02-01_notLoginBuy.html"></div>
+        <div class="panel" id="submitOrder" data-title="提交订单" data-include="page/02-03-02-02_submitOrder.html"></div>
+        <div class="panel" id="pay" data-title="在线支付" data-include="page/02-03-03_pay.html"></div>
+        <div class="panel" id="myOrders" data-title="我的订单" data-include="page/02-04-01_myOrders.html"></div>
+        <!--<div class="panel" id="orderDetail" data-title="订单详情" data-include="page/02-04-02_orderDetail.html"></div>-->
+        <div class="panel" id="orderDetail1" data-title="订单详情" data-include="page/02-04-02-01_orderDetail1.html"></div>
+        <div class="panel" id="orderDetail2" data-title="订单详情" data-include="page/02-04-02-02_orderDetail2.html"></div>
+        <div class="panel" id="orderDetail3" data-title="订单详情" data-include="page/02-04-02-03_orderDetail3.html"></div>
+        <div class="panel" id="orderDetail4" data-title="订单详情" data-include="page/02-04-02-04_orderDetail4.html"></div>
+        <div class="panel" id="refundApply" data-title="申请退款" data-include="page/02-04-03-01_refundApply.html"></div>
+        <div class="panel" id="returnApply" data-title="申请退货" data-include="page/02-04-03-02_returnApply.html"></div>
+        <div class="panel" id="salesPolicy" data-title="售后政策" data-include="page/02-04-03-02-01_salesPolicy.html"></div>
+        <div class="panel" id="addressConfirm" data-title="请确认联系信息" data-include="page/02-04-03-03_addressConfirm.html"></div>
+        <div class="panel" id="logisticsDetail" data-title="物流信息详情"
+             data-include="page/02-04-03-05_logisticsDetail.html"></div>
+        <div class="panel" id="unpayedOrderList" data-title="待付款订单"
+             data-include="page/02-04-04-01_unpayedOrderList.html"></div>
+        <div class="panel" id="unpayedOrder" data-title="待付款订单详情" data-include="page/02-04-04-02_unpayedOrder.html"></div>
+        <div class="panel" id="afterSalesService" data-title="售后服务单"
+             data-include="page/02-04-05-01_afterSalesService.html"></div>
+        <div class="panel" id="refundList" data-title="退款单" data-include="page/02-04-05-02_refundList.html"></div>
+        <div class="panel" id="refundDetail" data-title="退款单详情" data-include="page/02-04-05-03_refundDetail.html"></div>
+        <div class="panel" id="returnList" data-title="退货单" data-include="page/02-04-05-04_returnList.html"></div>
+        <div class="panel" id="returnDetail" data-title="退货单详情" data-include="page/02-04-05-05_returnDetail.html"></div>
+        <div class="panel" id="myMall" data-title="个人商城" data-include="page/02-05-00_myMall.html"></div>
+        <div class="panel" id="addressManage" data-title="收货地址管理" data-include="page/02-05-01_addressManage.html"></div>
+        <div class="panel" id="addressAdd" data-title="新增地址" data-include="page/02-05-02_addressAdd.html"></div>
+        <div class="panel" id="addressEdit" data-title="修改地址" data-include="page/02-05-03_addressEdit.html"></div>
+        <div class="panel" id="addressSelect" data-title="收货地址" data-include="page/02-05-04_addressSelect.html"></div>
+        <div class="panel" id="myFavorite" data-title="我的收藏" data-include="page/02-05-05_myFavorite.html"></div>
+        <div class="panel" id="evaluation" data-title="商品评价" data-include="page/02-05-06_evaluation.html"></div>
+        <div class="panel" id="evaluatedList" data-title="已评价" data-include="page/02-05-07_evaluatedList.html"></div>
+        <div class="panel" id="evaluateMore" data-title="追加评价" data-include="page/02-05-07-01_evaluateMore.html"></div>
+        <div class="panel" id="evaluateReadyList" data-title="未评价" data-include="page/02-05-08_evaluateReadyList.html"></div>
+        <div class="panel" id="evaluationSubmit" data-title="发表评价" data-include="page/02-05-09_evaluationSubmit.html"></div>
+        <div class="panel" id="myPoints" data-title="我的积分" data-include="page/02-05-10_myPoints.html"></div>
+        <div class="panel" id="checkin" data-title="签到" data-include="page/02-05-11_checkin.html"></div>
+        <div class="panel" id="checkinSuccess" data-title="签到" data-include="page/02-05-13_checkinSuccess.html"></div>
+        <div class="panel" id="commodityDetails1" data-title="商品详情" data-include="page/02-10-01_commodityDetails1.html"></div>
+        <div class="panel" id="commoditySuite" data-title="开学季" data-include="page/02-10-02_commoditySuite.html"></div>
+         <div class="panel" id="myInfoDetail" data-title="我的资料"
+             data-include="page/myInfoDetail.html"></div>
+        <div class="panel" id="updatePassword" data-title="修改密码"
+             data-include="page/updatePassword.html"></div>
+        <div class="panel" id="regetPassword" data-title="找回密码"
+             data-include="page/regetPassword.html"></div>
+        <div class="panel" id="fastRegister" data-title="快速注册"
+             data-include="page/fastRegister.html"></div>
+        <div class="panel" id="servicePoint" data-title="服务网点"
+             data-include="page/servicePoint.html"></div>
+        <div class="panel" id="pointDetail" data-title="网点详情"
+             data-include="page/pointDetail.html"></div>
+        <div class="panel" id="logistics" data-title="物流信息"
+             data-include="page/logistics.html"></div>
+        <div class="panel" id="regetPassword1" data-title="找回密码"
+             data-include="page/regetPassword1.html"></div>
+        <div class="panel" id="regetPassword_email" data-title="找回密码"
+             data-include="page/regetPassword_email.html"></div>
+        <div class="panel" id="after_service" data-title="售后服务"
+             data-include="page/after_service.html"></div>
+        <div class="panel" id="userServer" data-title="用户服务协议"
+             data-include="page/userServer.html"></div>
+
+        <!--蓝牙-->
+        <div class="panel" id="userManager" data-title="" data-include="page/06_userManagement.html"></div>
+    </div>
+    <!--<footer class="mallFooter">-->
+        <!--<a href="#deviceList" class="icon devices">&nbsp;&nbsp;设备</a>-->
+        <!--<a href="#mallIndex" class="icon shop">&nbsp;&nbsp;商城</a>-->
+        <!--<a href="#my" class="icon my">&nbsp;&nbsp;我的</a>-->
+    <!--</footer>-->
+    <!--<footer class="messageFooter" style="display:none">-->
+        <!--<a id="markAsRead">标记为已读</a>-->
+        <!--<a id="delete">删除</a>-->
+    <!--</footer>-->
+    <!--<footer class="scanFooter" style="display:none">-->
+        <!--<a href="#" id="fromAlbum" class="icon album">&nbsp;&nbsp;相册</a>-->
+        <!--<a href="#" id="flashlight" class="icon flashlight">&nbsp;&nbsp;闪光灯</a>-->
+    <!--</footer>-->
+    <!--<footer class="cleanerFooter" style="display:none">-->
+        <!--<a href="#" data-name>离子净化</a>-->
+        <!--<a href="#">定时关机</a>-->
+        <!--<a href="#">风速调节</a>-->
+    <!--</footer>-->
+    <!--<footer class="netFooter" style="display:none">-->
+        <!--<a href="#" class="to-cleaner-control">返回</a>-->
+        <!--&lt;!&ndash;<a href="#">重置滤网</a>&ndash;&gt;-->
+    <!--</footer>-->
+</div>
+
+<!--我的修改view-->
+<!--<div class="view" id="editMyInfoView">
+    <header>
+        <a class="backButton back" data-transition='up-reveal:dismiss' style="float:left"></a>
+
+        <h1>修改</h1>
+        <a href='#myInfo' id="myInfoUpdate" class="saveButton" data-transition='up-reveal:dismiss'></a>
+    </header>
+    <div class="pages">
+        <div class="panel darkblue" id="editName" data-title="昵称" data-include="page/05-2-1-1_myInfoEditName.html"></div>
+        <div class="panel darkblue" id="editAvatar" data-title="头像" data-include="page/05-2-1-2_myInfoEditAvatar.html"></div>
+    </div>
+</div>-->
+
+<div id="device_mask" class="ui-loader" style="z-index: 200000;width:100%;height:100%;position:fixed;display: none;">
+    <div class="black_mask"></div>
+    <div class="loading-panel">
+        <img src="images/icons-gif/loading.gif" alt=""/>
+        <p>正在加载</p>
+    </div>
+</div>
+
+<!--关于设备修改view-->
+<div class="view" id="editDeviceView">
+    <header>
+        <a class="backButton back" data-transition='up-reveal:dismiss' style="float:left"></a>
+
+        <h1>修改</h1>
+        <a href='#' id="aboutDeviceUpdate" class="saveButton" data-transition='up-reveal:dismiss'></a>
+    </header>
+    <div class="pages">
+        <div class="panel" id="editDeviceName" data-title="设备昵称"
+             data-include="page/04-4-6-2_aboutDeviceEditName.html"></div>
+        <div class="panel" id="editDeviceImage" data-title="设备图片"
+             data-include="page/04-4-6-3_aboutDeviceEditImage.html"></div>
+    </div>
+</div>
+<!--无header，无footer的view-->
+<div class="view" id="lockView">
+    <div class="pages">
+        <div class="panel" id="deviceIndex" data-title="设备控制首页(动态)" data-include="page/04-3-1-1_deviceIndex.html"></div>
+        <div class="panel" id="gesturePWsetting" data-title="手势密码"
+             data-include="page/05-1-2-1_GesturePWsetting.html"></div>
+        <div class="panel" id="gesturePW" data-title="手势密码" data-include="page/05-1-2-2_GesturePW.html"></div>
+        <div class="panel" id="welcome" data-title="手势密码" data-include="page/01-1-2_welcome.html"></div>
+    </div>
+</div>
+
+</body>
+</html>

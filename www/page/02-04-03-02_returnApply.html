@@ -1,0 +1,61 @@
+
+<div class="orderDetail">
+    <strong>请选择商品<span>*</span></strong>
+    <p>收到商品7天内无理由退货</p>
+</div>
+
+<div id="myOrdersDetail9" class="carList tuihuoList"> </div>
+
+<div class="orderDetail questionDesc">
+    <strong>问题描述<span>*</span></strong>
+    <textarea></textarea>
+</div>
+
+<div id="myOrdersDetail10" class="orderDetail"> </div>
+
+<a href="#" class="blueBtn sqthSubmit">提交</a>
+
+<div class="reader">
+    <div class="check selectAgree checked"></div>
+    <input class="isAgree" type="hidden" value="1" />
+    &nbsp;&nbsp;<a href="#salesPolicy" style="font-size:15px;">我已阅读并同意《售后政策》</a>
+</div>
+
+<p style="display: none">
+    <textarea id="tpl_myordersdetail9">
+        <ul>
+            {#foreach $T as Item}
+                <li>
+                    <!--<div id="{$T.Item.sku_sn}" class="check selectReturn"><input class="isChecked" type="hidden" value="0" /></div>-->
+                    <img src="{$T.Item.goods_thumb}" />
+                    <strong>{$T.Item.goods_name}</strong>
+                    <span>
+                        商城价：{$T.Item.market_price}元;<br/>
+                        数量：{$T.Item.goods_number}
+                        <input class="goodsNum" type="hidden" value="{$T.Item.goods_number}">
+                        <input class="skuSn" type="hidden" value="{$T.Item.sku_sn}">
+                    </span>
+                    <!--<div class="putNum">
+                        <i class="cutNum">-</i>
+                        <input class="goodsNum" type="text" value="{$T.Item.goods_number}">
+                        <i class="addNum">+</i>
+                        <input class="goodsNumHidden" type="hidden" value="{$T.Item.goods_number}">
+                    </div>-->
+                </li>
+            {#/for}
+        </ul>
+    </textarea>
+    <textarea id="tpl_myordersdetail10">
+            <strong>请确认联系信息<span>*</span><a class="blue infoEdit" qrxx-mobile="{$T.mobile}" href="#">编辑 ></a></strong>
+            <p><span style="padding:0 10px 0 0;" class="returnApplyConsignee">{$T.consignee}</span><span class="returnApplyMobile" style="padding:0 10px 0 0;">{$T.mobile}</span></p>
+            <p class="returnApplyAddress">{$T.address}</p>
+            <input type="hidden" class="hdnConsignee" value="{$T.consignee}" />
+            <input type="hidden" class="hdnMobile" value="{$T.mobile}" />
+            <input type="hidden" class="hdnAddress" value="{$T.address}" />
+            <input type="hidden" class="hdnTel" value="{$T.tel}" />
+            <input type="hidden" class="hdnProvince" value="{$T.province}" />
+            <input type="hidden" class="hdnCity" value="{$T.city}" />
+            <input type="hidden" class="hdnDistrict" value="{$T.district}" />
+            <input type="hidden" class="hdnZipCode" value="{$T.zipcode}" />
+    </textarea>
+</p>

@@ -1,0 +1,134 @@
+<!--<html>-->
+<!--<head>-->
+<!--<meta charset="utf-8" />-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />-->
+<!--<title>飞科商城</title>-->
+<!--<link href="../css/base.css" rel="stylesheet" type="text/css">-->
+<!--<link href="../css/global.css" rel="stylesheet" type="text/css">-->
+<!--<script src="js/jquery-1.7.2.min.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<header class="all">-->
+<!--<div class="home">-->
+
+<!--</div>-->
+
+<!--</a>-->
+
+<!--新增地址-->
+
+<!--<a href="javascript:;" class="shortCar">-->
+
+<!--<div class="shortCar">-->
+
+<!--<span>1</span>-->
+
+<!--</div>-->
+
+<!--</a>-->
+
+<!--</header>-->
+
+<style>
+    div#addressAdd form#addAddressForm div.addressBg {
+        overflow: auto;
+        padding: 10px 0;
+    }
+
+    div#addressAdd form#addAddressForm div.addressBg select {
+        position: inherit;
+        left: 0;
+        padding: 0;
+        width: 30%;
+        margin-right: 2%;
+    }
+
+    div#addressAdd form#addAddressForm div.addressBg select.long {
+        left: 33%;
+        width: 63%;
+    }
+
+    div#addressAdd form#addAddressForm div.addressBg label.error {
+        display: block;
+        color: red;
+        position: inherit;
+        float: left;
+        left: 25%;
+        padding: 0;
+        margin-bottom: 0.2rem;
+    }
+
+    div#addressAdd form#addAddressForm div.addressBg span {
+        position: inherit;
+        top: 1.3rem;
+        width: 33%;
+        float: left;
+    }
+
+    div#addressAdd form#addAddressForm div.addressBg input[type="text"] {
+        width: 66%;
+        height: 2.5rem;
+        text-indent: 0;
+        padding: 0;
+        position: inherit;
+        border: 0;
+        line-height: normal;
+        float: left;
+        margin: 0;
+    }
+</style>
+
+<div class="addTips" style="display: none" id="addAddressMessage"></div>
+
+<form id="addAddressForm" check_status="false" submitted="false">
+    <div class="addressBg">
+        <span>收货人姓名：</span>
+        <input name="address_consignee" type="text" placeholder="请填写真实姓名" />
+    </div>
+    <div class="addressBg">
+        <span>配送区域：</span>
+
+        <select name="address_province" id="addAddress_province">
+            <option value="-1"> --请选择--  </option>
+        </select>
+        <select name="address_city" id="addAddress_city">
+            <option value="-1"> --请选择--  </option>
+        </select>
+        <select name="address_district" class="long" id="addAddress_district">
+            <option value="-1"> --请选择--  </option>
+        </select>
+
+        <p style="display: none">
+        <textarea id="address_itemAdd">
+            <option value="-1"> --请选择--  </option>
+            {#foreach $T as Item}
+            <option value="{$T.Item.region_id}">{$T.Item.region_name}</option>
+            {#/for}
+        </textarea>
+        </p>
+    </div>
+
+    <div class="addressBg">
+        <span>详细地址：</span>
+        <input name="address_address" type="text" placeholder="不少于5个字" />
+    </div>
+    <div class="addressBg" style="display:none;">
+        <span>邮政编码：</span>
+        <input name="address_zipcode" type="text" maxlength="6" placeholder="6位数字" />
+    </div>
+    <div class="addressBg" style="display:none;">
+        <span>固定电话：</span>
+        <input name="address_tel" type="text" maxlength="12" placeholder="区号-电话号码" />
+    </div>
+    <div class="addressBg">
+        <span>手机号码：</span>
+        <input id="addressAdd_mobile" name="address_mobile" type="text" maxlength="11" placeholder="11位数字" />
+    </div>
+
+    <div class="addressBg">
+        <a class="blueBtn" onclick="AddAddress()">提交</a>
+    </div>
+</form>
+
+<!--</body>-->
+<!--</html>-->

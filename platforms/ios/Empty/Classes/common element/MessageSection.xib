@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageSection"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MessageSection">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red dot-rec.png" translatesAutoresizingMaskIntoConstraints="NO" id="72o-EJ-zEj" userLabel="imgRedDot">
+                        <rect key="frame" x="8" y="17" width="16" height="16"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="O37-Eb-fMl"/>
+                            <constraint firstAttribute="height" constant="34" id="uT0-jk-3Tt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="O37-Eb-fMl"/>
+                                <exclude reference="uT0-jk-3Tt"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blah~blah~blah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bf-QN-e82" userLabel="lblBriefContent">
+                        <rect key="frame" x="32" y="14" width="118" height="20.5"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="XGw-77-2y1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/09/17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHf-nr-YOw" userLabel="lblMsgTime">
+                        <rect key="frame" x="245" y="14" width="66.5" height="20.5"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="85" id="1do-jW-TB5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="72o-EJ-zEj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="0fb-ex-gQ7"/>
+                    <constraint firstItem="WHf-nr-YOw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="871-8U-0Pj"/>
+                    <constraint firstItem="9Bf-QN-e82" firstAttribute="leading" secondItem="72o-EJ-zEj" secondAttribute="trailing" constant="8" id="IjO-Ta-CwV"/>
+                    <constraint firstAttribute="bottom" secondItem="72o-EJ-zEj" secondAttribute="bottom" constant="8" id="K9o-bB-bnj"/>
+                    <constraint firstItem="72o-EJ-zEj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="LBK-Gw-gSm"/>
+                    <constraint firstAttribute="trailing" secondItem="WHf-nr-YOw" secondAttribute="trailing" constant="8" id="S33-Y4-JOp"/>
+                    <constraint firstItem="72o-EJ-zEj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UDu-Ss-34T"/>
+                    <constraint firstItem="9Bf-QN-e82" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gVH-JZ-iWR"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="0fb-ex-gQ7"/>
+                        <exclude reference="K9o-bB-bnj"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="imgRedDot" destination="72o-EJ-zEj" id="263-Aa-1ui"/>
+                <outlet property="lblBriefContent" destination="9Bf-QN-e82" id="JQU-rm-7uS"/>
+                <outlet property="lblMsgTime" destination="WHf-nr-YOw" id="ucm-6s-xSk"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="red dot-rec.png" width="16" height="16"/>
+    </resources>
+</document>

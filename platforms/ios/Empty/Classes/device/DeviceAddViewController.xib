@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeviceAddViewController">
+            <connections>
+                <outlet property="btnNext" destination="IP4-4E-dei" id="5Z6-T6-rMm"/>
+                <outlet property="pswTextView" destination="ajN-2t-NYj" id="64S-bW-jul"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wifilabel" destination="XfW-1N-poh" id="dPX-aL-Xkd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0O-4P-XjZ">
+                    <rect key="frame" x="0.0" y="249" width="600" height="101"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ajN-2t-NYj" userLabel="psw">
+                            <rect key="frame" x="0.0" y="51" width="600" height="50"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="IAv-Sv-R2W"/>
+                            </constraints>
+                            <color key="textColor" red="0.86298816089999997" green="0.89429320960000003" blue="0.87671538950000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfW-1N-poh" userLabel="wifi">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Im6-N7-w5n"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.015686274510000001" green="0.047058823530000002" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="101" id="A8p-I5-qPK"/>
+                        <constraint firstAttribute="trailing" secondItem="XfW-1N-poh" secondAttribute="trailing" id="VvQ-Sy-3Gg"/>
+                        <constraint firstItem="ajN-2t-NYj" firstAttribute="leading" secondItem="N0O-4P-XjZ" secondAttribute="leading" id="buO-a2-M7w"/>
+                        <constraint firstAttribute="trailing" secondItem="ajN-2t-NYj" secondAttribute="trailing" id="coO-N3-apc"/>
+                        <constraint firstItem="XfW-1N-poh" firstAttribute="leading" secondItem="N0O-4P-XjZ" secondAttribute="leading" id="wno-4i-kFE"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="iR2-c2-7eQ">
+                    <rect key="frame" x="20" y="300" width="560" height="1"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.1333333333" green="0.56470588239999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="vzc-Le-Atu"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IP4-4E-dei">
+                    <rect key="frame" x="50" y="413" width="500" height="50"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.52941176469999995" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5oB-3o-Gap"/>
+                    </constraints>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextButtonClicked:" destination="-1" eventType="touchUpInside" id="Kgn-Ea-C7P"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WIFI.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hw1-ho-HFI">
+                    <rect key="frame" x="250" y="159" width="100" height="65"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="7TH-1y-sa5"/>
+                        <constraint firstAttribute="width" constant="100" id="Wg4-aX-c6p"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.0078431372549019607" green="0.074509803921568626" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="N0O-4P-XjZ" firstAttribute="top" secondItem="Hw1-ho-HFI" secondAttribute="bottom" constant="25" id="0Ce-Ub-OeI"/>
+                <constraint firstAttribute="centerY" secondItem="N0O-4P-XjZ" secondAttribute="centerY" id="5Ix-kX-hwP"/>
+                <constraint firstAttribute="trailing" secondItem="N0O-4P-XjZ" secondAttribute="trailing" id="5Pe-Do-RnB"/>
+                <constraint firstAttribute="trailing" secondItem="iR2-c2-7eQ" secondAttribute="trailing" constant="20" id="88h-1w-aRz"/>
+                <constraint firstAttribute="trailing" secondItem="IP4-4E-dei" secondAttribute="trailing" constant="50" id="9D7-2Q-5AZ"/>
+                <constraint firstAttribute="centerY" secondItem="iR2-c2-7eQ" secondAttribute="centerY" id="AR4-w2-0Wu"/>
+                <constraint firstItem="iR2-c2-7eQ" firstAttribute="top" secondItem="XfW-1N-poh" secondAttribute="bottom" constant="1" id="IDu-UL-4w3"/>
+                <constraint firstItem="IP4-4E-dei" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="Ke4-gk-C0m"/>
+                <constraint firstAttribute="centerX" secondItem="iR2-c2-7eQ" secondAttribute="centerX" id="MLe-DO-llE"/>
+                <constraint firstItem="iR2-c2-7eQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="NA6-l9-2dq"/>
+                <constraint firstItem="N0O-4P-XjZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OKC-8s-QSN"/>
+                <constraint firstAttribute="centerX" secondItem="Hw1-ho-HFI" secondAttribute="centerX" id="UXQ-Tw-0DN"/>
+                <constraint firstItem="ajN-2t-NYj" firstAttribute="top" secondItem="iR2-c2-7eQ" secondAttribute="bottom" constant="-1" id="VFn-96-0wL"/>
+                <constraint firstItem="IP4-4E-dei" firstAttribute="top" secondItem="N0O-4P-XjZ" secondAttribute="bottom" constant="63" id="hM2-hP-aIA"/>
+                <constraint firstAttribute="centerX" secondItem="N0O-4P-XjZ" secondAttribute="centerX" id="tvi-lh-V8H"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="WIFI.png" width="97" height="65"/>
+        <image name="line_blue.png" width="1" height="105"/>
+    </resources>
+</document>

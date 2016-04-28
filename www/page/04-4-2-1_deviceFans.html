@@ -1,0 +1,24 @@
+<div id="deviceFansList" class="grid" style="font-size: .75rem;">
+
+</div>
+<!--  设备粉丝列表 模板 -->
+<p style="display: none">
+        <textarea id="tpl_deviceFansListAdd">
+            <ul class="list">
+                {#foreach $T.deviceNewAddedFansInfoList as Item}
+                    <li>
+                        <img src="{$T.Item.userHeadPortrait}" style="margin:0.6rem 0 0 0.6rem;width: 5rem">
+                        <span class="af-badge"></span>
+                        <h2>{$T.Item.fanName}</h2>
+                    </li>
+                {#/for}
+                {#foreach $T.deviceOldFansInfoList as Item}
+                    <li>
+                        <img src="{$T.Item.userHeadPortrait}" style="margin:0.6rem 0 0 0.6rem;width: 5rem">
+                        <h2>{$T.Item.fanName}</h2>
+                    </li>
+                {#/for}
+            </ul>
+         </textarea>
+</p>
+<!--  设备设备粉丝列表 模板-->

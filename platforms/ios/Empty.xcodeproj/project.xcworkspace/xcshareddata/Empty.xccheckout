@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>98E87257-4DCC-4564-94F6-DB3871E7CFFC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>f7fcebb1-050e-4941-bb85-6741a0f117e2++3378</key>
+		<string>https://112.124.59.203:1001/svn/FSAS_MOBILE/trunk/iOS/%25E6%2599%25BA%25E8%2583%25BD%25E5%25AE%25B6%25E7%2594%25B5819</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/Empty.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>f7fcebb1-050e-4941-bb85-6741a0f117e2++3378</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>f7fcebb1-050e-4941-bb85-6741a0f117e2++3378</key>
+		<string>https://112.124.59.203:1001/svn/FSAS_MOBILE</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://112.124.59.203:1001/svn/FSAS_MOBILE/trunk/iOS/%25E6%2599%25BA%25E8%2583%25BD%25E5%25AE%25B6%25E7%2594%25B5819/platforms/ios/Empty.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>f7fcebb1-050e-4941-bb85-6741a0f117e2++3378</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>f7fcebb1-050e-4941-bb85-6741a0f117e2++3378</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E9%A3%9E%E7%A7%91%E6%99%BA%E8%83%BD819</string>
+		</dict>
+	</array>
+</dict>
+</plist>

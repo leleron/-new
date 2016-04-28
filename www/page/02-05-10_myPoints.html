@@ -1,0 +1,96 @@
+<!--<html>-->
+<!--<head>-->
+    <!--<meta charset="utf-8" />-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />-->
+    <!--<title>飞科商城</title>-->
+    <!--<link href="../css/base.css" rel="stylesheet" type="text/css">-->
+    <!--<link href="../css/global.css" rel="stylesheet" type="text/css">-->
+    <!--<script src="js/jquery-1.7.2.min.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<header class="all">-->
+    <!--<a href="javascript:;" class="home">-->
+        <!--<div class="home">-->
+        <!--</div>-->
+    <!--</a>-->
+    <!--未评价-->
+    <!--<a href="javascript:;" class="shortCar">-->
+        <!--<div class="shortCar">-->
+            <!--<span>1</span>-->
+        <!--</div>-->
+    <!--</a>-->
+<!--</header>-->
+
+
+<div class="signCon">
+    <h4 >当前可使用积分：<span id="myPointsHeaderSpan" class="blue">0</span> 积分</h4>
+</div>
+
+<div class="jfCon">
+    <div class="searchJF">
+        <select id="myPointsSearchYear"></select>
+        <select id="myPointsSearchMonth"></select>
+        <a id="myPointsSearchBtn" >查询</a>
+
+        <p style="display: none">
+            <textarea id="myPointsDate_itemAdd">
+                {#foreach $T as Item}
+                <option value="{$T.Item.value}">{$T.Item.label}</option>
+                {#/for}
+            </textarea>
+        </p>
+    </div>
+
+    <div id="myPointsListDiv">
+        <!--<ul>
+        <li>
+            明细：每日签到送消费积分
+
+            <span class="blue">+1</span>
+            <p>2015-02-02</p>
+        </li>
+        <li>
+            明细：每日签到送消费积分
+
+            <span class="blue">+1</span>
+            <p>2015-02-02</p>
+        </li>
+        <li>
+            明细：每日签到送消费积分
+
+            <span class="red">-1</span>
+            <p>2015-02-02</p>
+        </li>
+        <li>
+
+            明细：积分消费
+            <br>
+            订单号：123456789012345
+            <span class="red">-1</span>
+                    <p>2015-02-02</p>
+                </li>
+            </ul>-->
+    </div>
+
+    <p style="display: none">
+        <textarea id="myPoints_itemAdd">
+                {#if $T==""}
+                <p class="topMessage">没有积分明细记录</p>
+                {#else}
+                <ul>
+                    {#foreach $T as Item}
+                    <li>
+                        明细：{$T.Item.event}
+                        <span class="{$T.Item.remarkClass}">{$T.Item.value}</span>
+                        <p>{$T.Item.eventTime}</p>
+                    </li>
+                    {#/for}
+                </ul>
+                {/#if}
+        </textarea>
+    </p>
+</div>
+
+
+<!--</body>-->
+<!--</html>-->

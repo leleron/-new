@@ -1,0 +1,178 @@
+<!--<html>-->
+
+<!--<head>-->
+
+<!--<meta charset="utf-8" />-->
+
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />-->
+
+<!--<title>飞科商城</title>-->
+
+<!--<link href="../css/base.css" rel="stylesheet" type="text/css">-->
+
+<!--<link href="../css/global.css" rel="stylesheet" type="text/css">-->
+
+<!--<script src="js/jquery-1.7.2.min.js"></script>-->
+
+<!--</head>-->
+
+
+
+<!--<body>-->
+
+<!--<header class="all">-->
+
+<!--<a href="javascript:;" class="home">-->
+
+<!--<div class="home">-->
+
+<!--</div>-->
+
+<!--</a>-->
+
+<!--提交订单-->
+
+<!--<a href="javascript:;" class="shortCar">-->
+
+<!--<div class="shortCar">-->
+
+<!--<span>1</span>-->
+
+<!--</div>-->
+
+<!--</a>-->
+
+<!--</header>-->
+<div class="orderBg">
+
+    <!--<a href="#addressSelect">上海 上海市 长宁区 红宝石路300号（200050）<br/>
+
+        张三 159****1111</a>-->
+    <div id="div_submitOrder_address">
+
+    </div>
+    <em></em>
+</div>
+
+<div class="orderBg">
+
+    <p>支付方式：在线支付</p>
+
+    <p>配送方式：快递配送<span id="forFree" style="display: none">（免运费）</span></p>
+
+    <!--发票信息：<em>个人发票</em>-->
+
+    <!--<i>修改</i>-->
+    <!--<em></em>-->
+
+    <div id="invoice" class="orderCon">
+        <p>发票信息：
+
+        <a id="person" class="cur" href="javascript:;">个人发票</a>
+
+        <a id="company" href="javascript:;">单位发票</a>
+
+        </p>
+        <input id="companyName" class="dw" type="text" style="display: none" placeholder="单位名称" />
+    </div>
+
+</div>
+
+<div class="orderBg canshu showcanshu" id="showIntegralDiv">
+    <a href="" onclick="showIntegral()">使用积分<i></i></a>
+
+    <span class="ar ar2 ar3"></span>
+
+    <div id="integralDiv" class="orderCon" style="display:block">
+
+        <div class="check" id='submitOrderCheckbox'></div>
+
+        使用积分 <input id="integral" type="text" class="jifen" placeholder="请输入积分"> 可优惠<strong id="integralToCash">0</strong>元
+
+        <!--<p class="jifen_total">（账户积分共{$T.integral}）</p>-->
+        <div id="div_submitOrder_integral"></div>
+    </div>
+
+</div>
+
+
+
+<div id="div_submitOrder_goods" class="orderBg canshu showcanshu">
+
+</div>
+
+
+
+<div id="div_submitOrder_totalPrice" class="orderMsg">
+    <!--订单结算-->
+</div>
+
+<a id="submitOrderPay" href="#" class="blueBtn subBtn">提交订单</a>
+<div id="notShowItem" style="display: none">
+    <p style="display: none" id="notShowFreight"></p>
+</div>
+
+<!--</tpl>-->
+<p style="display: none">
+    <textarea id="tpl_submitOrder_address">
+        <a id="submitOrderAddress" href="#addressSelect">
+            <p>{$T.address}</p>
+            <p>{$T.mobileAndName}</p>
+        </a>
+    </textarea>
+    <textarea id="tpl_submitOrder_integral">
+        <p class="jifen_total">（账户积分共{$T.all}分）</p>
+        <p class="available_total">亲！本订单最多可使用{$T.canUse}积分哦</p>
+    </textarea>
+    <textarea id="tpl_submitOrder_goods">
+        <a href="" onclick="showGoodList()">商品清单:共<span>{$T.num}</span>件商品<i></i></a>
+        <span class="ar ar2 ar3"></span>
+        <div id="goodList" class="orderCon" style="display:block">
+            <ul>
+                {#foreach $T.goodsSimpleInfoList as Item}
+                <li>
+                    <img src="{$T.Item.goods_thumb}" />
+                    <h4>{$T.Item.goods_name}</h4>
+                    <div>
+                        {#if $T.Item.is_special==1}
+                        <span>活动商品不可以使用积分</span></br>
+                        {#/if}
+                        {#if $T.Item.shop_price}
+                        商城价：{$T.Item.shop_price}元
+                        {#elseif $T.Item.app_price}
+                        手机专享价：{$T.Item.app_price}元
+                        {#elseif $T.Item.promo_price}
+                        活动价：{$T.Item.promo_price}元
+                        {#/if}
+                        <br>
+                        数量：{$T.Item.sum}
+                        <br>
+                        小计：{$T.Item.totalPrice}元
+                    </div>
+                </li>
+                {#/for}
+            </ul>
+        </div>
+    </textarea>
+    <textarea id="tpl_submitOrder_totalPrice">
+        <p>金额合计<span>{$T.price}元</span></p>
+
+        <p>积分抵扣<span>{$T.integralPrice}元</span></p>
+
+        <p>运费<span>{$T.freight}元</span></p>
+
+        <p class="orange">应付总额<span id="sumTotalPrice">{$T.sumTotalPrice}元</span></p>
+
+        {#if $T.freight!=0}
+        <h4 id="freight">亲！买满24元包邮哦！</h4>
+        {#/if}
+    </textarea>
+</p>
+<!--</tpl>-->
+
+<!--</body>-->
+
+
+
+<!--</html>-->
+

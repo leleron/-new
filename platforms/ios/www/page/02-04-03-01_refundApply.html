@@ -1,0 +1,40 @@
+
+<div class="applyTH applyRegNo">
+    <ul>
+        <li class="tips">你确定要退款吗，申请退款后不可取消</li>
+    </ul>
+</div>
+
+<div id="tkInfo" class="tkDes">
+    <div>
+        <span>退款原因：</span>
+        <select class="tkyy" style="width:72%;">
+            <option value="0">--请选择--</option>
+            <option value="我不想要了">我不想要了</option>
+            <option value="我买错了">我买错了</option>
+            <option value="价格贵了">价格贵了</option>
+        </select>
+    </div>
+    <div>
+        <span>退款说明：</span>
+        <textarea class="tksm"></textarea>
+    </div>
+</div>
+
+<div id="regMobile" class="registCon"> </div>
+
+<div class="registCon" >
+    <span>验证码</span>
+    <input class="refundGetCode" type="text" placeholder="填写验证码" />
+    <a id="refundApplyCode" class="button blue">获取动态验证码</a>
+</div>
+
+<a id="refundApplySubmit" href="#" class="blueBtn">确认提交退款申请</a>
+
+<p style="display: none">
+    <textarea id="tpl_refundapply">
+        <span style="width:100%;" reg-mobile="{$T.mobile}">将验证码发送到您的手机：{$T.mobile}</span>
+        <input type="text" disabled />
+        <input class="tkOrderSn" type="hidden" value="{$T.order_sn}" placeholder="填写验证码" />
+    </textarea>
+</p>

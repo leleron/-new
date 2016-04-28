@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AfterSaleViewController">
+            <connections>
+                <outlet property="btnFlyco" destination="p4G-RJ-5Zx" id="TIK-qj-PNr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="飞科售后服务平台正在建设中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pp4-P1-6pl">
+                    <rect key="frame" x="0.0" y="16" width="600" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Jt6-JM-ANW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="敬请期待" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCJ-mY-1N8">
+                    <rect key="frame" x="0.0" y="37" width="600" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="17J-2r-p95"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="s9B-78-zcl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您可以登录" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8og-1P-bQA">
+                    <rect key="frame" x="0.0" y="66" width="225" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4G-RJ-5Zx">
+                    <rect key="frame" x="225" y="62" width="150" height="30"/>
+                    <state key="normal" title="飞科官方网站">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查询售后信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTH-5w-dA6">
+                    <rect key="frame" x="375" y="66" width="225" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0078431372549019607" green="0.074509803921568626" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="p4G-RJ-5Zx" firstAttribute="top" secondItem="VCJ-mY-1N8" secondAttribute="bottom" constant="4" id="8mF-Gh-AbL"/>
+                <constraint firstItem="VCJ-mY-1N8" firstAttribute="top" secondItem="pp4-P1-6pl" secondAttribute="bottom" id="9Qy-Mv-zl0"/>
+                <constraint firstItem="fTH-5w-dA6" firstAttribute="leading" secondItem="p4G-RJ-5Zx" secondAttribute="trailing" id="AcW-1c-SJu"/>
+                <constraint firstAttribute="trailing" secondItem="pp4-P1-6pl" secondAttribute="trailing" id="Fkh-cw-MQ2"/>
+                <constraint firstItem="8og-1P-bQA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="G78-fD-t0x"/>
+                <constraint firstItem="VCJ-mY-1N8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KIQ-8a-Hup"/>
+                <constraint firstItem="p4G-RJ-5Zx" firstAttribute="leading" secondItem="8og-1P-bQA" secondAttribute="trailing" id="Lk6-lE-JuZ"/>
+                <constraint firstItem="8og-1P-bQA" firstAttribute="width" secondItem="p4G-RJ-5Zx" secondAttribute="width" multiplier="3/2" id="O0v-er-9Mw"/>
+                <constraint firstAttribute="trailing" secondItem="VCJ-mY-1N8" secondAttribute="trailing" id="UPg-Nc-hQ5"/>
+                <constraint firstItem="pp4-P1-6pl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="Umb-yo-YBm"/>
+                <constraint firstItem="fTH-5w-dA6" firstAttribute="leading" secondItem="p4G-RJ-5Zx" secondAttribute="trailing" id="l2R-YK-y1f"/>
+                <constraint firstItem="fTH-5w-dA6" firstAttribute="top" secondItem="VCJ-mY-1N8" secondAttribute="bottom" constant="8" id="lVx-h5-Cb5"/>
+                <constraint firstAttribute="trailing" secondItem="fTH-5w-dA6" secondAttribute="trailing" id="sFc-mg-RlW"/>
+                <constraint firstItem="pp4-P1-6pl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sNY-kW-3MW"/>
+                <constraint firstItem="p4G-RJ-5Zx" firstAttribute="leading" secondItem="8og-1P-bQA" secondAttribute="trailing" id="vDb-Z7-DVA"/>
+                <constraint firstItem="8og-1P-bQA" firstAttribute="width" secondItem="fTH-5w-dA6" secondAttribute="width" id="vP2-Ig-HVV"/>
+                <constraint firstItem="fTH-5w-dA6" firstAttribute="width" secondItem="p4G-RJ-5Zx" secondAttribute="width" id="wrg-hy-TBr"/>
+                <constraint firstItem="8og-1P-bQA" firstAttribute="top" secondItem="VCJ-mY-1N8" secondAttribute="bottom" constant="8" id="x87-u5-BGZ"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wrg-hy-TBr"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

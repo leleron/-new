@@ -1,0 +1,31 @@
+﻿$(function () {
+    $.afui.launch();
+
+    // news_top
+    $("#myLogin").on("panelload", function (e) {
+        $("#btnLogin").on("click", function () {
+            var u = $("#UserName").val();
+            var p = $("#Password").val();
+            svc.userAuthentication(u, p, function () {
+                hlp.log(hlp.format("U:{0},P:{1}", u, p));
+            });
+        });
+    });
+
+    // news_top
+    $("#mtlist").on("panelload", function (e) {
+        hlp.log("this is in my mtlist...");
+        var fls = $.localStorage;
+        fls.set("FLYCO.USER", { "UserId": 12, "UserName": "sicon" });
+        hlp.log(hlp.format("UserID:{0},UserName:{1}", [fls.get("FLYCO.USER").UserId, fls.get("FLYCO.USER").UserName]));
+
+        // tpl_mtlist
+        svc.getuserprofile(12, function (r) {
+            hlp.log("this is in getuserprofile.");
+            hlp.binddata(r, "#mtlist", "tpl_mtlist");
+        });
+
+        // $.afui.loadContent();
+    });
+
+});

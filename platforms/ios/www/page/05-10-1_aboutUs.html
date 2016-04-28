@@ -1,0 +1,15 @@
+<div  align="center" class="ui-field-contain aboutUs" style="border: 0;">
+    <p id="newTip" class="topMessage"></p>
+    <img src="images/aboutUs/logo.png">
+    <p id="version" >v1.1.2-7890</p>
+    <div id="otherLink">
+
+    </div>
+</div>
+<p style="display: none">
+    <textarea id="tpl_otherLink">
+        {#foreach $T as Item}
+            <div><a href="#">{$T.Item.linkUrl}</a></div>
+        {#/for}
+    </textarea>
+</p>

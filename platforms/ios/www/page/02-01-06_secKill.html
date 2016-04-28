@@ -1,0 +1,97 @@
+<div id="secKillBannerList">
+
+</div>
+<div id="currentTime" style="display: none"></div>
+
+<div id="secKillProInfo">
+
+</div>
+<p style="display: none">
+    <textarea id="tpl_secKillProInfo">
+        {#foreach $T.product_goods as Item}
+            <div class="newPro secKillPro" id="{$T.Item.goods_sn}">
+
+                <h1>
+
+                    <span>{$T.Item$index+1}</span>
+
+                    {$T.Item.goods_name}
+
+                </h1>
+
+                <div class="imgBg SecKillImg">
+
+                    <img class="{$T.Item.goods_sn}" src="{$T.Item.img_url}" />
+
+                    <div class="secKillProIcon"></div>
+
+                </div>
+
+                <div class="price">
+
+                    <strong>{$T.Item.promo_price}</strong>元
+
+                    <span>库存{$T.Item.promo_number}件</span>
+
+                </div>
+	
+                <a id="secKilling" sn="{$T.Item.goods_sn}" class="blueBtn secBtn">活动进行中</a>
+				
+                <a id="secKillNoBegin" class="blueBtn noStrtBtn"></a>
+
+                <a id="secKillEnd" class="blueBtn noStrtBtn">已结束</a>
+
+                <input type="hidden" class="promoBeginTime" value="{$T.Item.promo_begin}" />
+                <input type="hidden" class="promoEndTime" value="{$T.Item.promo_end}" />
+
+            </div>
+        {#/for}
+    </textarea>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

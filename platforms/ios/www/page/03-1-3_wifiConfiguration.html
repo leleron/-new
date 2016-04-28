@@ -1,0 +1,31 @@
+<div class="wifiCon" align="center">
+    <div>
+        <p>设备将与手机连接到同一个WI-FI</p>
+
+        <p>您当前连接的WI-FI是</p>
+    </div>
+
+    <div>
+        <img src="images/wifiCon/wifilogo.png"/>
+        <!--<p style="padding: 0.5rem 0;">wifi0980890</p>-->
+        <div id="wifiSSIDDiv">
+        </div>
+        <input id='wifissid' type="hidden"/>
+        <input id='wifiPassword' type="password" name="password" id="password" value="" placeholder="密码"/>
+        <a id="wifiSure" href="#" class="button blue">确定</a>
+        <div><p id="wifiConfigMes" style="font-size: 25px;color: #14a205;margin:0 auto;display:none">添加成功！</p></div>
+    </div>
+</div>
+
+
+<div id="waiting" class="ui-loader heavy" style="display: none">
+        <span class="ui-icon ui-icon-loading spin"></span>
+</div>
+
+
+<p style="display: none">
+        <textarea id="tpl_wifi">
+            <p style="padding: 0.5rem 0;">{$T}</p>
+        </textarea>
+</p>
+

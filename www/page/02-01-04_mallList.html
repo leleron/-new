@@ -1,0 +1,131 @@
+<div class="listTitle">
+
+    <a id="listBySales" onclick="listBy(this.id);" class="cur">销量</a>
+
+    <a id="listByNew" onclick="listBy(this.id);">新品</a>
+
+    <a id="listByPrice" onclick="listBy(this.id);">价格</a>
+
+    <a id="listByPopular" onclick="listBy(this.id);">人气</a>
+
+    <a onclick="changeDisplay();" style="width:16%;"><img class="listMenu" src="images/icons-png/grid-show.png"/></a>
+
+</div>
+
+
+<!--显示切换方式在这里：切换list1和list2-->
+<!--<div class="list1">-->
+<div id="goodsListDiv" class="list1">
+    <ul id="goodsList">
+
+    </ul>
+
+</div>
+
+<div class="tuijianT">推荐商品</div>
+
+<div id="recommendGoods" class="tuijianCon">
+
+</div>
+
+<p style="display: none">
+    <textarea id="tpl_goodsList">
+        {#foreach $T as Item}
+            <li class="gl" id="{$T.Item.goods_sn}">
+
+                <a>
+
+                    <img src="{$T.Item.goods_thumb}" />
+
+                    <p>{$T.Item.goods_name}</p>
+
+                    <div>{$T.Item.recommend_title}</div>
+
+                    <span>{$T.Item.shop_price}元</span>
+
+                    <em>总销量 {$T.Item.sales_number}</em>
+
+                </a>
+
+            </li>
+        {#/for}
+    </textarea>
+    <textarea id="tpl_recommendGoods">
+        {#foreach $T as Item}
+        <a class="mlr" id="mlr{$T.Item.goods_sn}">
+
+            <img src="{$T.Item.thumb}" />
+
+            <span>{$T.Item.goods_price}元</span>
+
+        </a>
+        {#/for}
+        <div class="clear"></div>
+
+    </textarea>
+</p>
+
+<script type="text/javascript">
+
+    $(".listTitle #listBySales,.listTitle #listByNew,.listTitle #listByPrice,.listTitle #listByPopular").click(function(){
+
+        if($(this).hasClass("cur")){
+
+            return false;
+
+        }else{
+
+            $(this).addClass("cur").siblings().removeClass("cur");
+
+        }
+
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

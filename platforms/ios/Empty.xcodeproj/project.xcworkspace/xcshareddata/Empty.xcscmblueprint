@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2270b6ff-203a-9148-bac3-1cbfcfdc2cbc++2156",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "2270b6ff-203a-9148-bac3-1cbfcfdc2cbc++2156" : {
+
+    },
+    "f7fcebb1-050e-4941-bb85-6741a0f117e2++3378" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2270b6ff-203a-9148-bac3-1cbfcfdc2cbc++2156" : 0,
+    "f7fcebb1-050e-4941-bb85-6741a0f117e2++3378" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "98E87257-4DCC-4564-94F6-DB3871E7CFFC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2270b6ff-203a-9148-bac3-1cbfcfdc2cbc++2156" : "%E9%A3%9E%E7%A7%91%E6%99%BA%E8%83%BDnew\/",
+    "f7fcebb1-050e-4941-bb85-6741a0f117e2++3378" : "%E9%A3%9E%E7%A7%91%E6%99%BA%E8%83%BD819\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Empty",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "platforms\/ios\/Empty.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.20.211:1001\/svn\/SmartHome_SRC",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2270b6ff-203a-9148-bac3-1cbfcfdc2cbc++2156"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/112.124.59.203:1001\/svn\/FSAS_MOBILE",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "f7fcebb1-050e-4941-bb85-6741a0f117e2++3378"
+    }
+  ]
+}

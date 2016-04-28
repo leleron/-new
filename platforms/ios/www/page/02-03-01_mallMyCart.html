@@ -1,0 +1,48 @@
+<div id="mallMyCart_Div"></div>
+
+<p style="display:none">
+	<textarea id="tpl_cartgoodslist">
+        <div class="carList" id="cartGoodsList">
+            <div class="controlAll">
+                <div class="checkAll">
+                    <div class="check checked" id="checkAll"></div>
+                    全选
+                </div>
+                <div class="delAll">清空购物车</div>
+            </div>
+            <ul>
+                {#foreach $T as Item}
+                <li id="{$T.Item.rec_id}">
+                    <div class="check checked checkbox" price="{$T.Item.goods_price}" sku_sn="{$T.Item.sku_sn}"
+                         goods_sn="{$T.Item.goods_sn}"></div>
+                    <img src="{$T.Item.goods_thumb}"/>
+                    <strong>{$T.Item.goods_name}{$T.Item.goods_sn}</strong>
+                    <span>商城价：{$T.Item.goods_price}元 <br/>库存：{$T.Item.available_number}件</span>
+
+                    <div class="putNum">
+                        <!--<a onclick="minusCount1({$T.Item.rec_id})">-</a>-->
+                        <input id="quantity{$T.Item.rec_id}" type="text" value="{$T.Item.goods_number}" onfocus="changeQuantity({$T.Item.rec_id})">
+                        <!--<a onclick="plusCount1({$T.Item.rec_id})">+</a>-->
+                    </div>
+                    <a href="#" class="del">删除</a>
+                </li>
+                {#/for}
+            </ul>
+        </div>
+        <div class="fixedBuy">
+            应付总额：<strong id="totalMoney"></strong>元
+            <a href="#">结算（<span></span>）</a>
+        </div>
+  </textarea>
+</p>
+
+<!--
+<p style="display:none">
+	<textarea id="tpl_nullCart">
+         <div class="cartNull">
+             <img src="images/cart-grey.png"/>
+             <h4>购物车内无商品</h4>
+             <a href="#mallIndex" class="blueBtn">去逛逛</a>
+         </div>
+    </textarea>
+</p>-->
